@@ -2896,6 +2896,56 @@ HomePage: https://www.world-of-satellite.com
 License: GPL-2.0-or-later
 Priority: optional
 
+Package: enigma2-plugin-drivers-dvb-usb-a867-dbg
+Version: 1.0-r0
+Section: devel
+Architecture: all
+Maintainer: OpenViX
+MD5Sum: 03cdab71c7b15c04b297d6a8c3616242
+SHA256sum: b105ec66c12ac791a450ff6a2db046fba5d40f2bc0311f395d4ec7734d6580b5
+Size: 610
+Filename: enigma2-plugin-drivers-dvb-usb-a867-dbg_1.0-r0_all.ipk
+Source: enigma2-plugin-drivers-dvb-usb-a867.bb
+Description: USB DVB driver for Afatech 867 chipset - Debugging files
+OE: enigma2-plugin-drivers-dvb-usb-a867
+HomePage: https://www.world-of-satellite.com
+License: GPL-2.0-or-later
+Priority: optional
+
+Package: enigma2-plugin-drivers-dvb-usb-a867-dev
+Version: 1.0-r0
+Recommends: enigma2-plugin-drivers-dvb-usb-a867 (= 1.0-r0)
+Section: devel
+Architecture: all
+Maintainer: OpenViX
+MD5Sum: 64032d640dd3786b229078df057b4b1b
+SHA256sum: 3e8a11044972faa6533673ee8411bbda2a8084e35b5a86c629d99c84dffe67c6
+Size: 644
+Filename: enigma2-plugin-drivers-dvb-usb-a867-dev_1.0-r0_all.ipk
+Source: enigma2-plugin-drivers-dvb-usb-a867.bb
+Description: USB DVB driver for Afatech 867 chipset - Development files
+OE: enigma2-plugin-drivers-dvb-usb-a867
+HomePage: https://www.world-of-satellite.com
+License: GPL-2.0-or-later
+Priority: optional
+
+Package: enigma2-plugin-drivers-dvb-usb-a867
+Version: 1.0-r0
+Recommends: firmware-dvb-usb-af9035-02, kernel-module-dvb-usb-a867
+Section: base
+Architecture: all
+Maintainer: OpenViX
+MD5Sum: 15a23915781c11b849fc073609de98e9
+SHA256sum: 69004e051f4d183bf4b46a1bc8eba1bebe853d048526bf3c9e1f2c662ba5ef8d
+Size: 582
+Filename: enigma2-plugin-drivers-dvb-usb-a867_1.0-r0_all.ipk
+Source: enigma2-plugin-drivers-dvb-usb-a867.bb
+Description: USB DVB driver for Afatech 867 chipset
+OE: enigma2-plugin-drivers-dvb-usb-a867
+HomePage: https://www.world-of-satellite.com
+License: GPL-2.0-or-later
+Priority: optional
+
 Package: enigma2-plugin-drivers-dvb-usb-af9015-dbg
 Version: 1.0-r0
 Section: devel
@@ -3181,13 +3231,13 @@ Priority: optional
 
 Package: enigma2-plugin-drivers-dvb-usb-dvbsky-classic
 Version: 2.0-r2
-Recommends: dvb-sky-module-dvb-usb-dvbsky, dvb-sky-module-dvb-usb-v2-media-tree, dvb-sky-module-dvbsky-m88ds3103, dvb-sky-module-dvbsky-m88rs6000, dvb-sky-module-m88ds3103, dvb-sky-module-si2157, dvb-sky-module-si2168, dvb-sky-module-sit2fe, dvb-sky-module-ts2020, firmware-dvb-fe-ds3000, firmware-dvb-fe-ds3xxx, firmware-dvb-fe-si2168, firmware-dvb-usb-s660
+Recommends: firmware-dvb-fe-ds3000, firmware-dvb-fe-ds3xxx, firmware-dvb-fe-si2168, firmware-dvb-usb-s660, kernel-module-dvb-usb-dvbsky, kernel-module-dvb-usb-v2, kernel-module-dvbsky-m88ds3103, kernel-module-dvbsky-m88rs6000, kernel-module-m88ds3103, kernel-module-si2157, kernel-module-si2168, kernel-module-sit2fe, kernel-module-ts2020
 Section: base
 Architecture: all
 Maintainer: OpenViX
-MD5Sum: 557ee7cadd33c879b50fd8ced6198d72
-SHA256sum: 8f7540e9ff5528725e573cd37ef6ed0eb1e945a74ca257931759ed3aa2b4b2b9
-Size: 654
+MD5Sum: e4cb0558e16a814aa0190e9d76547621
+SHA256sum: bd824040ebf679fd0df9e54d011c31d59d95bbbb7ee7a648545409c0abefc3fa
+Size: 650
 Filename: enigma2-plugin-drivers-dvb-usb-dvbsky-classic_2.0-r2_all.ipk
 Source: enigma2-plugin-drivers-dvb-usb-dvbsky-classic.bb
 Description: USB DVB driver for DVB-SKY Family
@@ -5296,56 +5346,6 @@ HomePage: https://www.world-of-satellite.com
 License: GPL-2.0-or-later
 Priority: optional
 
-Package: enigma2-plugin-drivers-network-usb-rtl8822cu-dbg
-Version: 1.0-r1
-Section: devel
-Architecture: all
-Maintainer: OpenViX
-MD5Sum: adaa62681fc606428a27707e402049a6
-SHA256sum: 26580cd6c2f252070692e42769b1ea38f4a76adf63bbe45622a12fecc72ff202
-Size: 618
-Filename: enigma2-plugin-drivers-network-usb-rtl8822cu-dbg_1.0-r1_all.ipk
-Source: enigma2-plugin-drivers-network-usb-rtl8822cu.bb
-Description: WiFi devices for Realtek 88x2CU chipsets. - Debugging files
-OE: enigma2-plugin-drivers-network-usb-rtl8822cu
-HomePage: https://www.world-of-satellite.com
-License: GPL-2.0-or-later
-Priority: optional
-
-Package: enigma2-plugin-drivers-network-usb-rtl8822cu-dev
-Version: 1.0-r1
-Recommends: enigma2-plugin-drivers-network-usb-rtl8822cu (= 1.0-r1)
-Section: devel
-Architecture: all
-Maintainer: OpenViX
-MD5Sum: 0d52f1dc1c14c7a91312d223b8bef503
-SHA256sum: ab12c6f98f2fb07ef412dbe598dbdcb861a7fbabaa4901ebbb21f316f25773d5
-Size: 656
-Filename: enigma2-plugin-drivers-network-usb-rtl8822cu-dev_1.0-r1_all.ipk
-Source: enigma2-plugin-drivers-network-usb-rtl8822cu.bb
-Description: WiFi devices for Realtek 88x2CU chipsets. - Development files
-OE: enigma2-plugin-drivers-network-usb-rtl8822cu
-HomePage: https://www.world-of-satellite.com
-License: GPL-2.0-or-later
-Priority: optional
-
-Package: enigma2-plugin-drivers-network-usb-rtl8822cu
-Version: 1.0-r1
-Recommends: firmware-rtk8822cbtusb, rt8822cu
-Section: base
-Architecture: all
-Maintainer: OpenViX
-MD5Sum: ea747d49a16b1a72b2df81eb7eaeb39f
-SHA256sum: 09663c3faf10eb0cddb23886b4921bf7f6e2e1e75e4da5554e3b845d3020bb5d
-Size: 584
-Filename: enigma2-plugin-drivers-network-usb-rtl8822cu_1.0-r1_all.ipk
-Source: enigma2-plugin-drivers-network-usb-rtl8822cu.bb
-Description: WiFi devices for Realtek 88x2CU chipsets.
-OE: enigma2-plugin-drivers-network-usb-rtl8822cu
-HomePage: https://www.world-of-satellite.com
-License: GPL-2.0-or-later
-Priority: optional
-
 Package: enigma2-plugin-drivers-network-usb-rtl8852cu-dbg
 Version: 1.0-r0
 Section: devel
@@ -5392,6 +5392,56 @@ Filename: enigma2-plugin-drivers-network-usb-rtl8852cu_1.0-r0_all.ipk
 Source: enigma2-plugin-drivers-network-usb-rtl8852cu.bb
 Description: WiFi devices for Realtek 8852CU chipsets.
 OE: enigma2-plugin-drivers-network-usb-rtl8852cu
+HomePage: https://www.world-of-satellite.com
+License: GPL-2.0-or-later
+Priority: optional
+
+Package: enigma2-plugin-drivers-network-usb-rtl88xxau-dbg
+Version: 1.0-r0
+Section: devel
+Architecture: all
+Maintainer: OpenViX
+MD5Sum: 2d1a6c3cb35f29df75ce399309d18c2d
+SHA256sum: 499ffd2f4c63c963c1ab1d5450afbf3eb8e29f55014441b42a87d9189669ff8d
+Size: 618
+Filename: enigma2-plugin-drivers-network-usb-rtl88xxau-dbg_1.0-r0_all.ipk
+Source: enigma2-plugin-drivers-network-usb-rtl88xxau.bb
+Description: WiFi devices for Realtek 88xxAU chipsets. - Debugging files
+OE: enigma2-plugin-drivers-network-usb-rtl88xxau
+HomePage: https://www.world-of-satellite.com
+License: GPL-2.0-or-later
+Priority: optional
+
+Package: enigma2-plugin-drivers-network-usb-rtl88xxau-dev
+Version: 1.0-r0
+Recommends: enigma2-plugin-drivers-network-usb-rtl88xxau (= 1.0-r0)
+Section: devel
+Architecture: all
+Maintainer: OpenViX
+MD5Sum: 3c8bed815d53e9dcc617ddc40cc3a9b7
+SHA256sum: 62442e5d6528d3f0642dca95c51607ff2a4e48f8f5035194bd6a50a79e773f5d
+Size: 654
+Filename: enigma2-plugin-drivers-network-usb-rtl88xxau-dev_1.0-r0_all.ipk
+Source: enigma2-plugin-drivers-network-usb-rtl88xxau.bb
+Description: WiFi devices for Realtek 88xxAU chipsets. - Development files
+OE: enigma2-plugin-drivers-network-usb-rtl88xxau
+HomePage: https://www.world-of-satellite.com
+License: GPL-2.0-or-later
+Priority: optional
+
+Package: enigma2-plugin-drivers-network-usb-rtl88xxau
+Version: 1.0-r0
+Recommends: rtl88xxau
+Section: base
+Architecture: all
+Maintainer: OpenViX
+MD5Sum: 410423c0a6c876c132a4d77c98b29f27
+SHA256sum: 1a4adc9ec8a628692450f4a82461928b7c87f092a4b1d6baf3805bdd0184f257
+Size: 562
+Filename: enigma2-plugin-drivers-network-usb-rtl88xxau_1.0-r0_all.ipk
+Source: enigma2-plugin-drivers-network-usb-rtl88xxau.bb
+Description: WiFi devices for Realtek 88xxAU chipsets.
+OE: enigma2-plugin-drivers-network-usb-rtl88xxau
 HomePage: https://www.world-of-satellite.com
 License: GPL-2.0-or-later
 Priority: optional
@@ -5677,14 +5727,14 @@ License: GPL-2.0-or-later
 Priority: optional
 
 Package: enigma2-plugin-extensions-e2embyclient-dbg
-Version: 1.0+git139+6ed8e0e0+6ed8e0e6c1-r0
+Version: 1.0+git141+99fd45d0+99fd45dd22-r0
 Section: devel
 Architecture: all
 Maintainer: DimitarCC
-MD5Sum: a51a7e6500bd0708648b9b585c2493a9
-SHA256sum: f71d388e445aab5308aebc42f00cd312d3d8b79a4be76c2704402e7e17c90487
+MD5Sum: 45e03301d3b8294424ef3a839db52e1e
+SHA256sum: c119fca826fa63f5322670251e32e106a9d9a63530997f41e908372e3126068b
 Size: 624
-Filename: enigma2-plugin-extensions-e2embyclient-dbg_1.0+git139+6ed8e0e0+6ed8e0e6c1-r0_all.ipk
+Filename: enigma2-plugin-extensions-e2embyclient-dbg_1.0+git141+99fd45d0+99fd45dd22-r0_all.ipk
 Source: enigma2-plugin-extensions-e2embyclient.bb
 Description: enigma2-plugin-extensions-e2embyclient version 1.0+git-r0 - Debugging files
 OE: enigma2-plugin-extensions-e2embyclient
@@ -5693,15 +5743,15 @@ License: GPL-3.0-only
 Priority: optional
 
 Package: enigma2-plugin-extensions-e2embyclient-dev
-Version: 1.0+git139+6ed8e0e0+6ed8e0e6c1-r0
-Recommends: enigma2-plugin-extensions-e2embyclient (= 1.0+git139+6ed8e0e0+6ed8e0e6c1-r0), python3-core-dev, python3-dev, python3-pillow-dev, python3-requests-dev, python3-yt-dlp-dev
+Version: 1.0+git141+99fd45d0+99fd45dd22-r0
+Recommends: enigma2-plugin-extensions-e2embyclient (= 1.0+git141+99fd45d0+99fd45dd22-r0), python3-core-dev, python3-dev, python3-pillow-dev, python3-requests-dev, python3-yt-dlp-dev
 Section: devel
 Architecture: all
 Maintainer: DimitarCC
-MD5Sum: b50afb62e8f103a3b773230bb710dc86
-SHA256sum: 0f09c8f0644941ed5275c281ac4ecdf3f3126b51d0521eddd2bb2cd318d0f509
-Size: 694
-Filename: enigma2-plugin-extensions-e2embyclient-dev_1.0+git139+6ed8e0e0+6ed8e0e6c1-r0_all.ipk
+MD5Sum: 13ec173c006b392ee5cc901abdaa989d
+SHA256sum: 103f32a070d28078032e230185dc90186bdfefd6cee1b1f51994c37229e9a1c8
+Size: 696
+Filename: enigma2-plugin-extensions-e2embyclient-dev_1.0+git141+99fd45d0+99fd45dd22-r0_all.ipk
 Source: enigma2-plugin-extensions-e2embyclient.bb
 Description: enigma2-plugin-extensions-e2embyclient version 1.0+git-r0 - Development files
 OE: enigma2-plugin-extensions-e2embyclient
@@ -5710,14 +5760,14 @@ License: GPL-3.0-only
 Priority: optional
 
 Package: enigma2-plugin-extensions-e2embyclient-src
-Version: 1.0+git139+6ed8e0e0+6ed8e0e6c1-r0
+Version: 1.0+git141+99fd45d0+99fd45dd22-r0
 Section: devel
 Architecture: all
 Maintainer: DimitarCC
-MD5Sum: 2a7e01b74c322b84e7c9601ae5d022a8
-SHA256sum: 79cc22a7a13124983034da24ec357f51e7c3956a2ae0e131abd14830588befe1
-Size: 49802
-Filename: enigma2-plugin-extensions-e2embyclient-src_1.0+git139+6ed8e0e0+6ed8e0e6c1-r0_all.ipk
+MD5Sum: 9d8fca018496a2e4b2dd430dc5717525
+SHA256sum: 084ee3dd98d517d1088f8a26811e1cea43e8775b2398079bc0fd05dbdb0162be
+Size: 50440
+Filename: enigma2-plugin-extensions-e2embyclient-src_1.0+git141+99fd45d0+99fd45dd22-r0_all.ipk
 Source: enigma2-plugin-extensions-e2embyclient.bb
 Description: enigma2-plugin-extensions-e2embyclient version 1.0+git-r0 - Source files
 OE: enigma2-plugin-extensions-e2embyclient
@@ -5726,15 +5776,15 @@ License: GPL-3.0-only
 Priority: optional
 
 Package: enigma2-plugin-extensions-e2embyclient
-Version: 1.0+git139+6ed8e0e0+6ed8e0e6c1-r0
+Version: 1.0+git141+99fd45d0+99fd45dd22-r0
 Depends: python3-core, python3-pillow, python3-requests, python3-yt-dlp
 Section: base
 Architecture: all
 Maintainer: DimitarCC
-MD5Sum: 8311ef6651d6b30d02b879e09a16bfb1
-SHA256sum: 5cb894353881926c185ebb112a29bc10897486c1ff779891a85179b0dc175d79
-Size: 237912
-Filename: enigma2-plugin-extensions-e2embyclient_1.0+git139+6ed8e0e0+6ed8e0e6c1-r0_all.ipk
+MD5Sum: 3bde80bae769075589626544c2bd4d57
+SHA256sum: f5b6f833d3a43148accceb7c495365ad0ede65d8a58f051bf66133740cabefaf
+Size: 238788
+Filename: enigma2-plugin-extensions-e2embyclient_1.0+git141+99fd45d0+99fd45dd22-r0_all.ipk
 Source: enigma2-plugin-extensions-e2embyclient.bb
 Description: enigma2-plugin-extensions-e2embyclient version 1.0+git-r0
 OE: enigma2-plugin-extensions-e2embyclient

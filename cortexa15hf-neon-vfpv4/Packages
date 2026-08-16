@@ -40,9 +40,9 @@ Recommends: 7zip
 Section: base
 Architecture: cortexa15hf-neon-vfpv4
 Maintainer: OpenViX
-MD5Sum: 6bf4359b372ee955a00e656cbb5cf5d2
-SHA256sum: ec39b3c2a76cfd0e7d25da24c13d1f485f9d172168477bbec6a4a9fbe4852cb6
-Size: 1491190
+MD5Sum: 1f4f8e3f691df5804e69814e6f638dc1
+SHA256sum: fbba98de45da6077d2ddea90c15b95c2c4ddcbeb8a086d147f01159d64fcd352
+Size: 1300436
 Filename: 7zip-full_26.02-r0_cortexa15hf-neon-vfpv4.ipk
 Source: 7zip_26.02.bb
 Description: 7-zip is a commandline utility handling 7z archives.
@@ -58,9 +58,9 @@ Provides: 7z, lib7z.so, lib7z.so()(64bit)
 Section: base
 Architecture: cortexa15hf-neon-vfpv4
 Maintainer: OpenViX
-MD5Sum: 7856da4f0ff5f8bd154886c1d892402c
-SHA256sum: 94c4928405a46ef7721752562c81ca1b18f7271ad70e93ab2c531c5e35e86720
-Size: 514322
+MD5Sum: 74c7428d6049a9b17eb467f07cbab50d
+SHA256sum: 91769071c6631d0859c7a43b99893aea32fe1a550303f3b69ea08e0b0bbaef7e
+Size: 581784
 Filename: 7zip_26.02-r0_cortexa15hf-neon-vfpv4.ipk
 Source: 7zip_26.02.bb
 Description: 7-zip is a commandline utility handling 7z archives.
@@ -236,6 +236,157 @@ OE: aio-grab
 HomePage: https://www.world-of-satellite.com
 License: GPL-2.0-only
 Priority: optional
+
+Package: airdigital-dvb-modules-h8se-dbg
+Version: 4.4.35+20260710-r0
+Recommends: glibc-dbg, libgcc-dbg
+Section: devel
+Architecture: cortexa15hf-neon-vfpv4
+Maintainer: OpenViX
+MD5Sum: 02aa73c0626ea21067c64cb3206fa73d
+SHA256sum: b99de4ca7d7c82d64677b7a1eea30b473ec0cc667b35fa3a37285000d8b2be98
+Size: 642
+Filename: airdigital-dvb-modules-h8se-dbg_4.4.35+20260710-r0_cortexa15hf-neon-vfpv4.ipk
+Source: airdigital-dvb-modules-h8se.bb
+Description: Hardware drivers for h8se - Debugging files
+OE: airdigital-dvb-modules-h8se
+HomePage: https://www.world-of-satellite.com
+License: LicenseRef-Proprietary
+Priority: required
+
+Package: airdigital-dvb-modules-h8se-dev
+Version: 4.4.35+20260710-r0
+Recommends: airdigital-dvb-modules-h8se (= 4.4.35+20260710-r0), glibc-dev, initscripts-dev, libgcc-dev, libjpeg-turbo-dev, pulseaudio-lib-rtp-dev, update-rc.d-dev
+Section: devel
+Architecture: cortexa15hf-neon-vfpv4
+Maintainer: OpenViX
+MD5Sum: e9b928644baeab1bb27b2b7d89657b79
+SHA256sum: c045a5026ac0f5ea17efeb225b2913754f0399a3d5ad2e9a571e4b5e91ae56d4
+Size: 706
+Filename: airdigital-dvb-modules-h8se-dev_4.4.35+20260710-r0_cortexa15hf-neon-vfpv4.ipk
+Source: airdigital-dvb-modules-h8se.bb
+Description: Hardware drivers for h8se - Development files
+OE: airdigital-dvb-modules-h8se
+HomePage: https://www.world-of-satellite.com
+License: LicenseRef-Proprietary
+Priority: required
+
+Package: airdigital-dvb-modules-h8se
+Version: 4.4.35+20260710-r0
+Depends: libc6 (>= 2.44+git0+7cba77790f), libgcc1 (>= 16.2.0), libjpeg-turbo, pulseaudio-lib-rtp
+Recommends: update-rc.d
+Section: base
+Architecture: cortexa15hf-neon-vfpv4
+Maintainer: OpenViX
+MD5Sum: 607ce9c36568c642ea32bec0be65ecc2
+SHA256sum: e1aec6954d868f788e2088dcd0146e22a95f1e609c044a968f064936d09bdd85
+Size: 4763698
+Filename: airdigital-dvb-modules-h8se_4.4.35+20260710-r0_cortexa15hf-neon-vfpv4.ipk
+Source: airdigital-dvb-modules-h8se.bb
+Description: Hardware drivers for h8se
+OE: airdigital-dvb-modules-h8se
+HomePage: https://www.world-of-satellite.com
+License: LicenseRef-Proprietary
+Priority: required
+
+Package: airdigital-libs-3798mv200-dbg
+Version: 1.0-20260402.r1
+Section: devel
+Architecture: cortexa15hf-neon-vfpv4
+Maintainer: OpenViX
+MD5Sum: 96f6d670cb646ad4f69ef440fc6311be
+SHA256sum: 29a3133f3ddac6bca92e1e04b4b0396dbaa2d8cacef285789dc971d1b8e1fe57
+Size: 618
+Filename: airdigital-libs-3798mv200-dbg_1.0-20260402.r1_cortexa15hf-neon-vfpv4.ipk
+Source: airdigital-libs-3798mv200.bb
+Description: airdigital-libs-3798mv200 version 1.0-20260402.r1 - Debugging files
+OE: airdigital-libs-3798mv200
+HomePage: https://www.world-of-satellite.com
+License: LicenseRef-Proprietary
+Priority: required
+
+Package: airdigital-libs-3798mv200-dev
+Version: 1.0-20260402.r1
+Recommends: airdigital-libs-3798mv200 (>= 1.0-20260402.r1), airdigital-libs-3798mv200 (<< 1.0-20260402.r1.0), curl-dev, freetype-dev, harfbuzz-dev, libbluray-dev, libjpeg-turbo-dev, libpng-dev, libxml2-dev, openssl10-dev, zlib-dev
+Section: devel
+Architecture: cortexa15hf-neon-vfpv4
+Maintainer: OpenViX
+MD5Sum: 40cb20e50ba559ac8a7c3d098f189a14
+SHA256sum: 5de8b471f38b65adb25754a1564dc6c8931e01b358dfb14c8e6eb0377e54745e
+Size: 726
+Filename: airdigital-libs-3798mv200-dev_1.0-20260402.r1_cortexa15hf-neon-vfpv4.ipk
+Source: airdigital-libs-3798mv200.bb
+Description: airdigital-libs-3798mv200 version 1.0-20260402.r1 - Development files
+OE: airdigital-libs-3798mv200
+HomePage: https://www.world-of-satellite.com
+License: LicenseRef-Proprietary
+Priority: required
+
+Package: airdigital-libs-3798mv200
+Version: 1.0-20260402.r1
+Depends: libbluray, openssl10
+Section: base
+Architecture: cortexa15hf-neon-vfpv4
+Maintainer: OpenViX
+MD5Sum: d249b71d7029ca728650223270a60faa
+SHA256sum: 65a5882533d3715d5050e5bc50e090e6a9eae27d44c020eed1d61da50b5072b4
+Size: 10588816
+Filename: airdigital-libs-3798mv200_1.0-20260402.r1_cortexa15hf-neon-vfpv4.ipk
+Source: airdigital-libs-3798mv200.bb
+Description: airdigital-libs-3798mv200 version 1.0-20260402.r1
+OE: airdigital-libs-3798mv200
+HomePage: https://www.world-of-satellite.com
+License: LicenseRef-Proprietary
+Priority: required
+
+Package: airdigital-tntfs-3798mv200-dbg
+Version: 1.0-r0
+Section: devel
+Architecture: cortexa15hf-neon-vfpv4
+Maintainer: OpenViX
+MD5Sum: da91abee04065547f40e11c798697496
+SHA256sum: 6351ce0ca649ad3b40d27d4f5743190d13b3380123dd7cd2f4d3a1f729fab8fd
+Size: 49870
+Filename: airdigital-tntfs-3798mv200-dbg_1.0-r0_cortexa15hf-neon-vfpv4.ipk
+Source: airdigital-tntfs-3798mv200.bb
+Description: Hardware drivers for TNTFS - Debugging files
+OE: airdigital-tntfs-3798mv200
+HomePage: https://www.world-of-satellite.com
+License: LicenseRef-Proprietary
+Priority: required
+
+Package: airdigital-tntfs-3798mv200-dev
+Version: 1.0-r0
+Recommends: airdigital-tntfs-3798mv200 (= 1.0-r0)
+Section: devel
+Architecture: cortexa15hf-neon-vfpv4
+Maintainer: OpenViX
+MD5Sum: e9c0e014f1d973a3942a8d83ca247534
+SHA256sum: d228149504731baaaa18ae11f8a3cd8abe41893e589a9704bea10f455379d498
+Size: 648
+Filename: airdigital-tntfs-3798mv200-dev_1.0-r0_cortexa15hf-neon-vfpv4.ipk
+Source: airdigital-tntfs-3798mv200.bb
+Description: Hardware drivers for TNTFS - Development files
+OE: airdigital-tntfs-3798mv200
+HomePage: https://www.world-of-satellite.com
+License: LicenseRef-Proprietary
+Priority: required
+
+Package: airdigital-tntfs-3798mv200
+Version: 1.0-r0
+Section: base
+Architecture: cortexa15hf-neon-vfpv4
+Maintainer: OpenViX
+MD5Sum: 62df1f853c9cb142a2b329f33808e0b8
+SHA256sum: 753809b47fc43ad954bb72f6ddb09db1adc381db98382ba1cc33d52055d2a4fc
+Size: 269050
+Filename: airdigital-tntfs-3798mv200_1.0-r0_cortexa15hf-neon-vfpv4.ipk
+Source: airdigital-tntfs-3798mv200.bb
+Description: Hardware drivers for TNTFS
+OE: airdigital-tntfs-3798mv200
+HomePage: https://www.world-of-satellite.com
+License: LicenseRef-Proprietary
+Priority: required
 
 Package: alsa-conf
 Version: 1.2.16.1-r1
@@ -4852,9 +5003,9 @@ Depends: base-files, libc6 (>= 2.44+git0+7cba77790f), libtinfo5 (>= 6.6), update
 Section: base/shell
 Architecture: cortexa15hf-neon-vfpv4
 Maintainer: OpenViX
-MD5Sum: 0c2d0b52d68d41af2ad2c531b8a21490
-SHA256sum: a348c4394afb40efcf589b08b275e22674120ea5605a33a58300a9301c29e867
-Size: 433048
+MD5Sum: aafe085d5efcf15fe556a7022db85b04
+SHA256sum: 5c18ebb3e798a49c7217ded521125b04942cb6c40df9fb95a0fb79e1569dfb0e
+Size: 474660
 Filename: bash_5.3-r0_cortexa15hf-neon-vfpv4.ipk
 Source: bash_5.3.bb
 Description: An sh-compatible command language interpreter
@@ -6881,9 +7032,9 @@ Recommends: update-rc.d
 Section: base
 Architecture: cortexa15hf-neon-vfpv4
 Maintainer: OpenViX
-MD5Sum: cfacbf36ab07198b6d6656ceb093d5e7
-SHA256sum: 4a22ed321875771d1705fa1d6720a750b0054ed505dc1bc0aca847313f4dbaf8
-Size: 118532
+MD5Sum: 2153cfe69218b8a50d130896a074f25d
+SHA256sum: f0dd244524d23ec4a2b1260b74120a9a24cfee2e0fb5fc7eed0f090509de7b2c
+Size: 112164
 Filename: dbus-1_1.16.2-r0.3_cortexa15hf-neon-vfpv4.ipk
 Source: dbus_1.16.2.bb
 Description: D-Bus message bus
@@ -6933,9 +7084,9 @@ Recommends: base-files-dev, base-passwd-dev, dbus-1 (= 1.16.2-r0.3), dbus-common
 Section: devel
 Architecture: cortexa15hf-neon-vfpv4
 Maintainer: OpenViX
-MD5Sum: 2997f3569c698b7d5f4b7dacbfad9710
-SHA256sum: 809ca7b02cc9d5942a67567ce1dc731c61fb01af7e47ac7cfa5b3bb482ee1514
-Size: 40164
+MD5Sum: e6009c8f4e6529e0e2141ea6e982ccb9
+SHA256sum: a8b9bf170df8c56950d79b823c6d1714cdeb550547bf767570cc85785d80bf83
+Size: 35388
 Filename: dbus-dev_1.16.2-r0.3_cortexa15hf-neon-vfpv4.ipk
 Source: dbus_1.16.2.bb
 Description: D-Bus message bus - Development files
@@ -6966,9 +7117,9 @@ Depends: libc6 (>= 2.44+git0+7cba77790f), libdbus-1-3 (>= 1.16.2)
 Section: base
 Architecture: cortexa15hf-neon-vfpv4
 Maintainer: OpenViX
-MD5Sum: eb9f12762d32dc658f0dd8933883c2d2
-SHA256sum: 5720e9755a7b138328e5573860fd2df1d48e75ef5fa243c6a41aa851972cc471
-Size: 27778
+MD5Sum: ffcf4c5fd6c51fdec9bea1473c28d1ac
+SHA256sum: 5824dcfd3d76d64f256fb8eec8b4c313ec918f8cc0d40e7d7521e0e831670a22
+Size: 20044
 Filename: dbus-tools_1.16.2-r0.3_cortexa15hf-neon-vfpv4.ipk
 Source: dbus_1.16.2.bb
 Description: D-Bus message bus
@@ -7058,59 +7209,6 @@ Source: cdrkit_1.1.11.bb
 Description: CD/DVD command line tools
 OE: cdrkit
 HomePage: http://cdrkit.org/
-License: GPL-2.0-only
-Priority: optional
-
-Package: displayvfd-dbg
-Version: 1.0+git3+ba2b49d0+ba2b49dc28-r0
-Recommends: glibc-dbg, libgcc-dbg, libpng-dbg, libstdc++-dbg
-Section: devel
-Architecture: cortexa15hf-neon-vfpv4
-Maintainer: OpenViX
-MD5Sum: 63462c3be3cd5b1da1a6cd44ed0d18dd
-SHA256sum: 528e3b6541b68f5e8665bbcac5bafc13e09a70f0012570afd82bf74ca1406c73
-Size: 82646
-Filename: displayvfd-dbg_1.0+git3+ba2b49d0+ba2b49dc28-r0_cortexa15hf-neon-vfpv4.ipk
-Source: displayvfd.bb
-Description: displayvfd version 1.0+git-r0 - Debugging files
-OE: displayvfd
-HomePage: https://www.world-of-satellite.com
-License: GPL-2.0-only
-Priority: optional
-
-Package: displayvfd-dev
-Version: 1.0+git3+ba2b49d0+ba2b49dc28-r0
-Recommends: displayvfd (= 1.0+git3+ba2b49d0+ba2b49dc28-r0), glibc-dev, libgcc-dev, libpng-dev, libstdc++-dev
-Section: devel
-Architecture: cortexa15hf-neon-vfpv4
-Maintainer: OpenViX
-MD5Sum: 2d09f2a958d453d9363425f1a7e0c014
-SHA256sum: 301cbc78760702f985b7876e3e3f69b44892eca730b7c23c9187b6433f0b99f0
-Size: 666
-Filename: displayvfd-dev_1.0+git3+ba2b49d0+ba2b49dc28-r0_cortexa15hf-neon-vfpv4.ipk
-Source: displayvfd.bb
-Description: displayvfd version 1.0+git-r0 - Development files
-OE: displayvfd
-HomePage: https://www.world-of-satellite.com
-License: GPL-2.0-only
-Priority: optional
-
-Package: displayvfd
-Version: 1.0+git3+ba2b49d0+ba2b49dc28-r0
-Depends: libc6 (>= 2.44+git0+7cba77790f), libgcc1 (>= 16.2.0), libpng16-16 (>= 1.6.58), libstdc++6 (>= 16.2.0)
-Replaces: vuplus-displayvfd
-Conflicts: vuplus-displayvfd
-Section: base
-Architecture: cortexa15hf-neon-vfpv4
-Maintainer: OpenViX
-MD5Sum: 19295222c874fbbe93a382a51e1d99ca
-SHA256sum: 43c27b78fa25da60d65782d8e3cb7ec80989c791bb0f856fd7d7fddf9fd7e0c0
-Size: 11666
-Filename: displayvfd_1.0+git3+ba2b49d0+ba2b49dc28-r0_cortexa15hf-neon-vfpv4.ipk
-Source: displayvfd.bb
-Description: displayvfd version 1.0+git-r0
-OE: displayvfd
-HomePage: https://www.world-of-satellite.com
 License: GPL-2.0-only
 Priority: optional
 
@@ -7273,9 +7371,9 @@ Depends: libc6 (>= 2.44+git0+7cba77790f), libpython3.14-1.0 (>= 3.14.7), libusb-
 Section: base
 Architecture: cortexa15hf-neon-vfpv4
 Maintainer: OpenViX
-MD5Sum: 29c58a0eed561cd23bcde451001ca97c
-SHA256sum: 190e838eb78dae292a9dfaac64c21799419402eaf4cd667f180175bd1444ba6d
-Size: 53334
+MD5Sum: c9919ebc00698dcee489925af568f25f
+SHA256sum: 4c9b3550fad9757f7657261d33912e9cab3ad892953f83400b58d48cefe8377f
+Size: 53342
 Filename: dpflib_4.0.+git61+fcd11580+fcd1158129-r0_cortexa15hf-neon-vfpv4.ipk
 Source: dpflib.bb
 Description: dpflib version 4.0.+git-r0
@@ -7391,6 +7489,57 @@ OE: duktape
 HomePage: https://duktape.org
 License: MIT
 Priority: optional
+
+Package: dumpait-legacy-dbg
+Version: git2+38b5b1d0+38b5b1db1b-r0
+Recommends: glibc-dbg, libdvbsi++-dbg, libgcc-dbg, libstdc++-dbg
+Section: devel
+Architecture: cortexa15hf-neon-vfpv4
+Maintainer: OpenViX
+MD5Sum: fea4eba81ea907448c0f068eebd2b38e
+SHA256sum: 6059d0bdbe4cba848095f1ec2580a9c9e338d61a3dd6f2a8d8f27d0bf1ce7e8c
+Size: 155114
+Filename: dumpait-legacy-dbg_git2+38b5b1d0+38b5b1db1b-r0_cortexa15hf-neon-vfpv4.ipk
+Source: dumpait-legacy.bb
+Description: dumpait - Debugging files
+OE: dumpait-legacy
+HomePage: https://www.world-of-satellite.com
+License: GPL-3.0-only
+Priority: required
+
+Package: dumpait-legacy-dev
+Version: git2+38b5b1d0+38b5b1db1b-r0
+Recommends: dumpait-legacy (= git2+38b5b1d0+38b5b1db1b-r0), glibc-dev, libdvbsi++-dev, libgcc-dev, libstdc++-dev
+Section: devel
+Architecture: cortexa15hf-neon-vfpv4
+Maintainer: OpenViX
+MD5Sum: 538894a988b9e978bba62af1bd0c73ac
+SHA256sum: b02c859f953072c67f04912cf81107bb17dd2558577666d6bcc4dc489332e59a
+Size: 660
+Filename: dumpait-legacy-dev_git2+38b5b1d0+38b5b1db1b-r0_cortexa15hf-neon-vfpv4.ipk
+Source: dumpait-legacy.bb
+Description: dumpait - Development files
+OE: dumpait-legacy
+HomePage: https://www.world-of-satellite.com
+License: GPL-3.0-only
+Priority: required
+
+Package: dumpait-legacy
+Version: git2+38b5b1d0+38b5b1db1b-r0
+Depends: libc6 (>= 2.44+git0+7cba77790f), libdvbsi++1 (>= 0.3.9+git130+f3c40ea0+f3c40ea6da), libgcc1 (>= 16.2.0), libstdc++6 (>= 16.2.0)
+Section: base
+Architecture: cortexa15hf-neon-vfpv4
+Maintainer: OpenViX
+MD5Sum: 7f3075578ece37a1feb94188e183e61b
+SHA256sum: dc86ad6b177db802868e84f922403cb51897bd23f77bb614112f716bfc47d937
+Size: 10376
+Filename: dumpait-legacy_git2+38b5b1d0+38b5b1db1b-r0_cortexa15hf-neon-vfpv4.ipk
+Source: dumpait-legacy.bb
+Description: dumpait
+OE: dumpait-legacy
+HomePage: https://www.world-of-satellite.com
+License: GPL-3.0-only
+Priority: required
 
 Package: dvb-apps-dbg
 Version: 1.1.1.20140321-r0
@@ -8038,9 +8187,9 @@ Depends: libc6 (>= 2.44+git0+7cba77790f), libcom-err2 (>= 1.47.4), libext2fs2 (>
 Section: base
 Architecture: cortexa15hf-neon-vfpv4
 Maintainer: OpenViX
-MD5Sum: 67473d75ef75345cafabf8d3fa5fce4f
-SHA256sum: 89709e049121c62afc7b7ec4019493e1d23d6ad424564599c52d9b1edde528e8
-Size: 16450
+MD5Sum: e789724cfa1829132877bae401eb98a5
+SHA256sum: d105ce84eb870f85a9e3b6b2ef94b965d7bbd3a01323b227bdc5ad83a38c5f74
+Size: 12870
 Filename: e2fsprogs-badblocks_1.47.4-r0.0_cortexa15hf-neon-vfpv4.ipk
 Source: e2fsprogs_1.47.4.bb
 Description: Ext2 Filesystem Utilities
@@ -8107,9 +8256,9 @@ Depends: libblkid1 (>= 2.42.2), libc6 (>= 2.44+git0+7cba77790f), libcom-err2 (>=
 Section: base
 Architecture: cortexa15hf-neon-vfpv4
 Maintainer: OpenViX
-MD5Sum: 85fa98f8b2c1d1c2dd878a329574d5bc
-SHA256sum: 7c6b179d3840f575b76188a84ce2aff02bda55322b63d2cb06683c818759476e
-Size: 16090
+MD5Sum: a01f89a1304eeb7725d52c661dd8e99a
+SHA256sum: 3409d2a3f7e9c2880cc736e8b99c459ea8afd0e29164a8c1b959bf6cbe88341d
+Size: 12068
 Filename: e2fsprogs-dumpe2fs_1.47.4-r0.0_cortexa15hf-neon-vfpv4.ipk
 Source: e2fsprogs_1.47.4.bb
 Description: Ext2 Filesystem Utilities
@@ -8124,9 +8273,9 @@ Depends: libblkid1 (>= 2.42.2), libc6 (>= 2.44+git0+7cba77790f), libcom-err2 (>=
 Section: base
 Architecture: cortexa15hf-neon-vfpv4
 Maintainer: OpenViX
-MD5Sum: 6124a6cf08ad43afe3faea5683191a3b
-SHA256sum: 90e15ce9fef09ab44ba288f16b4c1e75839267fbd2ca01deeac0424bd38c3f76
-Size: 133396
+MD5Sum: 41590890fddab7c7d233e2aabc4378c6
+SHA256sum: 4e201f74cfa7aad6fee39de186ad4ec2d1096df18b250b1bc0c85c4c5d8dfb04
+Size: 142362
 Filename: e2fsprogs-e2fsck_1.47.4-r0.0_cortexa15hf-neon-vfpv4.ipk
 Source: e2fsprogs_1.47.4.bb
 Description: Ext2 Filesystem Utilities
@@ -8158,9 +8307,9 @@ Depends: libc6 (>= 2.44+git0+7cba77790f), libcom-err2 (>= 1.47.4), libext2fs2 (>
 Section: base
 Architecture: cortexa15hf-neon-vfpv4
 Maintainer: OpenViX
-MD5Sum: ee5029da9c4e22c2aa0d3560500671f4
-SHA256sum: 31b67d1cddad051842bd98e1da7a4780050d9a8fc2f881b18bca09583a8753e3
-Size: 17814
+MD5Sum: abca366589e51d3e4b443d45d1c53804
+SHA256sum: 821047f8d7ace634c4123bee82432a646f235c6b63815cc04dcf23bb3ab6f776
+Size: 13972
 Filename: e2fsprogs-e4defrag_1.47.4-r0.0_cortexa15hf-neon-vfpv4.ipk
 Source: e2fsprogs_1.47.4.bb
 Description: Ext2 Filesystem Utilities
@@ -8191,9 +8340,9 @@ Depends: libblkid1 (>= 2.42.2), libc6 (>= 2.44+git0+7cba77790f), libcom-err2 (>=
 Section: base
 Architecture: cortexa15hf-neon-vfpv4
 Maintainer: OpenViX
-MD5Sum: 4639bbc6f727649be848dd82d3b1d167
-SHA256sum: e8cb070fc8ccc6ee51727debba181e10539f29ce7283d999e23490a8ea284998
-Size: 60472
+MD5Sum: 6fc2f179536b91f05112750f174903ef
+SHA256sum: cd6664a1d8628d149675f4d553cf9a5aa0e3cd1a52be4e969c754f19218dbcee
+Size: 62844
 Filename: e2fsprogs-mke2fs_1.47.4-r0.0_cortexa15hf-neon-vfpv4.ipk
 Source: e2fsprogs_1.47.4.bb
 Description: Ext2 Filesystem Utilities
@@ -8208,9 +8357,9 @@ Depends: libc6 (>= 2.44+git0+7cba77790f), libcom-err2 (>= 1.47.4), libe2p2 (>= 1
 Section: base
 Architecture: cortexa15hf-neon-vfpv4
 Maintainer: OpenViX
-MD5Sum: 8df6a5b7bfba2489dca953f01cb6dddd
-SHA256sum: f9122941e8b7a269e6d5ed3d551416285fb3a5735f43923a4da25f57d26b5fa1
-Size: 33664
+MD5Sum: 41317c1ae65b63948be8633453985ba0
+SHA256sum: 312c90a1483e950741ec7aa0661dc07ee7cca2eaf16600aa088d1b180c8240f5
+Size: 31774
 Filename: e2fsprogs-resize2fs_1.47.4-r0.0_cortexa15hf-neon-vfpv4.ipk
 Source: e2fsprogs_1.47.4.bb
 Description: Ext2 Filesystem Utilities
@@ -8242,9 +8391,9 @@ Depends: libblkid1 (>= 2.42.2), libc6 (>= 2.44+git0+7cba77790f), libcom-err2 (>=
 Section: base
 Architecture: cortexa15hf-neon-vfpv4
 Maintainer: OpenViX
-MD5Sum: 6ffac03ab1eba7edfbf7eef45c125bbb
-SHA256sum: 3df57269b5321419192e868ad4dcff835e546dfbb0e6a1345cfedb8ea3bd4da1
-Size: 48860
+MD5Sum: dca01b16eec3f184cafc3f56ad6eb388
+SHA256sum: e1ea6a322cce9dd537eb512ce5da4814c8f768f0eeb731f722724faa3134d36c
+Size: 49542
 Filename: e2fsprogs-tune2fs_1.47.4-r0.0_cortexa15hf-neon-vfpv4.ipk
 Source: e2fsprogs_1.47.4.bb
 Description: Ext2 Filesystem Utilities
@@ -8260,9 +8409,9 @@ Recommends: e2fsprogs-e2fsck, e2fsprogs-mke2fs
 Section: base
 Architecture: cortexa15hf-neon-vfpv4
 Maintainer: OpenViX
-MD5Sum: 883da9b515154696588c506fc2abb14b
-SHA256sum: 00e42c741d2bd82752cd3705e62e50d6230c95bbcc0373c472ebbfac587464bb
-Size: 150724
+MD5Sum: 2af847d4155d193c558414c7ecd2fc6a
+SHA256sum: 6fe1718d0847b02f72a8f6640c5b13f4e0a334d310c0f13162530d957c624420
+Size: 139324
 Filename: e2fsprogs_1.47.4-r0.0_cortexa15hf-neon-vfpv4.ipk
 Source: e2fsprogs_1.47.4.bb
 Description: Ext2 Filesystem Utilities
@@ -10228,14 +10377,14 @@ License: GPL-2.0-or-later
 Priority: optional
 
 Package: enigma2-plugin-extensions-e2iplayer-dbg
-Version: 2026.08.14.01-git5665+fd0e6750+fd0e675cea-r0
+Version: 2026.08.15.02-git5677+e26a7310+e26a731869-r0
 Section: devel
 Architecture: cortexa15hf-neon-vfpv4
 Maintainer: OpenViX
-MD5Sum: fa3728a3c8379619608d815910858d70
-SHA256sum: c512a3cd6be8aaa76db7b449b64adc1e2817b455ec07b7710cbe38f788d99fbb
+MD5Sum: 670f8fcf454b8403fc11bd875b63bb54
+SHA256sum: 0bffe3d8cc5b633ad9886fbade42f9f51df0be2a3ec73eb7e79fec78f69d2e6d
 Size: 638
-Filename: enigma2-plugin-extensions-e2iplayer-dbg_2026.08.14.01-git5665+fd0e6750+fd0e675cea-r0_cortexa15hf-neon-vfpv4.ipk
+Filename: enigma2-plugin-extensions-e2iplayer-dbg_2026.08.15.02-git5677+e26a7310+e26a731869-r0_cortexa15hf-neon-vfpv4.ipk
 Source: enigma2-plugin-extensions-e2iplayer.bb
 Description: E2iPlayer - Debugging files
 OE: enigma2-plugin-extensions-e2iplayer
@@ -10296,15 +10445,15 @@ License: GPL-2.0-or-later
 Priority: optional
 
 Package: enigma2-plugin-extensions-e2iplayer-dev
-Version: 2026.08.14.01-git5665+fd0e6750+fd0e675cea-r0
-Recommends: enigma2-plugin-extensions-e2iplayer (= 2026.08.14.01-git5665+fd0e6750+fd0e675cea-r0), python3-core-dev, python3-dev
+Version: 2026.08.15.02-git5677+e26a7310+e26a731869-r0
+Recommends: enigma2-plugin-extensions-e2iplayer (= 2026.08.15.02-git5677+e26a7310+e26a731869-r0), python3-core-dev, python3-dev
 Section: devel
 Architecture: cortexa15hf-neon-vfpv4
 Maintainer: OpenViX
-MD5Sum: e5e7956f064b2eedcbe4b6df4318a255
-SHA256sum: 99f022c3279a2c11cd2f0999dc7d2f97e3cb4639c55cc91b7628b4668d58cdaf
-Size: 690
-Filename: enigma2-plugin-extensions-e2iplayer-dev_2026.08.14.01-git5665+fd0e6750+fd0e675cea-r0_cortexa15hf-neon-vfpv4.ipk
+MD5Sum: e01ba7ee159efccc3f360e75ef2e0b27
+SHA256sum: 27a08845b30d2719e55f2932a77e4ad625d7a22dcfef3629513b0b06aaf201d0
+Size: 692
+Filename: enigma2-plugin-extensions-e2iplayer-dev_2026.08.15.02-git5677+e26a7310+e26a731869-r0_cortexa15hf-neon-vfpv4.ipk
 Source: enigma2-plugin-extensions-e2iplayer.bb
 Description: E2iPlayer - Development files
 OE: enigma2-plugin-extensions-e2iplayer
@@ -10313,15 +10462,15 @@ License: GPL-2.0-or-later
 Priority: optional
 
 Package: enigma2-plugin-extensions-e2iplayer-src
-Version: 2026.08.14.01-git5665+fd0e6750+fd0e675cea-r0
+Version: 2026.08.15.02-git5677+e26a7310+e26a731869-r0
 Depends: enigma2-plugin-extensions-e2iplayer
 Section: devel
 Architecture: cortexa15hf-neon-vfpv4
 Maintainer: OpenViX
-MD5Sum: feff425c289a6d031ee089a57f618981
-SHA256sum: 920c11fb88e8321e307e79a0f427a125f1ed4e3f5f685dde069e17ce7a663007
-Size: 1282916
-Filename: enigma2-plugin-extensions-e2iplayer-src_2026.08.14.01-git5665+fd0e6750+fd0e675cea-r0_cortexa15hf-neon-vfpv4.ipk
+MD5Sum: 75a66b3f4475044190bfa720bf343d3a
+SHA256sum: 7975aaac42ce0529fcf27245a36dc304eea9d1e91d0f4bfb84ee6ab199e0bdf4
+Size: 1285812
+Filename: enigma2-plugin-extensions-e2iplayer-src_2026.08.15.02-git5677+e26a7310+e26a731869-r0_cortexa15hf-neon-vfpv4.ipk
 Source: enigma2-plugin-extensions-e2iplayer.bb
 Description: E2iPlayer - Source files
 OE: enigma2-plugin-extensions-e2iplayer
@@ -10330,16 +10479,16 @@ License: GPL-2.0-or-later
 Priority: optional
 
 Package: enigma2-plugin-extensions-e2iplayer
-Version: 2026.08.14.01-git5665+fd0e6750+fd0e675cea-r0
+Version: 2026.08.15.02-git5677+e26a7310+e26a731869-r0
 Depends: python3-core
 Recommends: enigma2-plugin-extensions-e2iplayer-deps, python3-compression, python3-core, python3-html, python3-json, python3-shell, python3-websocket-client
 Section: multimedia
 Architecture: cortexa15hf-neon-vfpv4
 Maintainer: OpenViX
-MD5Sum: 70a178c05141ac471b22c5fdb3a032a9
-SHA256sum: 7700d5fb7bb2af75f5c108e352c361b8faeddae672339623620ad72ee1313566
-Size: 13993746
-Filename: enigma2-plugin-extensions-e2iplayer_2026.08.14.01-git5665+fd0e6750+fd0e675cea-r0_cortexa15hf-neon-vfpv4.ipk
+MD5Sum: a63fa4cf27d0c940503703e468ae60e7
+SHA256sum: 843f8117906db2f120e197473d2210b9602dec07f3784419af58f155b69a8aa9
+Size: 13994938
+Filename: enigma2-plugin-extensions-e2iplayer_2026.08.15.02-git5677+e26a7310+e26a731869-r0_cortexa15hf-neon-vfpv4.ipk
 Source: enigma2-plugin-extensions-e2iplayer.bb
 Description: E2iPlayer
 OE: enigma2-plugin-extensions-e2iplayer
@@ -11175,6 +11324,72 @@ OE: enigma2-plugin-extensions-gerbera
 HomePage: https://www.world-of-satellite.com
 License: GPL-2.0-or-later
 Priority: optional
+
+Package: enigma2-plugin-extensions-hbbtv-webkit-dbg
+Version: 2.0-r0-71+c60e1a60+c60e1a69d5-r0
+Section: devel
+Architecture: cortexa15hf-neon-vfpv4
+Maintainer: OpenViX
+MD5Sum: 1410e3b31c9682faef6fbbb6a8184371
+SHA256sum: ca2316e8e9d410a065115f91f56f8e9dbefd3c0732103adee970ce06e1d903e1
+Size: 640
+Filename: enigma2-plugin-extensions-hbbtv-webkit-dbg_2.0-r0-71+c60e1a60+c60e1a69d5-r0_cortexa15hf-neon-vfpv4.ipk
+Source: enigma2-plugin-extensions-hbbtv-webkit.bb
+Description: enigma2-plugin-extensions-hbbtv-webkit version 2.0-r0--r0 - Debugging files
+OE: enigma2-plugin-extensions-hbbtv-webkit
+HomePage: https://www.world-of-satellite.com
+License: LicenseRef-Proprietary
+Priority: required
+
+Package: enigma2-plugin-extensions-hbbtv-webkit-dev
+Version: 2.0-r0-71+c60e1a60+c60e1a69d5-r0
+Recommends: dumpait-legacy-dev, enigma2-plugin-extensions-hbbtv-webkit (= 2.0-r0-71+c60e1a60+c60e1a69d5-r0), webkit-hbbtv-plugin-dev
+Section: devel
+Architecture: cortexa15hf-neon-vfpv4
+Maintainer: OpenViX
+MD5Sum: f786b3964012f199c562d992ba38dabd
+SHA256sum: 3b87bae018f382e578ec085d9613b56adc6d7908822aa2ba904955f082aa984f
+Size: 700
+Filename: enigma2-plugin-extensions-hbbtv-webkit-dev_2.0-r0-71+c60e1a60+c60e1a69d5-r0_cortexa15hf-neon-vfpv4.ipk
+Source: enigma2-plugin-extensions-hbbtv-webkit.bb
+Description: enigma2-plugin-extensions-hbbtv-webkit version 2.0-r0--r0 - Development files
+OE: enigma2-plugin-extensions-hbbtv-webkit
+HomePage: https://www.world-of-satellite.com
+License: LicenseRef-Proprietary
+Priority: required
+
+Package: enigma2-plugin-extensions-hbbtv-webkit-src
+Version: 2.0-r0-71+c60e1a60+c60e1a69d5-r0
+Section: devel
+Architecture: cortexa15hf-neon-vfpv4
+Maintainer: OpenViX
+MD5Sum: 8bafa30bacab6c181d5d362c81386b2d
+SHA256sum: 615305be0feac14cc764ab681fb1bf15dd8c546093f710bb1e798c6d078af1e6
+Size: 8644
+Filename: enigma2-plugin-extensions-hbbtv-webkit-src_2.0-r0-71+c60e1a60+c60e1a69d5-r0_cortexa15hf-neon-vfpv4.ipk
+Source: enigma2-plugin-extensions-hbbtv-webkit.bb
+Description: enigma2-plugin-extensions-hbbtv-webkit version 2.0-r0--r0 - Source files
+OE: enigma2-plugin-extensions-hbbtv-webkit
+HomePage: https://www.world-of-satellite.com
+License: LicenseRef-Proprietary
+Priority: required
+
+Package: enigma2-plugin-extensions-hbbtv-webkit
+Version: 2.0-r0-71+c60e1a60+c60e1a69d5-r0
+Depends: dumpait-legacy, webkit-hbbtv-plugin
+Section: base
+Architecture: cortexa15hf-neon-vfpv4
+Maintainer: OpenViX
+MD5Sum: 2c9fe5321b4b13a694cfca55b42a750e
+SHA256sum: 203836111bb9ef9f6e30896142ac51fd7abff0ec80885e20975af740cff080ca
+Size: 23078
+Filename: enigma2-plugin-extensions-hbbtv-webkit_2.0-r0-71+c60e1a60+c60e1a69d5-r0_cortexa15hf-neon-vfpv4.ipk
+Source: enigma2-plugin-extensions-hbbtv-webkit.bb
+Description: enigma2-plugin-extensions-hbbtv-webkit version 2.0-r0--r0
+OE: enigma2-plugin-extensions-hbbtv-webkit
+HomePage: https://www.world-of-satellite.com
+License: LicenseRef-Proprietary
+Priority: required
 
 Package: enigma2-plugin-extensions-imdb-dbg
 Version: V1.2-git359+b797af50+b797af52a1-r0
@@ -12405,9 +12620,9 @@ Depends: enigma2-plugin-extensions-openwebif
 Section: devel
 Architecture: cortexa15hf-neon-vfpv4
 Maintainer: OpenViX
-MD5Sum: ac95e45c7f9ea1b045805bb7c1ee7dbc
-SHA256sum: 85ee8c0af804b3d19830a17993584f4997de30c635cf782a230652cec11d15d8
-Size: 348876
+MD5Sum: 3815bf487f09d5f1f68fc1e90eb24f45
+SHA256sum: 5e60f00c6f7f06f95c264dddbb7d9ffedee837c78944950e61c75602b95bbd21
+Size: 348378
 Filename: enigma2-plugin-extensions-openwebif-src_2.4.0-git324+b3647280+b3647283ce-r0_cortexa15hf-neon-vfpv4.ipk
 Source: enigma2-plugin-extensions-openwebif.bb
 Description: enigma2-plugin-extensions-openwebif version git-r0 - Source files
@@ -12422,9 +12637,9 @@ Depends: enigma2-plugin-extensions-openwebif
 Section: base
 Architecture: cortexa15hf-neon-vfpv4
 Maintainer: OpenViX
-MD5Sum: 52aa5a58668c27172550b75178be7535
-SHA256sum: 23c87190cb45e2be4439e07ab73ac26bc88be2b39cadaaba87ae6a3e2865b36b
-Size: 798612
+MD5Sum: b380ef87eceaea10d125c6ee0cd1d486
+SHA256sum: ba6f91819ea2e5c76736cb7139deb25ea6229f99617bbb696ed5d57c45a88eae
+Size: 798820
 Filename: enigma2-plugin-extensions-openwebif-themes_2.4.0-git324+b3647280+b3647283ce-r0_cortexa15hf-neon-vfpv4.ipk
 Source: enigma2-plugin-extensions-openwebif.bb
 Description: extensions-openwebif (Additional themes for OpenWebif)
@@ -12442,9 +12657,9 @@ Conflicts: enigma2-plugin-extensions-openwebif-terminal, enigma2-plugin-extensio
 Section: base
 Architecture: cortexa15hf-neon-vfpv4
 Maintainer: OpenViX
-MD5Sum: aaf5d94aabb21da4c653b7f5382f2a20
-SHA256sum: 865e19f9034a8229ad8312361bfd1a181bd59bd0d4e795bc7f0215de9e7fd3c8
-Size: 1346480
+MD5Sum: 96c14fa51bb7e9d45241552a30d3df2d
+SHA256sum: 78a4d58e388dc2b25bdd35f77cde17952df31633ac2924293e4ae510f870c7ce
+Size: 1346284
 Filename: enigma2-plugin-extensions-openwebif_2.4.0-git324+b3647280+b3647283ce-r0_cortexa15hf-neon-vfpv4.ipk
 Source: enigma2-plugin-extensions-openwebif.bb
 Description: extensions-openwebif
@@ -14633,80 +14848,14 @@ HomePage: https://www.world-of-satellite.com
 License: GPL-2.0-or-later
 Priority: optional
 
-Package: enigma2-plugin-extensions-witaispeechtotext-dbg
-Version: V1.0-git15+2346b760+2346b76a5a-r0
-Section: devel
-Architecture: cortexa15hf-neon-vfpv4
-Maintainer: OpenViX
-MD5Sum: 98a4ea123dda6db1ef2a45da9a90eaff
-SHA256sum: c90f1bf07cf89d6f660f4a3b86e72bf4abd4cd2262d9447fc83caa8ed7a9ea41
-Size: 644
-Filename: enigma2-plugin-extensions-witaispeechtotext-dbg_V1.0-git15+2346b760+2346b76a5a-r0_cortexa15hf-neon-vfpv4.ipk
-Source: enigma2-plugin-extensions-witaispeechtotext.bb
-Description: enigma2-plugin-extensions-witaispeechtotext version git-r0 - Debugging files
-OE: enigma2-plugin-extensions-witaispeechtotext
-HomePage: https://www.world-of-satellite.com
-License: GPL-2.0-or-later
-Priority: optional
-
-Package: enigma2-plugin-extensions-witaispeechtotext-dev
-Version: V1.0-git15+2346b760+2346b76a5a-r0
-Recommends: enigma2-plugin-extensions-witaispeechtotext (= V1.0-git15+2346b760+2346b76a5a-r0), python3-core-dev, python3-dev, python3-requests-dev
-Section: devel
-Architecture: cortexa15hf-neon-vfpv4
-Maintainer: OpenViX
-MD5Sum: ecb949c9efe2c54b5624d171d606d843
-SHA256sum: 59a2e7b568e4b718788e5fe7d87984e94b312284ca60fa29683f86fbc17ac404
-Size: 704
-Filename: enigma2-plugin-extensions-witaispeechtotext-dev_V1.0-git15+2346b760+2346b76a5a-r0_cortexa15hf-neon-vfpv4.ipk
-Source: enigma2-plugin-extensions-witaispeechtotext.bb
-Description: enigma2-plugin-extensions-witaispeechtotext version git-r0 - Development files
-OE: enigma2-plugin-extensions-witaispeechtotext
-HomePage: https://www.world-of-satellite.com
-License: GPL-2.0-or-later
-Priority: optional
-
-Package: enigma2-plugin-extensions-witaispeechtotext-src
-Version: V1.0-git15+2346b760+2346b76a5a-r0
-Section: devel
-Architecture: cortexa15hf-neon-vfpv4
-Maintainer: OpenViX
-MD5Sum: 10213ba3493f39c5d18264bffc5f8d1c
-SHA256sum: 21e26bef7a53b0e8d66e130d12d7e4da562a1682db5adb126b1d7766d6d48e2c
-Size: 3610
-Filename: enigma2-plugin-extensions-witaispeechtotext-src_V1.0-git15+2346b760+2346b76a5a-r0_cortexa15hf-neon-vfpv4.ipk
-Source: enigma2-plugin-extensions-witaispeechtotext.bb
-Description: enigma2-plugin-extensions-witaispeechtotext version git-r0 - Source files
-OE: enigma2-plugin-extensions-witaispeechtotext
-HomePage: https://www.world-of-satellite.com
-License: GPL-2.0-or-later
-Priority: optional
-
-Package: enigma2-plugin-extensions-witaispeechtotext
-Version: V1.0-git15+2346b760+2346b76a5a-r0
-Depends: python3-core, python3-requests
-Section: base
-Architecture: cortexa15hf-neon-vfpv4
-Maintainer: OpenViX
-MD5Sum: 4070c48fb5fdd51e748dd8c8f6466bef
-SHA256sum: bc811f7d142ea13746d6b2c578b199165d7721ca0e4e1cf39869f6b771e1e324
-Size: 7764
-Filename: enigma2-plugin-extensions-witaispeechtotext_V1.0-git15+2346b760+2346b76a5a-r0_cortexa15hf-neon-vfpv4.ipk
-Source: enigma2-plugin-extensions-witaispeechtotext.bb
-Description: enigma2-plugin-extensions-witaispeechtotext version git-r0
-OE: enigma2-plugin-extensions-witaispeechtotext
-HomePage: https://www.world-of-satellite.com
-License: GPL-2.0-or-later
-Priority: optional
-
 Package: enigma2-plugin-extensions-worldcam-dbg
 Version: V6.8-git525+c89c48c0+c89c48c5f7-r0
 Section: devel
 Architecture: cortexa15hf-neon-vfpv4
 Maintainer: lululla
-MD5Sum: 7387e2e1fd39ba9b9c814d696360758d
-SHA256sum: ed0028015b4d6238742036be9c8106e208d960373a3d24ecaf2b38d4448d6cc6
-Size: 652
+MD5Sum: e65ab4d7013cb749926d5d717352c98e
+SHA256sum: ccb703e5a7af61ca0f034c6a52970c57be127814ff378104d0d1db2e2ab5071d
+Size: 650
 Filename: enigma2-plugin-extensions-worldcam-dbg_V6.8-git525+c89c48c0+c89c48c5f7-r0_cortexa15hf-neon-vfpv4.ipk
 Source: enigma2-plugin-extensions-worldcam.bb
 Description: Enigma2 Plugin You WorldCam from site and youtube playlists - Debugging files
@@ -14721,8 +14870,8 @@ Recommends: enigma2-plugin-extensions-worldcam (= V6.8-git525+c89c48c0+c89c48c5f
 Section: devel
 Architecture: cortexa15hf-neon-vfpv4
 Maintainer: lululla
-MD5Sum: c8744e75c0f00b49b8965bb1a02c4ebb
-SHA256sum: fec3a1cd29076bc9f8fd110b8bde2200036e0db0d2bd4e00295d71cb676a2580
+MD5Sum: bad80a113cdb7e120c5b91b6addf91eb
+SHA256sum: 47b35306aa225f2be596644ca754a9269e15300b7daa81ef40b8357ae02aa15a
 Size: 784
 Filename: enigma2-plugin-extensions-worldcam-dev_V6.8-git525+c89c48c0+c89c48c5f7-r0_cortexa15hf-neon-vfpv4.ipk
 Source: enigma2-plugin-extensions-worldcam.bb
@@ -14737,8 +14886,8 @@ Version: V6.8-git525+c89c48c0+c89c48c5f7-r0
 Section: devel
 Architecture: cortexa15hf-neon-vfpv4
 Maintainer: lululla
-MD5Sum: 2fdae34cf99cc24035574cafb93f38bf
-SHA256sum: f16c812a60fbcd13403518e912ebc9ef4c81419d264cfbdfaf0232e34edb097a
+MD5Sum: fc876aa69db289e0545c8c83070f812c
+SHA256sum: 86183b311f6c0163249a6fcdf45eb5970867f8040c95fb332fb9063cbb72687d
 Size: 51120
 Filename: enigma2-plugin-extensions-worldcam-src_V6.8-git525+c89c48c0+c89c48c5f7-r0_cortexa15hf-neon-vfpv4.ipk
 Source: enigma2-plugin-extensions-worldcam.bb
@@ -14755,9 +14904,9 @@ Recommends: enigma2-plugin-extensions-streamlinkwrapper, enigma2-plugin-extensio
 Section: base
 Architecture: cortexa15hf-neon-vfpv4
 Maintainer: lululla
-MD5Sum: 5317948fef7bb540f064ac340da0cfb9
-SHA256sum: 9c7f34e9159aad5687dda2ec874d3fd7a580b1f8f0ac0c8f8f80598698aec7a3
-Size: 2765628
+MD5Sum: da383108514365128c34e2414f92c763
+SHA256sum: d8f46046b42037381e509a262b883b3d7f7183fe5cb51e57aec17be170bb9df2
+Size: 2766014
 Filename: enigma2-plugin-extensions-worldcam_V6.8-git525+c89c48c0+c89c48c5f7-r0_cortexa15hf-neon-vfpv4.ipk
 Source: enigma2-plugin-extensions-worldcam.bb
 Description: Enigma2 Plugin You WorldCam from site and youtube playlists
@@ -15488,8 +15637,8 @@ Conflicts: ncam-ipv4
 Section: base
 Architecture: cortexa15hf-neon-vfpv4
 Maintainer: Raed - fairbird
-MD5Sum: 1760db9cc923dd2d2b6c336b49a8d7f1
-SHA256sum: f095170fef5547bb771788696ce3d0700e67d2b58c21dbc710c08640a76c30a1
+MD5Sum: 76b0c8c43efa00c2f74fb20ebdcc0d9a
+SHA256sum: a649933e6691a97d103a0e27c42586ef27cf0809e9d6ef8e6432eb4bfacb82f5
 Size: 866854
 Filename: enigma2-plugin-softcams-ncam_1.30+git10899+b9882800+b9882801f7-r1_cortexa15hf-neon-vfpv4.ipk
 Source: enigma2-plugin-softcams-ncam.bb
@@ -15508,8 +15657,8 @@ Conflicts: enigma2-plugin-softcams-oscam-openvix-emu, oscam-emu-ipv4
 Section: base
 Architecture: cortexa15hf-neon-vfpv4
 Maintainer: oscam-emu
-MD5Sum: 8d44fb114f108052f7875a26f011389a
-SHA256sum: 232305efb47398b70b892edd4f456139e7791ec5bc96b2559a4deaaa858f6644
+MD5Sum: 9b3df45fe781440927a124283b913ae5
+SHA256sum: 584de73eae0e26b39227b3cf97433ab65add50e5ff332acde5835c06adc2e1ae
 Size: 805562
 Filename: enigma2-plugin-softcams-oscam-emu_11966-git11077+ad7588c0+ad7588c6dd-r3_cortexa15hf-neon-vfpv4.ipk
 Source: enigma2-plugin-softcams-oscam-emu.bb
@@ -15528,8 +15677,8 @@ Conflicts: enigma2-plugin-softcams-oscam-openvix, oscam-latest-ipv4
 Section: base
 Architecture: cortexa15hf-neon-vfpv4
 Maintainer: oscam
-MD5Sum: 3d6a263603658c318a90f5be897beace
-SHA256sum: 77481ab8849566cfbf34e282e63206010048a09a0ebbbc423e3e5e10c533061e
+MD5Sum: 635952053fd06d8d6913f7f9d698d53f
+SHA256sum: 17024caeb1d4a05e9c6c269d54e9cd8c975e2ba5e8301b4c9ed17f4d32747f78
 Size: 752308
 Filename: enigma2-plugin-softcams-oscam-latest_11966-git10885+59051090+5905109ea7-r4_cortexa15hf-neon-vfpv4.ipk
 Source: enigma2-plugin-softcams-oscam-latest.bb
@@ -15548,8 +15697,8 @@ Conflicts: enigma2-plugin-softcams-oscam-pcscd-latest, oscam-pcscd-latest-ipv4
 Section: base
 Architecture: cortexa15hf-neon-vfpv4
 Maintainer: oscam-pscd
-MD5Sum: 8cc0691fa102f514f9184f598f504b5d
-SHA256sum: eb8dd1f2f6890b4fea6b25f6cdc1c469bc9630aac838110d9a878f01c60b5dd4
+MD5Sum: 46e45673b533e7173b83d82ba1b24e20
+SHA256sum: 4d856515398ae327e8ca83d69bb581533a1634a04daf424aec3a53cd4f5cc426
 Size: 753664
 Filename: enigma2-plugin-softcams-oscam-pcscd-latest_11966-git10885+59051090+5905109ea7-r2_cortexa15hf-neon-vfpv4.ipk
 Source: enigma2-plugin-softcams-oscam-pcscd-latest.bb
@@ -16159,13 +16308,12 @@ Priority: optional
 Package: enigma2-plugin-systemplugins-blindscan
 Version: V1.0-git432+35aed6f0+35aed6fadf-r0
 Depends: python3-core
-Recommends: vuplus-blindscan-dvbs-utils
 Section: base
 Architecture: cortexa15hf-neon-vfpv4
 Maintainer: OpenViX
-MD5Sum: 25c93ab4251b18f8499dfb1f0a121085
-SHA256sum: 411cfe0b6f42673c6bd50621a3d4ee02bff3e172fc3896df36a15d69fd705a77
-Size: 127196
+MD5Sum: 1262bcd3309f5ea8a5a357dcf8ee4dbb
+SHA256sum: aec66ab44d983730517fced5814f55c4367964cfad2cf4a17c1f46f35f7a1596
+Size: 127174
 Filename: enigma2-plugin-systemplugins-blindscan_V1.0-git432+35aed6f0+35aed6fadf-r0_cortexa15hf-neon-vfpv4.ipk
 Source: enigma2-plugin-systemplugins-blindscan.bb
 Description: enigma2-plugin-systemplugins-blindscan version git-r0
@@ -16557,6 +16705,72 @@ HomePage: https://www.world-of-satellite.com
 License: GPL-2.0-or-later
 Priority: optional
 
+Package: enigma2-plugin-systemplugins-multitranscodingsetup-dbg
+Version: V1.0-git102+e78aacf0+e78aacf19f-r0
+Section: devel
+Architecture: cortexa15hf-neon-vfpv4
+Maintainer: OpenViX
+MD5Sum: 097618f871a7868d39a86c2e8fe68ed2
+SHA256sum: 67446c3ce2b81bed1ac4383382c2b740aee70d275427750a327ccc073a4c7895
+Size: 636
+Filename: enigma2-plugin-systemplugins-multitranscodingsetup-dbg_V1.0-git102+e78aacf0+e78aacf19f-r0_cortexa15hf-neon-vfpv4.ipk
+Source: enigma2-plugin-systemplugins-multitranscodingsetup.bb
+Description: enigma2-plugin-systemplugins-multitranscodingsetup version git-r0 - Debugging files
+OE: enigma2-plugin-systemplugins-multitranscodingsetup
+HomePage: https://www.world-of-satellite.com
+License: GPL-2.0-or-later
+Priority: optional
+
+Package: enigma2-plugin-systemplugins-multitranscodingsetup-dev
+Version: V1.0-git102+e78aacf0+e78aacf19f-r0
+Recommends: enigma2-plugin-systemplugins-multitranscodingsetup (= V1.0-git102+e78aacf0+e78aacf19f-r0), python3-core-dev, python3-dev
+Section: devel
+Architecture: cortexa15hf-neon-vfpv4
+Maintainer: OpenViX
+MD5Sum: 885f2a508fce6d91d7adf9ce080ccd45
+SHA256sum: 7f6985dff7fff7a18629d2ad132d2ec1e06fd3c588fa4ad2b49cb9265ee5bd31
+Size: 688
+Filename: enigma2-plugin-systemplugins-multitranscodingsetup-dev_V1.0-git102+e78aacf0+e78aacf19f-r0_cortexa15hf-neon-vfpv4.ipk
+Source: enigma2-plugin-systemplugins-multitranscodingsetup.bb
+Description: enigma2-plugin-systemplugins-multitranscodingsetup version git-r0 - Development files
+OE: enigma2-plugin-systemplugins-multitranscodingsetup
+HomePage: https://www.world-of-satellite.com
+License: GPL-2.0-or-later
+Priority: optional
+
+Package: enigma2-plugin-systemplugins-multitranscodingsetup-src
+Version: V1.0-git102+e78aacf0+e78aacf19f-r0
+Section: devel
+Architecture: cortexa15hf-neon-vfpv4
+Maintainer: OpenViX
+MD5Sum: 0734b95c82ab9d7f2595033d68fc74d4
+SHA256sum: 605f576cdcae83be02553e19c66f05087364a61320de79364f9309d0a0a1c921
+Size: 4350
+Filename: enigma2-plugin-systemplugins-multitranscodingsetup-src_V1.0-git102+e78aacf0+e78aacf19f-r0_cortexa15hf-neon-vfpv4.ipk
+Source: enigma2-plugin-systemplugins-multitranscodingsetup.bb
+Description: enigma2-plugin-systemplugins-multitranscodingsetup version git-r0 - Source files
+OE: enigma2-plugin-systemplugins-multitranscodingsetup
+HomePage: https://www.world-of-satellite.com
+License: GPL-2.0-or-later
+Priority: optional
+
+Package: enigma2-plugin-systemplugins-multitranscodingsetup
+Version: V1.0-git102+e78aacf0+e78aacf19f-r0
+Depends: python3-core
+Section: base
+Architecture: cortexa15hf-neon-vfpv4
+Maintainer: OpenViX
+MD5Sum: af248731e8886c80fba8c44bd0f8c59f
+SHA256sum: 08c4a8296a781bb1cac40836c3c325cf5576c7d639e476fa50be48c4155c932c
+Size: 23398
+Filename: enigma2-plugin-systemplugins-multitranscodingsetup_V1.0-git102+e78aacf0+e78aacf19f-r0_cortexa15hf-neon-vfpv4.ipk
+Source: enigma2-plugin-systemplugins-multitranscodingsetup.bb
+Description: enigma2-plugin-systemplugins-multitranscodingsetup version git-r0
+OE: enigma2-plugin-systemplugins-multitranscodingsetup
+HomePage: https://www.world-of-satellite.com
+License: GPL-2.0-or-later
+Priority: optional
+
 Package: enigma2-plugin-systemplugins-networkbrowser-dbg
 Version: V1.0-git327+d05d1730+d05d173776-r0
 Recommends: glibc-dbg, libtirpc-dbg
@@ -16620,72 +16834,6 @@ Filename: enigma2-plugin-systemplugins-networkbrowser_V1.0-git327+d05d1730+d05d1
 Source: enigma2-plugin-systemplugins-networkbrowser.bb
 Description: enigma2-plugin-systemplugins-networkbrowser version git-r0
 OE: enigma2-plugin-systemplugins-networkbrowser
-HomePage: https://www.world-of-satellite.com
-License: GPL-2.0-or-later
-Priority: optional
-
-Package: enigma2-plugin-systemplugins-quadpip-dbg
-Version: git67+75c0b480+75c0b48624-r7
-Section: devel
-Architecture: cortexa15hf-neon-vfpv4
-Maintainer: OpenViX
-MD5Sum: 45546b5693e76263442beb24dd865a52
-SHA256sum: fb7577aa827cbe34fd11d06fe7097bb9d56c49c90168f1fd63539eb9f5c9057e
-Size: 636
-Filename: enigma2-plugin-systemplugins-quadpip-dbg_git67+75c0b480+75c0b48624-r7_cortexa15hf-neon-vfpv4.ipk
-Source: enigma2-plugin-systemplugins-quadpip.bb
-Description: enigma2-plugin-systemplugins-quadpip version git-r7 - Debugging files
-OE: enigma2-plugin-systemplugins-quadpip
-HomePage: https://www.world-of-satellite.com
-License: GPL-2.0-or-later
-Priority: optional
-
-Package: enigma2-plugin-systemplugins-quadpip-dev
-Version: git67+75c0b480+75c0b48624-r7
-Recommends: enigma2-plugin-systemplugins-quadpip (= git67+75c0b480+75c0b48624-r7), python3-core-dev, python3-dev
-Section: devel
-Architecture: cortexa15hf-neon-vfpv4
-Maintainer: OpenViX
-MD5Sum: d6bbc0dca7c92e768c00e106253aac85
-SHA256sum: 217d744547531e8cbc631ead87ef0dea431f63a53a1b539560ab17bc8e860f24
-Size: 690
-Filename: enigma2-plugin-systemplugins-quadpip-dev_git67+75c0b480+75c0b48624-r7_cortexa15hf-neon-vfpv4.ipk
-Source: enigma2-plugin-systemplugins-quadpip.bb
-Description: enigma2-plugin-systemplugins-quadpip version git-r7 - Development files
-OE: enigma2-plugin-systemplugins-quadpip
-HomePage: https://www.world-of-satellite.com
-License: GPL-2.0-or-later
-Priority: optional
-
-Package: enigma2-plugin-systemplugins-quadpip-src
-Version: git67+75c0b480+75c0b48624-r7
-Section: devel
-Architecture: cortexa15hf-neon-vfpv4
-Maintainer: OpenViX
-MD5Sum: 463b2c35da7bfcd50f2ec4ef0dd206a3
-SHA256sum: 452afc41efbd0e7796784052f6b53ee4a053b26cd37443fc990f96a9fd73234a
-Size: 10694
-Filename: enigma2-plugin-systemplugins-quadpip-src_git67+75c0b480+75c0b48624-r7_cortexa15hf-neon-vfpv4.ipk
-Source: enigma2-plugin-systemplugins-quadpip.bb
-Description: enigma2-plugin-systemplugins-quadpip version git-r7 - Source files
-OE: enigma2-plugin-systemplugins-quadpip
-HomePage: https://www.world-of-satellite.com
-License: GPL-2.0-or-later
-Priority: optional
-
-Package: enigma2-plugin-systemplugins-quadpip
-Version: git67+75c0b480+75c0b48624-r7
-Depends: python3-core
-Section: base
-Architecture: cortexa15hf-neon-vfpv4
-Maintainer: OpenViX
-MD5Sum: b54b1ca0032fa9588eeb0ced7eb6e2f3
-SHA256sum: 32480ed90d6136edee486236ba6618ac60f5a3afb0ef89be34963f72fae54974
-Size: 35414
-Filename: enigma2-plugin-systemplugins-quadpip_git67+75c0b480+75c0b48624-r7_cortexa15hf-neon-vfpv4.ipk
-Source: enigma2-plugin-systemplugins-quadpip.bb
-Description: enigma2-plugin-systemplugins-quadpip version git-r7
-OE: enigma2-plugin-systemplugins-quadpip
 HomePage: https://www.world-of-satellite.com
 License: GPL-2.0-or-later
 Priority: optional
@@ -16772,72 +16920,6 @@ Description: systemplugins-radiotimesemulator
 OE: enigma2-plugin-systemplugins-radiotimesemulator
 HomePage: https://github.com/LraiZer/RadiotimesXmltvEmulator
 License: LGPL-2.1-only
-Priority: optional
-
-Package: enigma2-plugin-systemplugins-remotecontrolcode-dbg
-Version: V1.0-git107+5bd6ab40+5bd6ab43a2-r0
-Section: devel
-Architecture: cortexa15hf-neon-vfpv4
-Maintainer: OpenViX
-MD5Sum: c60b3e224b5984f8ac31313fa5700d9d
-SHA256sum: 901703922b1be3ee25928bcff5ec1b924d4a202d823a1c20440c7e834d29fa24
-Size: 642
-Filename: enigma2-plugin-systemplugins-remotecontrolcode-dbg_V1.0-git107+5bd6ab40+5bd6ab43a2-r0_cortexa15hf-neon-vfpv4.ipk
-Source: enigma2-plugin-systemplugins-vuremotecontrolcode.bb
-Description: enigma2-plugin-systemplugins-remotecontrolcode version git-r0 - Debugging files
-OE: enigma2-plugin-systemplugins-remotecontrolcode
-HomePage: https://www.world-of-satellite.com
-License: GPL-2.0-or-later
-Priority: optional
-
-Package: enigma2-plugin-systemplugins-remotecontrolcode-dev
-Version: V1.0-git107+5bd6ab40+5bd6ab43a2-r0
-Recommends: enigma2-plugin-systemplugins-remotecontrolcode (= V1.0-git107+5bd6ab40+5bd6ab43a2-r0), python3-core-dev, python3-dev
-Section: devel
-Architecture: cortexa15hf-neon-vfpv4
-Maintainer: OpenViX
-MD5Sum: 9f586786a5f07f5d7b14111975aae4ee
-SHA256sum: a0163aaedcf3c53f9fa7b6efcce6a88b47368229afa29b3b9db739ef54ae4fa3
-Size: 696
-Filename: enigma2-plugin-systemplugins-remotecontrolcode-dev_V1.0-git107+5bd6ab40+5bd6ab43a2-r0_cortexa15hf-neon-vfpv4.ipk
-Source: enigma2-plugin-systemplugins-vuremotecontrolcode.bb
-Description: enigma2-plugin-systemplugins-remotecontrolcode version git-r0 - Development files
-OE: enigma2-plugin-systemplugins-remotecontrolcode
-HomePage: https://www.world-of-satellite.com
-License: GPL-2.0-or-later
-Priority: optional
-
-Package: enigma2-plugin-systemplugins-remotecontrolcode-src
-Version: V1.0-git107+5bd6ab40+5bd6ab43a2-r0
-Section: devel
-Architecture: cortexa15hf-neon-vfpv4
-Maintainer: OpenViX
-MD5Sum: af1eaaf1685cdba52239c27efb9b8ff2
-SHA256sum: 64d704fa80cec1ce3aa8e308de41f0bef2243d2bd63bea4b28f6bfdded61083a
-Size: 3424
-Filename: enigma2-plugin-systemplugins-remotecontrolcode-src_V1.0-git107+5bd6ab40+5bd6ab43a2-r0_cortexa15hf-neon-vfpv4.ipk
-Source: enigma2-plugin-systemplugins-vuremotecontrolcode.bb
-Description: enigma2-plugin-systemplugins-remotecontrolcode version git-r0 - Source files
-OE: enigma2-plugin-systemplugins-remotecontrolcode
-HomePage: https://www.world-of-satellite.com
-License: GPL-2.0-or-later
-Priority: optional
-
-Package: enigma2-plugin-systemplugins-remotecontrolcode
-Version: V1.0-git107+5bd6ab40+5bd6ab43a2-r0
-Depends: python3-core
-Section: base
-Architecture: cortexa15hf-neon-vfpv4
-Maintainer: OpenViX
-MD5Sum: 7260505703f446051900d24cfe30b37b
-SHA256sum: 8cae72b3d9ea8339db17be0f7d7589bfee599a14e5e582429651f1205cbf7190
-Size: 16154
-Filename: enigma2-plugin-systemplugins-remotecontrolcode_V1.0-git107+5bd6ab40+5bd6ab43a2-r0_cortexa15hf-neon-vfpv4.ipk
-Source: enigma2-plugin-systemplugins-vuremotecontrolcode.bb
-Description: enigma2-plugin-systemplugins-remotecontrolcode version git-r0
-OE: enigma2-plugin-systemplugins-remotecontrolcode
-HomePage: https://www.world-of-satellite.com
-License: GPL-2.0-or-later
 Priority: optional
 
 Package: enigma2-plugin-systemplugins-satipclient-dbg
@@ -17043,6 +17125,73 @@ HomePage: https://www.world-of-satellite.com
 License: GPL-2.0-only
 Priority: optional
 
+Package: enigma2-plugin-systemplugins-servicehisilicon-dbg
+Version: git43+696bcf10+696bcf1846-r3
+Recommends: glibc-dbg, libgcc-dbg, libstdc++-dbg
+Section: devel
+Architecture: cortexa15hf-neon-vfpv4
+Maintainer: OpenViX
+MD5Sum: a5d5538ee733a41d6ddb589669f42d91
+SHA256sum: 02c2bccb4e253ad396332c48b97d4ca0e7eb0187f07a090e1d85b9a5f1046ad8
+Size: 355610
+Filename: enigma2-plugin-systemplugins-servicehisilicon-dbg_git43+696bcf10+696bcf1846-r3_cortexa15hf-neon-vfpv4.ipk
+Source: enigma2-plugin-systemplugins-servicehisilicon.bb
+Description: enigma2-plugin-systemplugins-servicehisilicon version git-r3 - Debugging files
+OE: enigma2-plugin-systemplugins-servicehisilicon
+HomePage: https://www.world-of-satellite.com
+License: GPL-2.0-only
+Priority: optional
+
+Package: enigma2-plugin-systemplugins-servicehisilicon-dev
+Version: git43+696bcf10+696bcf1846-r3
+Recommends: enigma2-dev, enigma2-plugin-systemplugins-servicehisilicon (= git43+696bcf10+696bcf1846-r3), glibc-dev, libgcc-dev, libstdc++-dev, python3-dev
+Section: devel
+Architecture: cortexa15hf-neon-vfpv4
+Maintainer: OpenViX
+MD5Sum: 24a027502901a733b3d1001aeb44e14c
+SHA256sum: fb0839c9865069eb39ccd7b12c01696b6101bfd442b1127467b30321b494eb88
+Size: 696
+Filename: enigma2-plugin-systemplugins-servicehisilicon-dev_git43+696bcf10+696bcf1846-r3_cortexa15hf-neon-vfpv4.ipk
+Source: enigma2-plugin-systemplugins-servicehisilicon.bb
+Description: enigma2-plugin-systemplugins-servicehisilicon version git-r3 - Development files
+OE: enigma2-plugin-systemplugins-servicehisilicon
+HomePage: https://www.world-of-satellite.com
+License: GPL-2.0-only
+Priority: optional
+
+Package: enigma2-plugin-systemplugins-servicehisilicon-src
+Version: git43+696bcf10+696bcf1846-r3
+Section: devel
+Architecture: cortexa15hf-neon-vfpv4
+Maintainer: OpenViX
+MD5Sum: 5cfdb511d57e78ce4e5b3320dac125bd
+SHA256sum: 8325a439830314f7c93c733534fa4e6dcad5213afb31235c449769575655fe4a
+Size: 1014
+Filename: enigma2-plugin-systemplugins-servicehisilicon-src_git43+696bcf10+696bcf1846-r3_cortexa15hf-neon-vfpv4.ipk
+Source: enigma2-plugin-systemplugins-servicehisilicon.bb
+Description: enigma2-plugin-systemplugins-servicehisilicon version git-r3 - Source files
+OE: enigma2-plugin-systemplugins-servicehisilicon
+HomePage: https://www.world-of-satellite.com
+License: GPL-2.0-only
+Priority: optional
+
+Package: enigma2-plugin-systemplugins-servicehisilicon
+Version: git43+696bcf10+696bcf1846-r3
+Depends: enigma2, libc6 (>= 2.44+git0+7cba77790f), libgcc1 (>= 16.2.0), libstdc++6 (>= 16.2.0)
+Section: base
+Architecture: cortexa15hf-neon-vfpv4
+Maintainer: OpenViX
+MD5Sum: 7249158d26a0785fdbc2469389329142
+SHA256sum: 124f1cdfb74f7a5a1444cdfeda30b2241bdfb9febf10a0ab7ac69c081e959f9a
+Size: 35174
+Filename: enigma2-plugin-systemplugins-servicehisilicon_git43+696bcf10+696bcf1846-r3_cortexa15hf-neon-vfpv4.ipk
+Source: enigma2-plugin-systemplugins-servicehisilicon.bb
+Description: enigma2-plugin-systemplugins-servicehisilicon version git-r3
+OE: enigma2-plugin-systemplugins-servicehisilicon
+HomePage: https://www.world-of-satellite.com
+License: GPL-2.0-only
+Priority: optional
+
 Package: enigma2-plugin-systemplugins-terrestrialscan-dbg
 Version: 6.9+git69+751301c0+751301c3b2-r1
 Depends: enigma2-plugin-systemplugins-terrestrialscan
@@ -17190,72 +17339,6 @@ Filename: enigma2-plugin-systemplugins-toolkit_V1.0-git23+66aa1a10+66aa1a116d-r0
 Source: enigma2-plugin-systemplugins-toolkit.bb
 Description: enigma2-plugin-systemplugins-toolkit version git-r0
 OE: enigma2-plugin-systemplugins-toolkit
-HomePage: https://www.world-of-satellite.com
-License: GPL-2.0-or-later
-Priority: optional
-
-Package: enigma2-plugin-systemplugins-transcodingsetup-dbg
-Version: V1.0-git160+d7940c10+d7940c1887-r0
-Section: devel
-Architecture: cortexa15hf-neon-vfpv4
-Maintainer: OpenViX
-MD5Sum: 0139308d6fdff6e2626fe35127095566
-SHA256sum: c92000775a44395d4662b488fc788f6711d8a4a903a38bcd51e15857b5e785e3
-Size: 642
-Filename: enigma2-plugin-systemplugins-transcodingsetup-dbg_V1.0-git160+d7940c10+d7940c1887-r0_cortexa15hf-neon-vfpv4.ipk
-Source: enigma2-plugin-systemplugins-transcodingsetup.bb
-Description: enigma2-plugin-systemplugins-transcodingsetup version git-r0 - Debugging files
-OE: enigma2-plugin-systemplugins-transcodingsetup
-HomePage: https://www.world-of-satellite.com
-License: GPL-2.0-or-later
-Priority: optional
-
-Package: enigma2-plugin-systemplugins-transcodingsetup-dev
-Version: V1.0-git160+d7940c10+d7940c1887-r0
-Recommends: enigma2-plugin-systemplugins-transcodingsetup (= V1.0-git160+d7940c10+d7940c1887-r0), python3-core-dev, python3-dev, virtual-transtreamproxy-dev
-Section: devel
-Architecture: cortexa15hf-neon-vfpv4
-Maintainer: OpenViX
-MD5Sum: 17386091b9ef8f58fa29a5aabd2c1bc5
-SHA256sum: 36d7ef2a5b71747ab9d090567fe465762b4c9bb9ef8be46d5829e1a7281fd225
-Size: 708
-Filename: enigma2-plugin-systemplugins-transcodingsetup-dev_V1.0-git160+d7940c10+d7940c1887-r0_cortexa15hf-neon-vfpv4.ipk
-Source: enigma2-plugin-systemplugins-transcodingsetup.bb
-Description: enigma2-plugin-systemplugins-transcodingsetup version git-r0 - Development files
-OE: enigma2-plugin-systemplugins-transcodingsetup
-HomePage: https://www.world-of-satellite.com
-License: GPL-2.0-or-later
-Priority: optional
-
-Package: enigma2-plugin-systemplugins-transcodingsetup-src
-Version: V1.0-git160+d7940c10+d7940c1887-r0
-Section: devel
-Architecture: cortexa15hf-neon-vfpv4
-Maintainer: OpenViX
-MD5Sum: 71704dafb634713bcd204f8fbe6e43b3
-SHA256sum: 10d34fb300fe1e44b3028e049b0524cc2b286e7763958f839894bb94ddfd4c81
-Size: 6928
-Filename: enigma2-plugin-systemplugins-transcodingsetup-src_V1.0-git160+d7940c10+d7940c1887-r0_cortexa15hf-neon-vfpv4.ipk
-Source: enigma2-plugin-systemplugins-transcodingsetup.bb
-Description: enigma2-plugin-systemplugins-transcodingsetup version git-r0 - Source files
-OE: enigma2-plugin-systemplugins-transcodingsetup
-HomePage: https://www.world-of-satellite.com
-License: GPL-2.0-or-later
-Priority: optional
-
-Package: enigma2-plugin-systemplugins-transcodingsetup
-Version: V1.0-git160+d7940c10+d7940c1887-r0
-Depends: python3-core, virtual-transtreamproxy
-Section: base
-Architecture: cortexa15hf-neon-vfpv4
-Maintainer: OpenViX
-MD5Sum: 0ea7c68abf0c95cc92d798198461d6da
-SHA256sum: 18e0ca67104974426a618b3ce1de1df9cab325b72cf880794a72c16e64b7ea09
-Size: 36196
-Filename: enigma2-plugin-systemplugins-transcodingsetup_V1.0-git160+d7940c10+d7940c1887-r0_cortexa15hf-neon-vfpv4.ipk
-Source: enigma2-plugin-systemplugins-transcodingsetup.bb
-Description: enigma2-plugin-systemplugins-transcodingsetup version git-r0
-OE: enigma2-plugin-systemplugins-transcodingsetup
 HomePage: https://www.world-of-satellite.com
 License: GPL-2.0-or-later
 Priority: optional
@@ -17714,9 +17797,9 @@ Depends: libc6 (>= 2.44+git0+7cba77790f), libmnl0 (>= 1.0.5)
 Section: console/network
 Architecture: cortexa15hf-neon-vfpv4
 Maintainer: OpenViX
-MD5Sum: 1916b97ac65116573fca99c8ca2fa665
-SHA256sum: d231edc911ff1f010aaaa11d64a91d5f2dcaec322e2489374a05f33e2881b0b8
-Size: 246132
+MD5Sum: fa94a80443b023f622e15c72c8214365
+SHA256sum: ea71325a1ef310dbaa766772a89a2613919bbc6113a5d5542fbd62afae9ed5c6
+Size: 276492
 Filename: ethtool_7.1-r0_cortexa15hf-neon-vfpv4.ipk
 Source: ethtool_7.1.bb
 Description: Display or change ethernet card settings
@@ -18725,22 +18808,6 @@ Description: Filesystem and hardware benchmark and stress tool
 OE: fio
 HomePage: http://freecode.com/projects/fio
 License: GPL-2.0-only
-Priority: optional
-
-Package: firmware-rtk8822cbtusb
-Version: 1.0-r0
-Section: base
-Architecture: cortexa15hf-neon-vfpv4
-Maintainer: OpenViX
-MD5Sum: 2c85e800742eff280ce0cf0d57eca9b2
-SHA256sum: b6e1b2d2ee94eab5b191bf645b6d8da594bc8be52d9efd50aa27272d8fd9463a
-Size: 39994
-Filename: firmware-rtk8822cbtusb_1.0-r0_cortexa15hf-neon-vfpv4.ipk
-Source: firmware-rtk8822cbtusb.bb
-Description: Firmware for rtk8822cbtusb
-OE: firmware-rtk8822cbtusb
-HomePage: https://www.world-of-satellite.com
-License: LicenseRef-Proprietary
 Priority: optional
 
 Package: flac-dbg
@@ -47992,13 +48059,13 @@ Priority: optional
 
 Package: gstreamer1.0-plugins-base-dbg
 Version: 1.28.6-r0
-Recommends: alsa-lib-dbg, cairo-dbg, glib-2.0-dbg, glibc-dbg, gstreamer1.0-dbg, libcdparanoia-dbg, libgstallocators-1.0-dbg, libgstapp-1.0-dbg, libgstaudio-1.0-dbg, libgstgl-1.0-dbg, libgstpbutils-1.0-dbg, libgstriff-1.0-dbg, libgstrtp-1.0-dbg, libgsttag-1.0-dbg, libgstvideo-1.0-dbg, libjpeg-turbo-dbg, libogg-dbg, libopus-dbg, liborc-0.4-dbg, libpng-dbg, libtheora-dbg, libvorbis-dbg, libx11-dbg, libx11-xcb-dbg, libxcb-dbg, libxext-dbg, libxv-dbg, orc-dbg, pango-dbg, tremor-dbg, zlib-dbg
+Recommends: alsa-lib-dbg, cairo-dbg, glib-2.0-dbg, glibc-dbg, gstreamer1.0-dbg, libcdparanoia-dbg, libgstallocators-1.0-dbg, libgstapp-1.0-dbg, libgstaudio-1.0-dbg, libgstpbutils-1.0-dbg, libgstriff-1.0-dbg, libgstrtp-1.0-dbg, libgsttag-1.0-dbg, libgstvideo-1.0-dbg, libogg-dbg, libopus-dbg, liborc-0.4-dbg, libtheora-dbg, libvorbis-dbg, libx11-dbg, libxext-dbg, libxv-dbg, orc-dbg, pango-dbg, tremor-dbg, zlib-dbg
 Section: devel
 Architecture: cortexa15hf-neon-vfpv4
 Maintainer: OpenViX
-MD5Sum: 29741f4ee31ff2dd4d560135e8fc4f1b
-SHA256sum: 8109aeb3ce5253108a60e98264877f12438ad074c20f830141e28da815c93d0a
-Size: 7285384
+MD5Sum: c19d558fcadeea22ca69a371153362b6
+SHA256sum: 1dfc6c3f8c04ccdabbbd89048ab02589bbae07891f07e479906e2fa3f98dd13e
+Size: 5980310
 Filename: gstreamer1.0-plugins-base-dbg_1.28.6-r0_cortexa15hf-neon-vfpv4.ipk
 Source: gstreamer1.0-plugins-base_1.28.5.bb
 Description: 'Base' GStreamer plugins and helper libraries - Debugging files
@@ -48009,14 +48076,14 @@ Priority: optional
 
 Package: gstreamer1.0-plugins-base-dev
 Version: 1.28.6-r0
-Depends: glib-2.0-dev, gstreamer1.0-dev, libgstallocators-1.0, libgstapp-1.0, libgstaudio-1.0, libgstfft-1.0, libgstgl-1.0, libgstpbutils-1.0, libgstriff-1.0, libgstrtp-1.0, libgstrtsp-1.0, libgstsdp-1.0, libgsttag-1.0, libgstvideo-1.0, libx11-dev, orc-dev, zlib-dev
-Recommends: alsa-lib-dev, cairo-dev, cdparanoia-dev, glib-2.0-dev, glibc-dev, gobject-introspection-dev, gstreamer1.0-dev, gstreamer1.0-plugins-base (= 1.28.6-r0), gstreamer1.0-plugins-base-adder-dev, gstreamer1.0-plugins-base-alsa-dev, gstreamer1.0-plugins-base-app-dev, gstreamer1.0-plugins-base-apps-dev, gstreamer1.0-plugins-base-audioconvert-dev, gstreamer1.0-plugins-base-audiomixer-dev, gstreamer1.0-plugins-base-audiorate-dev, gstreamer1.0-plugins-base-audioresample-dev, gstreamer1.0-plugins-base-audiotestsrc-dev, gstreamer1.0-plugins-base-basedebug-dev, gstreamer1.0-plugins-base-cdparanoia-dev, gstreamer1.0-plugins-base-compositor-dev, gstreamer1.0-plugins-base-dsd-dev, gstreamer1.0-plugins-base-encoding-dev, gstreamer1.0-plugins-base-gio-dev, gstreamer1.0-plugins-base-ivorbisdec-dev, gstreamer1.0-plugins-base-ogg-dev, gstreamer1.0-plugins-base-opengl-dev, gstreamer1.0-plugins-base-opus-dev, gstreamer1.0-plugins-base-overlaycomposition-dev, gstreamer1.0-plugins-base-pango-dev, gstreamer1.0-plugins-base-pbtypes-dev, gstreamer1.0-plugins-base-playback-dev, gstreamer1.0-plugins-base-rawparse-dev, gstreamer1.0-plugins-base-subparse-dev, gstreamer1.0-plugins-base-tcp-dev, gstreamer1.0-plugins-base-theora-dev, gstreamer1.0-plugins-base-typefindfunctions-dev, gstreamer1.0-plugins-base-videoconvertscale-dev, gstreamer1.0-plugins-base-videorate-dev, gstreamer1.0-plugins-base-videotestsrc-dev, gstreamer1.0-plugins-base-volume-dev, gstreamer1.0-plugins-base-vorbis-dev, gstreamer1.0-plugins-base-ximagesink-dev, gstreamer1.0-plugins-base-xvimagesink-dev, iso-codes-dev, jpeg-dev, libcdparanoia-dev, libgstallocators-1.0-dev, libgstapp-1.0-dev, libgstaudio-1.0-dev, libgstfft-1.0-dev, libgstgl-1.0-dev, libgstpbutils-1.0-dev, libgstriff-1.0-dev, libgstrtp-1.0-dev, libgstrtsp-1.0-dev, libgstsdp-1.0-dev, libgsttag-1.0-dev, libgstvideo-1.0-dev, libjpeg-turbo-dev, libogg-dev, libopus-dev, liborc-0.4-dev, libpng-dev, libsm-dev, libtheora-dev, libvorbis-dev, libx11-dev, libx11-xcb-dev, libxcb-dev, libxext-dev, libxrender-dev, libxv-dev, orc-dev, pango-dev, tremor-dev, util-linux-dev, zlib-dev
+Depends: glib-2.0-dev, gstreamer1.0-dev, libgstallocators-1.0, libgstapp-1.0, libgstaudio-1.0, libgstfft-1.0, libgstpbutils-1.0, libgstriff-1.0, libgstrtp-1.0, libgstrtsp-1.0, libgstsdp-1.0, libgsttag-1.0, libgstvideo-1.0, orc-dev, zlib-dev
+Recommends: alsa-lib-dev, cairo-dev, cdparanoia-dev, glib-2.0-dev, glibc-dev, gobject-introspection-dev, gstreamer1.0-dev, gstreamer1.0-plugins-base (= 1.28.6-r0), gstreamer1.0-plugins-base-adder-dev, gstreamer1.0-plugins-base-alsa-dev, gstreamer1.0-plugins-base-app-dev, gstreamer1.0-plugins-base-apps-dev, gstreamer1.0-plugins-base-audioconvert-dev, gstreamer1.0-plugins-base-audiomixer-dev, gstreamer1.0-plugins-base-audiorate-dev, gstreamer1.0-plugins-base-audioresample-dev, gstreamer1.0-plugins-base-audiotestsrc-dev, gstreamer1.0-plugins-base-basedebug-dev, gstreamer1.0-plugins-base-cdparanoia-dev, gstreamer1.0-plugins-base-compositor-dev, gstreamer1.0-plugins-base-dsd-dev, gstreamer1.0-plugins-base-encoding-dev, gstreamer1.0-plugins-base-gio-dev, gstreamer1.0-plugins-base-ivorbisdec-dev, gstreamer1.0-plugins-base-ogg-dev, gstreamer1.0-plugins-base-opus-dev, gstreamer1.0-plugins-base-overlaycomposition-dev, gstreamer1.0-plugins-base-pango-dev, gstreamer1.0-plugins-base-pbtypes-dev, gstreamer1.0-plugins-base-playback-dev, gstreamer1.0-plugins-base-rawparse-dev, gstreamer1.0-plugins-base-subparse-dev, gstreamer1.0-plugins-base-tcp-dev, gstreamer1.0-plugins-base-theora-dev, gstreamer1.0-plugins-base-typefindfunctions-dev, gstreamer1.0-plugins-base-videoconvertscale-dev, gstreamer1.0-plugins-base-videorate-dev, gstreamer1.0-plugins-base-videotestsrc-dev, gstreamer1.0-plugins-base-volume-dev, gstreamer1.0-plugins-base-vorbis-dev, gstreamer1.0-plugins-base-ximagesink-dev, gstreamer1.0-plugins-base-xvimagesink-dev, iso-codes-dev, jpeg-dev, libcdparanoia-dev, libgstallocators-1.0-dev, libgstapp-1.0-dev, libgstaudio-1.0-dev, libgstfft-1.0-dev, libgstpbutils-1.0-dev, libgstriff-1.0-dev, libgstrtp-1.0-dev, libgstrtsp-1.0-dev, libgstsdp-1.0-dev, libgsttag-1.0-dev, libgstvideo-1.0-dev, libogg-dev, libopus-dev, liborc-0.4-dev, libpng-dev, libsm-dev, libtheora-dev, libvorbis-dev, libx11-dev, libxext-dev, libxrender-dev, libxv-dev, orc-dev, pango-dev, tremor-dev, util-linux-dev, zlib-dev
 Section: devel
 Architecture: cortexa15hf-neon-vfpv4
 Maintainer: OpenViX
-MD5Sum: a366d6a8243be7bb484b6b9b95052c1e
-SHA256sum: 4455acc8870dbf19bb0f11b867a993d94b47325896ec20466ebde161983581a1
-Size: 701122
+MD5Sum: 14864ac8265a9c346c51d5f2ee17a153
+SHA256sum: 636fcbbbf807adf5fe2a1e557e8b3c6e71cb7fdc390243333d423b4147159e93
+Size: 578354
 Filename: gstreamer1.0-plugins-base-dev_1.28.6-r0_cortexa15hf-neon-vfpv4.ipk
 Source: gstreamer1.0-plugins-base_1.28.5.bb
 Description: 'Base' GStreamer plugins and helper libraries - Development files
@@ -48127,13 +48194,13 @@ Priority: optional
 
 Package: gstreamer1.0-plugins-base-meta
 Version: 1.28.6-r0
-Depends: gstreamer1.0-plugins-base-adder, gstreamer1.0-plugins-base-alsa, gstreamer1.0-plugins-base-app, gstreamer1.0-plugins-base-apps, gstreamer1.0-plugins-base-audioconvert, gstreamer1.0-plugins-base-audiomixer, gstreamer1.0-plugins-base-audiorate, gstreamer1.0-plugins-base-audioresample, gstreamer1.0-plugins-base-audiotestsrc, gstreamer1.0-plugins-base-basedebug, gstreamer1.0-plugins-base-cdparanoia, gstreamer1.0-plugins-base-compositor, gstreamer1.0-plugins-base-dsd, gstreamer1.0-plugins-base-encoding, gstreamer1.0-plugins-base-gio, gstreamer1.0-plugins-base-ivorbisdec, gstreamer1.0-plugins-base-ogg, gstreamer1.0-plugins-base-opengl, gstreamer1.0-plugins-base-opus, gstreamer1.0-plugins-base-overlaycomposition, gstreamer1.0-plugins-base-pango, gstreamer1.0-plugins-base-pbtypes, gstreamer1.0-plugins-base-playback, gstreamer1.0-plugins-base-rawparse, gstreamer1.0-plugins-base-subparse, gstreamer1.0-plugins-base-tcp, gstreamer1.0-plugins-base-theora, gstreamer1.0-plugins-base-typefindfunctions, gstreamer1.0-plugins-base-videoconvertscale, gstreamer1.0-plugins-base-videorate, gstreamer1.0-plugins-base-videotestsrc, gstreamer1.0-plugins-base-volume, gstreamer1.0-plugins-base-vorbis, gstreamer1.0-plugins-base-ximagesink, gstreamer1.0-plugins-base-xvimagesink, libgstallocators-1.0, libgstapp-1.0, libgstaudio-1.0, libgstfft-1.0, libgstgl-1.0, libgstpbutils-1.0, libgstriff-1.0, libgstrtp-1.0, libgstrtsp-1.0, libgstsdp-1.0, libgsttag-1.0, libgstvideo-1.0
+Depends: gstreamer1.0-plugins-base-adder, gstreamer1.0-plugins-base-alsa, gstreamer1.0-plugins-base-app, gstreamer1.0-plugins-base-apps, gstreamer1.0-plugins-base-audioconvert, gstreamer1.0-plugins-base-audiomixer, gstreamer1.0-plugins-base-audiorate, gstreamer1.0-plugins-base-audioresample, gstreamer1.0-plugins-base-audiotestsrc, gstreamer1.0-plugins-base-basedebug, gstreamer1.0-plugins-base-cdparanoia, gstreamer1.0-plugins-base-compositor, gstreamer1.0-plugins-base-dsd, gstreamer1.0-plugins-base-encoding, gstreamer1.0-plugins-base-gio, gstreamer1.0-plugins-base-ivorbisdec, gstreamer1.0-plugins-base-ogg, gstreamer1.0-plugins-base-opus, gstreamer1.0-plugins-base-overlaycomposition, gstreamer1.0-plugins-base-pango, gstreamer1.0-plugins-base-pbtypes, gstreamer1.0-plugins-base-playback, gstreamer1.0-plugins-base-rawparse, gstreamer1.0-plugins-base-subparse, gstreamer1.0-plugins-base-tcp, gstreamer1.0-plugins-base-theora, gstreamer1.0-plugins-base-typefindfunctions, gstreamer1.0-plugins-base-videoconvertscale, gstreamer1.0-plugins-base-videorate, gstreamer1.0-plugins-base-videotestsrc, gstreamer1.0-plugins-base-volume, gstreamer1.0-plugins-base-vorbis, gstreamer1.0-plugins-base-ximagesink, gstreamer1.0-plugins-base-xvimagesink, libgstallocators-1.0, libgstapp-1.0, libgstaudio-1.0, libgstfft-1.0, libgstpbutils-1.0, libgstriff-1.0, libgstrtp-1.0, libgstrtsp-1.0, libgstsdp-1.0, libgsttag-1.0, libgstvideo-1.0
 Section: multimedia
 Architecture: cortexa15hf-neon-vfpv4
 Maintainer: OpenViX
-MD5Sum: 919c519d1b204ce1799e6f0051c5ba30
-SHA256sum: 410636b578a9c18d35e8b64c3540e9d8e714294a88a7f9858cc0cd8edf2690bb
-Size: 850
+MD5Sum: 8ea5499ce3b1361163cef9db22bd3fb1
+SHA256sum: 165825f0539bf709cbe92caaff5f2e35364e5c8043310dcb96a1a3c3760f6b66
+Size: 844
 Filename: gstreamer1.0-plugins-base-meta_1.28.6-r0_cortexa15hf-neon-vfpv4.ipk
 Source: gstreamer1.0-plugins-base_1.28.5.bb
 Description: 'Base' GStreamer plugins and helper libraries
@@ -48154,23 +48221,6 @@ Size: 94528
 Filename: gstreamer1.0-plugins-base-ogg_1.28.6-r0_cortexa15hf-neon-vfpv4.ipk
 Source: gstreamer1.0-plugins-base_1.28.5.bb
 Description: GStreamer 1.0 plugin for ogg
-OE: gstreamer1.0-plugins-base
-HomePage: https://gstreamer.freedesktop.org/
-License: LGPL-2.1-or-later
-Priority: optional
-
-Package: gstreamer1.0-plugins-base-opengl
-Version: 1.28.6-r0
-Depends: gstreamer1.0 (>= 1.28.6), libc6 (>= 2.44+git0+7cba77790f), libglib-2.0-0 (>= 2.88.3), libgstgl-1.0-0 (>= 1.28.6), libgstvideo-1.0-0 (>= 1.28.6), libjpeg62 (>= 3.2.0), libpng16-16 (>= 1.6.58), libx11-6 (>= 1.8.13)
-Section: multimedia
-Architecture: cortexa15hf-neon-vfpv4
-Maintainer: OpenViX
-MD5Sum: fe03c6cd1dd52a99e7757792da240771
-SHA256sum: bdba366d247e9a44b4dd81827f14bbe91880498d4b69e1675c792a17b8f6e454
-Size: 100070
-Filename: gstreamer1.0-plugins-base-opengl_1.28.6-r0_cortexa15hf-neon-vfpv4.ipk
-Source: gstreamer1.0-plugins-base_1.28.5.bb
-Description: GStreamer 1.0 plugin for opengl
 OE: gstreamer1.0-plugins-base
 HomePage: https://gstreamer.freedesktop.org/
 License: LGPL-2.1-or-later
@@ -48488,9 +48538,9 @@ Recommends: gstreamer1.0-plugins-base-meta
 Section: multimedia
 Architecture: cortexa15hf-neon-vfpv4
 Maintainer: OpenViX
-MD5Sum: 97e2f1dcb25f2819f3673acf87cf26d5
-SHA256sum: 472386f6405024c6c89b1d9dd3409af99db32db1780d7b4140a30564ad1c4d54
-Size: 132282
+MD5Sum: 032cf7da689bba5bb52c2ec00d117b6e
+SHA256sum: 3867630c197b1fa14b1f34747b121cde736ac172430912d34d90e1258dcdde08
+Size: 109362
 Filename: gstreamer1.0-plugins-base_1.28.6-r0_cortexa15hf-neon-vfpv4.ipk
 Source: gstreamer1.0-plugins-base_1.28.5.bb
 Description: 'Base' GStreamer plugins and helper libraries
@@ -57034,6 +57084,219 @@ HomePage: https://www.world-of-satellite.com
 License: GPL-2.0-or-later
 Priority: optional
 
+Package: libdrm-amdgpu1
+Version: 2.4.134-r0
+Depends: libc6 (>= 2.44+git0+7cba77790f), libdrm2 (>= 2.4.134)
+Provides: libdrm-amdgpu
+Section: x11/base
+Architecture: cortexa15hf-neon-vfpv4
+Maintainer: OpenViX
+MD5Sum: 21a2d3c11a8eb373df8a0c3ed23f8625
+SHA256sum: 468613e91022405402fce66348de6588aaf4abd8040977cd06d3486f7e611332
+Size: 25058
+Filename: libdrm-amdgpu1_2.4.134-r0_cortexa15hf-neon-vfpv4.ipk
+Source: libdrm_2.4.134.bb
+Description: Userspace interface to the kernel DRM services
+OE: libdrm
+HomePage: http://dri.freedesktop.org
+License: MIT
+Priority: optional
+
+Package: libdrm-dbg
+Version: 2.4.134-r0
+Recommends: glibc-dbg, libdrm-amdgpu-dbg, libdrm-etnaviv-dbg, libpciaccess-dbg
+Section: devel
+Architecture: cortexa15hf-neon-vfpv4
+Maintainer: OpenViX
+MD5Sum: 7bd89f911fe6591880eb11e5e33b2ac4
+SHA256sum: a0448e87945a956fa298716858f46df0f835fe26f11f3de40ed8de6e14239c9f
+Size: 591816
+Filename: libdrm-dbg_2.4.134-r0_cortexa15hf-neon-vfpv4.ipk
+Source: libdrm_2.4.134.bb
+Description: Userspace interface to the kernel DRM services - Debugging files
+OE: libdrm
+HomePage: http://dri.freedesktop.org
+License: MIT
+Priority: optional
+
+Package: libdrm-dev
+Version: 2.4.134-r0
+Depends: libdrm, libdrm-amdgpu, libdrm-etnaviv, libdrm-freedreno, libdrm-intel, libdrm-nouveau, libdrm-omap, libdrm-radeon, libpciaccess-dev
+Recommends: glibc-dev, libdrm-amdgpu-dev, libdrm-etnaviv-dev, libdrm-freedreno-dev, libdrm-intel-dev, libdrm-nouveau-dev, libdrm-omap-dev, libdrm-radeon-dev, libdrm2 (= 2.4.134-r0), libpciaccess-dev, libpthread-stubs-dev
+Section: devel
+Architecture: cortexa15hf-neon-vfpv4
+Maintainer: OpenViX
+MD5Sum: 20df5912f321028be4419a799b966b9f
+SHA256sum: 008c1ea4cf752199e2c0935d1573a9e20a4c107c7c215ccf02d5400444d127b5
+Size: 194362
+Filename: libdrm-dev_2.4.134-r0_cortexa15hf-neon-vfpv4.ipk
+Source: libdrm_2.4.134.bb
+Description: Userspace interface to the kernel DRM services - Development files
+OE: libdrm
+HomePage: http://dri.freedesktop.org
+License: MIT
+Priority: optional
+
+Package: libdrm-drivers
+Version: 2.4.134-r0
+Recommends: libdrm-amdgpu, libdrm-etnaviv, libdrm-exynos, libdrm-freedreno, libdrm-intel, libdrm-nouveau, libdrm-omap, libdrm-radeon
+Section: x11/base
+Architecture: cortexa15hf-neon-vfpv4
+Maintainer: OpenViX
+MD5Sum: 298feaa20f6dcc3ddb45b689a9291f08
+SHA256sum: 284b1d88f5f7896581fd902f7180f7b00911bd25403f634400984414ac8d620c
+Size: 728
+Filename: libdrm-drivers_2.4.134-r0_cortexa15hf-neon-vfpv4.ipk
+Source: libdrm_2.4.134.bb
+Description: Userspace interface to the kernel DRM services
+OE: libdrm
+HomePage: http://dri.freedesktop.org
+License: MIT
+Priority: optional
+
+Package: libdrm-etnaviv1
+Version: 2.4.134-r0
+Depends: libc6 (>= 2.44+git0+7cba77790f), libdrm2 (>= 2.4.134)
+Provides: libdrm-etnaviv
+Section: x11/base
+Architecture: cortexa15hf-neon-vfpv4
+Maintainer: OpenViX
+MD5Sum: 065cd9567e78e885352c5a5ff370bb74
+SHA256sum: 595c83d758c1fcb8d40adb8e362276b9e48c155d5bc6601cd1be8914c6fb5804
+Size: 9980
+Filename: libdrm-etnaviv1_2.4.134-r0_cortexa15hf-neon-vfpv4.ipk
+Source: libdrm_2.4.134.bb
+Description: Userspace interface to the kernel DRM services
+OE: libdrm
+HomePage: http://dri.freedesktop.org
+License: MIT
+Priority: optional
+
+Package: libdrm-freedreno1
+Version: 2.4.134-r0
+Depends: libc6 (>= 2.44+git0+7cba77790f), libdrm2 (>= 2.4.134)
+Provides: libdrm-freedreno
+Section: x11/base
+Architecture: cortexa15hf-neon-vfpv4
+Maintainer: OpenViX
+MD5Sum: 42ea6620bf0fdeee869249add09be5f3
+SHA256sum: 92e09f93f25a8286583a2c2eaeb35349ebadd22c5386bdc21960d31b435995ed
+Size: 13658
+Filename: libdrm-freedreno1_2.4.134-r0_cortexa15hf-neon-vfpv4.ipk
+Source: libdrm_2.4.134.bb
+Description: Userspace interface to the kernel DRM services
+OE: libdrm
+HomePage: http://dri.freedesktop.org
+License: MIT
+Priority: optional
+
+Package: libdrm-intel1
+Version: 2.4.134-r0
+Depends: libc6 (>= 2.44+git0+7cba77790f), libdrm2 (>= 2.4.134), libpciaccess0 (>= 0.19)
+Provides: libdrm-intel
+Section: x11/base
+Architecture: cortexa15hf-neon-vfpv4
+Maintainer: OpenViX
+MD5Sum: 7929f0bad01fd5d07c8f20b677d7cb02
+SHA256sum: edda953930b69c1eab7df389546ce9f400309582327216a8c0c5962fbda7a9af
+Size: 64570
+Filename: libdrm-intel1_2.4.134-r0_cortexa15hf-neon-vfpv4.ipk
+Source: libdrm_2.4.134.bb
+Description: Userspace interface to the kernel DRM services
+OE: libdrm
+HomePage: http://dri.freedesktop.org
+License: MIT
+Priority: optional
+
+Package: libdrm-nouveau2
+Version: 2.4.134-r0
+Depends: libc6 (>= 2.44+git0+7cba77790f), libdrm2 (>= 2.4.134)
+Provides: libdrm-nouveau
+Section: x11/base
+Architecture: cortexa15hf-neon-vfpv4
+Maintainer: OpenViX
+MD5Sum: 65d026312fd9fdadb469f61f64a91614
+SHA256sum: 6421b47eaa8df01f21ad0ac0caf099f3aa70e2dbb77bdb5302610b9f83223066
+Size: 14970
+Filename: libdrm-nouveau2_2.4.134-r0_cortexa15hf-neon-vfpv4.ipk
+Source: libdrm_2.4.134.bb
+Description: Userspace interface to the kernel DRM services
+OE: libdrm
+HomePage: http://dri.freedesktop.org
+License: MIT
+Priority: optional
+
+Package: libdrm-omap1
+Version: 2.4.134-r0
+Depends: libc6 (>= 2.44+git0+7cba77790f), libdrm2 (>= 2.4.134)
+Provides: libdrm-omap
+Section: x11/base
+Architecture: cortexa15hf-neon-vfpv4
+Maintainer: OpenViX
+MD5Sum: 9bd1ef643e65a109565b65cb3593671b
+SHA256sum: 6d601b8eeae583fc6eb162c07ec9ed6bb7e5bafc9995df9306268395b74ff378
+Size: 4692
+Filename: libdrm-omap1_2.4.134-r0_cortexa15hf-neon-vfpv4.ipk
+Source: libdrm_2.4.134.bb
+Description: Userspace interface to the kernel DRM services
+OE: libdrm
+HomePage: http://dri.freedesktop.org
+License: MIT
+Priority: optional
+
+Package: libdrm-radeon1
+Version: 2.4.134-r0
+Depends: libc6 (>= 2.44+git0+7cba77790f), libdrm2 (>= 2.4.134)
+Provides: libdrm-radeon
+Section: x11/base
+Architecture: cortexa15hf-neon-vfpv4
+Maintainer: OpenViX
+MD5Sum: cd3cb8b742c96d98889ec612ee112a7f
+SHA256sum: 36317ac46714888867cc4582c93181c8dae770364353fffd8c92cce8a3a0779d
+Size: 16744
+Filename: libdrm-radeon1_2.4.134-r0_cortexa15hf-neon-vfpv4.ipk
+Source: libdrm_2.4.134.bb
+Description: Userspace interface to the kernel DRM services
+OE: libdrm
+HomePage: http://dri.freedesktop.org
+License: MIT
+Priority: optional
+
+Package: libdrm-tests
+Version: 2.4.134-r0
+Depends: libc6 (>= 2.44+git0+7cba77790f), libdrm-amdgpu1 (>= 2.4.134), libdrm-etnaviv1 (>= 2.4.134), libdrm2 (>= 2.4.134)
+Section: x11/base
+Architecture: cortexa15hf-neon-vfpv4
+Maintainer: OpenViX
+MD5Sum: bc54ea6e3857154c9076e8c5151ed9e8
+SHA256sum: 8eb351ea5abe2665eb116bc8613d8e9e8eeed3d217d3ddd0e0c06e1d665ee5b7
+Size: 60450
+Filename: libdrm-tests_2.4.134-r0_cortexa15hf-neon-vfpv4.ipk
+Source: libdrm_2.4.134.bb
+Description: Userspace interface to the kernel DRM services
+OE: libdrm
+HomePage: http://dri.freedesktop.org
+License: MIT
+Priority: optional
+
+Package: libdrm2
+Version: 2.4.134-r0
+Depends: libc6 (>= 2.44+git0+7cba77790f)
+Provides: libdrm
+Section: x11/base
+Architecture: cortexa15hf-neon-vfpv4
+Maintainer: OpenViX
+MD5Sum: 58540950e4b04ae460c4e370a2c3b6c1
+SHA256sum: 8a51c97763fc7b0df1f40906ded756f1c3e3fa44b9709ad3d83f5948731f82ef
+Size: 34118
+Filename: libdrm2_2.4.134-r0_cortexa15hf-neon-vfpv4.ipk
+Source: libdrm_2.4.134.bb
+Description: Userspace interface to the kernel DRM services
+OE: libdrm
+HomePage: http://dri.freedesktop.org
+License: MIT
+Priority: optional
+
 Package: libdsdb-module-private-samba
 Version: 4.24.5-r1
 Depends: libc6 (>= 2.44+git0+7cba77790f), libcli-ldap-common-private-samba (>= 4.24.5), libflag-mapping-private-samba (>= 4.24.5), libgenrand-private-samba (>= 4.24.5), libldb-private-samba (>= 4.24.5), libldbsamba-private-samba (>= 4.24.5), libmessaging-private-samba (>= 4.24.5), libmessaging-send-private-samba (>= 4.24.5), libndr6 (>= 4.24.5), libnetif-private-samba (>= 4.24.5), libsamba-debug-private-samba (>= 4.24.5), libsamba-errors1 (>= 4.24.5), libsamba-hostconfig0 (>= 4.24.5), libsamba-security-private-samba (>= 4.24.5), libsamba-util0 (>= 4.24.5), libsamdb-common-private-samba (>= 4.24.5), libtalloc2 (>= 2.5.0), samba-common
@@ -57622,6 +57885,27 @@ Description: BSD replacement for libreadline
 OE: libedit
 HomePage: http://www.thrysoee.dk/editline/
 License: BSD-3-Clause
+Priority: optional
+
+Package: libegl-mesa-dev
+Version: 2:26.1.6-r0
+Depends: libdrm-dev
+Provides: libegl-dev
+Replaces: libegl-dev
+Conflicts: libegl-dev
+Recommends: libdrm-dev, xorgproto-dev, zlib-dev
+Section: x11
+Architecture: cortexa15hf-neon-vfpv4
+Maintainer: OpenViX
+MD5Sum: 21e918ae233fda4e55156b7c0df5c7c0
+SHA256sum: 8275348626c7b919b51974d562a5633e4a0492488628c6e40a5e6600295c7431
+Size: 26510
+Filename: libegl-mesa-dev_26.1.6-r0_cortexa15hf-neon-vfpv4.ipk
+Source: mesa.bb
+Description: A free implementation of the OpenGL API
+OE: mesa
+HomePage: http://mesa3d.org
+License: MIT
 Priority: optional
 
 Package: libelf1
@@ -58678,6 +58962,57 @@ HomePage: https://github.com/libfuse/libfuse
 License: GPL-2.0-only AND LGPL-2.0-only
 Priority: optional
 
+Package: libgallium
+Version: 2:26.1.6-r0
+Depends: libc6 (>= 2.44+git0+7cba77790f), libdrm2 (>= 2.4.134), libgcc1 (>= 16.2.0), libstdc++6 (>= 16.2.0), libz1 (>= 1.3.2)
+Section: x11
+Architecture: cortexa15hf-neon-vfpv4
+Maintainer: OpenViX
+MD5Sum: 721d4dba484f8a21ff70a551f7fbf471
+SHA256sum: 5f865ffed83174e6ed2576269f1724964d4be14c4a2a5c370145d7717bc22bfe
+Size: 2765132
+Filename: libgallium_26.1.6-r0_cortexa15hf-neon-vfpv4.ipk
+Source: mesa.bb
+Description: A free implementation of the OpenGL API
+OE: mesa
+HomePage: http://mesa3d.org
+License: MIT
+Priority: optional
+
+Package: libgbm-dev
+Version: 2:26.1.6-r0
+Recommends: glibc-dev, libdrm-dev, libgallium-dev, libgcc-dev, xorgproto-dev, zlib-dev
+Section: x11
+Architecture: cortexa15hf-neon-vfpv4
+Maintainer: OpenViX
+MD5Sum: 215fe0987d3e279d56730a06f4a5e241
+SHA256sum: 4b8000bc3c1a3bc98567349a755ed2476b3058e4aedada1dccc9b52e2271263b
+Size: 8320
+Filename: libgbm-dev_26.1.6-r0_cortexa15hf-neon-vfpv4.ipk
+Source: mesa.bb
+Description: A free implementation of the OpenGL API
+OE: mesa
+HomePage: http://mesa3d.org
+License: MIT
+Priority: optional
+
+Package: libgbm
+Version: 2:26.1.6-r0
+Depends: libc6 (>= 2.44+git0+7cba77790f), libdrm2 (>= 2.4.134), libgallium (>= 26.1.6), libgcc1 (>= 16.2.0)
+Section: x11
+Architecture: cortexa15hf-neon-vfpv4
+Maintainer: OpenViX
+MD5Sum: 6b564d9e3ed63538eda5638c9c8468bd
+SHA256sum: 96176b6c76539381e39db039b7ad43779ede67451cf906e8574d75cb73b6561e
+Size: 41010
+Filename: libgbm_26.1.6-r0_cortexa15hf-neon-vfpv4.ipk
+Source: mesa.bb
+Description: A free implementation of the OpenGL API
+OE: mesa
+HomePage: http://mesa3d.org
+License: MIT
+Priority: optional
+
 Package: libgcc-s-dbg
 Version: 16.2.0-r0
 Provides: libgcc-dbg
@@ -59459,6 +59794,66 @@ Description: Middleware layer between GObject-using C libraries and language bin
 OE: gobject-introspection
 HomePage: https://gitlab.gnome.org/GNOME/gobject-introspection
 License: GPL-2.0-or-later AND LGPL-2.0-or-later AND MIT
+Priority: optional
+
+Package: libgl-mesa-dev
+Version: 2:26.1.6-r0
+Provides: libgl-dev
+Replaces: libgl-dev
+Conflicts: libgl-dev
+Recommends: libdrm-dev, xorgproto-dev, zlib-dev
+Section: x11
+Architecture: cortexa15hf-neon-vfpv4
+Maintainer: OpenViX
+MD5Sum: 8e23dd864f2a8224e9f631ee1a1e056a
+SHA256sum: 1e222a0156bbd5de872c317ac50a36d4d171abfae7f7135b1f4c1dbbc7f4165a
+Size: 136388
+Filename: libgl-mesa-dev_26.1.6-r0_cortexa15hf-neon-vfpv4.ipk
+Source: mesa.bb
+Description: A free implementation of the OpenGL API
+OE: mesa
+HomePage: http://mesa3d.org
+License: MIT
+Priority: optional
+
+Package: libgles1-mesa-dev
+Version: 2:26.1.6-r0
+Provides: libgles1-dev
+Replaces: libgles1-dev
+Conflicts: libgles1-dev
+Recommends: libdrm-dev, xorgproto-dev, zlib-dev
+Section: x11
+Architecture: cortexa15hf-neon-vfpv4
+Maintainer: OpenViX
+MD5Sum: 3b951282badab7878023bf4f8653a695
+SHA256sum: 3d3ee589ca752e64517a0af1613729bb8fa1843323f4b4130d06f4182ba950ed
+Size: 15872
+Filename: libgles1-mesa-dev_26.1.6-r0_cortexa15hf-neon-vfpv4.ipk
+Source: mesa.bb
+Description: A free implementation of the OpenGL API
+OE: mesa
+HomePage: http://mesa3d.org
+License: MIT
+Priority: optional
+
+Package: libgles2-mesa-dev
+Version: 2:26.1.6-r0
+Provides: libgles2-dev, libgles3-mesa-dev
+Replaces: libgles2-dev
+Conflicts: libgles2-dev
+Recommends: libdrm-dev, xorgproto-dev, zlib-dev
+Section: x11
+Architecture: cortexa15hf-neon-vfpv4
+Maintainer: OpenViX
+MD5Sum: 4d468d0552ce6c90d1ac55d4b6fac1e4
+SHA256sum: 48dddbde66efdef4d6a5650457be99358fa80a7e669097938460ce1a1a976afb
+Size: 56952
+Filename: libgles2-mesa-dev_26.1.6-r0_cortexa15hf-neon-vfpv4.ipk
+Source: mesa.bb
+Description: A free implementation of the OpenGL API
+OE: mesa
+HomePage: http://mesa3d.org
+License: MIT
 Priority: optional
 
 Package: libglib-2.0-0
@@ -62095,24 +62490,6 @@ HomePage: https://gstreamer.freedesktop.org/
 License: LGPL-2.1-or-later
 Priority: optional
 
-Package: libgstgl-1.0-0
-Version: 1.28.6-r0
-Depends: gstreamer1.0 (>= 1.28.6), libc6 (>= 2.44+git0+7cba77790f), libglib-2.0-0 (>= 2.88.3), libgstvideo-1.0-0 (>= 1.28.6), libx11-6 (>= 1.8.13), libx11-xcb1 (>= 1.8.13), libxcb1 (>= 1.17.0)
-Provides: libgstgl-1.0
-Section: multimedia
-Architecture: cortexa15hf-neon-vfpv4
-Maintainer: OpenViX
-MD5Sum: 8843a18c398bfb3fb108ed8323358f5c
-SHA256sum: 9bc3cea7ad70a19533f4cff91079e487cdcaebcc4c50e5c18827c5796715c335
-Size: 175552
-Filename: libgstgl-1.0-0_1.28.6-r0_cortexa15hf-neon-vfpv4.ipk
-Source: gstreamer1.0-plugins-base_1.28.5.bb
-Description: GStreamer 1.0 gstgl-1.0 library
-OE: gstreamer1.0-plugins-base
-HomePage: https://gstreamer.freedesktop.org/
-License: LGPL-2.1-or-later
-Priority: optional
-
 Package: libgstinsertbin-1.0-0
 Version: 1.28.6-r0
 Depends: gstreamer1.0 (>= 1.28.6), libglib-2.0-0 (>= 2.88.3)
@@ -62408,9 +62785,9 @@ Provides: libgstvideo-1.0
 Section: multimedia
 Architecture: cortexa15hf-neon-vfpv4
 Maintainer: OpenViX
-MD5Sum: d5efa7f3a067e1d17bb07a4a188dc286
-SHA256sum: 28bdce7a7c529ffbb40339441a4f4fe53ccb5b74480a037f7b309a18500fc536
-Size: 266396
+MD5Sum: 6df41eff028ca424148f102ef5c4ae65
+SHA256sum: c01a3df5fe4a1850d1b9768d9bfb540f072e2590854c396c0a00a0c1f87b96e3
+Size: 266220
 Filename: libgstvideo-1.0-0_1.28.6-r0_cortexa15hf-neon-vfpv4.ipk
 Source: gstreamer1.0-plugins-base_1.28.5.bb
 Description: GStreamer 1.0 gstvideo-1.0 library
@@ -66343,6 +66720,59 @@ Description: PCI utilities
 OE: pciutils
 HomePage: https://mj.ucw.cz/sw/pciutils/
 License: GPL-2.0-or-later
+Priority: optional
+
+Package: libpciaccess-dbg
+Version: 0.19-r0
+Recommends: glibc-dbg, zlib-dbg
+Section: devel
+Architecture: cortexa15hf-neon-vfpv4
+Maintainer: OpenViX
+MD5Sum: f873964150256d786520bf1ad8a6a127
+SHA256sum: 03431320b641b6215ff71a4d596f4f7fd38ae1856277bec3303a89a43a1d07fa
+Size: 50206
+Filename: libpciaccess-dbg_0.19-r0_cortexa15hf-neon-vfpv4.ipk
+Source: libpciaccess_0.19.bb
+Description: Generic PCI access library for X - Debugging files
+OE: libpciaccess
+HomePage: http://www.x.org
+License: MIT
+Priority: optional
+
+Package: libpciaccess-dev
+Version: 0.19-r0
+Depends: libpciaccess, zlib-dev
+Recommends: glibc-dev, libpciaccess0 (= 0.19-r0), util-macros-dev, zlib-dev
+Section: devel
+Architecture: cortexa15hf-neon-vfpv4
+Maintainer: OpenViX
+MD5Sum: 741a770b36ea7c0172ce36ae7f2db1b2
+SHA256sum: 34b32f2fa519172de72e98cf9fb2d1780f8f4688b6851e64138d3a71ec336336
+Size: 5762
+Filename: libpciaccess-dev_0.19-r0_cortexa15hf-neon-vfpv4.ipk
+Source: libpciaccess_0.19.bb
+Description: Generic PCI access library for X - Development files
+OE: libpciaccess
+HomePage: http://www.x.org
+License: MIT
+Priority: optional
+
+Package: libpciaccess0
+Version: 0.19-r0
+Depends: libc6 (>= 2.44+git0+7cba77790f), libz1 (>= 1.3.2)
+Provides: libpciaccess
+Section: x11/libs
+Architecture: cortexa15hf-neon-vfpv4
+Maintainer: OpenViX
+MD5Sum: 36c9645fe5d31adb11616c79df816feb
+SHA256sum: ca5e7f5e2b3f62656223b23eaf495b2127bcebbbbbf6ef9eee7a64810d86740f
+Size: 14378
+Filename: libpciaccess0_0.19-r0_cortexa15hf-neon-vfpv4.ipk
+Source: libpciaccess_0.19.bb
+Description: Generic PCI access library for X
+OE: libpciaccess
+HomePage: http://www.x.org
+License: MIT
 Priority: optional
 
 Package: libpcre-dbg
@@ -72823,24 +73253,6 @@ Description: libxkbregistry library
 OE: libxkbcommon
 HomePage: http://www.xkbcommon.org
 License: HPND AND HPND-sell-variant AND MIT AND MIT-open-group AND X11
-Priority: optional
-
-Package: libxml2-2
-Version: 1.0-r0
-Depends: libc6 (>= 2.44+git0+7cba77790f), libgcc1 (>= 16.2.0)
-Provides: libxml2-qt
-Section: base
-Architecture: cortexa15hf-neon-vfpv4
-Maintainer: OpenViX
-MD5Sum: 63d1215e63558c10d7ed693bbad73f21
-SHA256sum: f45d10171c55f4705a12eb630d4d767db8cce4e1c04bc13b98f99c61424b8ac8
-Size: 483842
-Filename: libxml2-2_1.0-r0_cortexa15hf-neon-vfpv4.ipk
-Source: libxml2-qt.bb
-Description: XML C Parser Library and Toolkit for old Close QT Plugins
-OE: libxml2-qt
-HomePage: https://www.world-of-satellite.com
-License: LicenseRef-Proprietary
 Priority: optional
 
 Package: libxml2-dbg
@@ -84809,9 +85221,9 @@ Recommends: update-rc.d
 Section: base
 Architecture: cortexa15hf-neon-vfpv4
 Maintainer: OpenViX
-MD5Sum: 7391de6495aad015fa6f23a9fc6c1097
-SHA256sum: 264a2e0ad439218fc5307898dd26798027450fd2cc0289c2a8adb9efa0fae6e7
-Size: 7833268
+MD5Sum: 3ed181f8b52353e6dbebcb3137a118ac
+SHA256sum: 5f9ed004aa285baa04630410e49f2cc06739f6f71ad47c05012cac0f9bca902a
+Size: 11602440
 Filename: mediamtx_1.11.3-git2417+b66efd60+b66efd66da-r0_cortexa15hf-neon-vfpv4.ipk
 Source: mediamtx_1.11.3.bb
 Description: Ready-to-use SRT / WebRTC / RTSP / RTMP / LL-HLS media server and media proxy that allows to read, publish, proxy, record and playback video and audio streams.
@@ -84937,6 +85349,63 @@ Description: a featureful union filesystem
 OE: mergerfs
 HomePage: https://github.com/trapexit/mergerfs
 License: ISC
+Priority: optional
+
+Package: mesa-dbg
+Version: 2:26.1.6-r0
+Provides: mesa-dri-dbg
+Replaces: mesa-dri-dbg
+Conflicts: mesa-dri-dbg
+Recommends: glibc-dbg, libdrm-dbg, libgallium-dbg, libgcc-dbg, libstdc++-dbg, zlib-dbg
+Section: devel
+Architecture: cortexa15hf-neon-vfpv4
+Maintainer: OpenViX
+MD5Sum: e38a5262e9567d856160e5a86643db67
+SHA256sum: 5d7ad4d0fe2f484f92af246718400eb3b775f1f24786823f20182d9343565888
+Size: 19166228
+Filename: mesa-dbg_26.1.6-r0_cortexa15hf-neon-vfpv4.ipk
+Source: mesa.bb
+Description: A free implementation of the OpenGL API - Debugging files
+OE: mesa
+HomePage: http://mesa3d.org
+License: MIT
+Priority: optional
+
+Package: mesa-dev
+Version: 2:26.1.6-r0
+Depends: libdrm-dev
+Provides: mesa-dri-dev
+Replaces: mesa-dri-dev
+Conflicts: mesa-dri-dev
+Recommends: libdrm-dev, xorgproto-dev, zlib-dev
+Section: devel
+Architecture: cortexa15hf-neon-vfpv4
+Maintainer: OpenViX
+MD5Sum: 3928f5e240e6858acbff3d9d794c5a64
+SHA256sum: 9766d17dfb21a779853a1cabc4a5070233ebc8f5758e5bd9fbcf34122178a92a
+Size: 22794
+Filename: mesa-dev_26.1.6-r0_cortexa15hf-neon-vfpv4.ipk
+Source: mesa.bb
+Description: A free implementation of the OpenGL API - Development files
+OE: mesa
+HomePage: http://mesa3d.org
+License: MIT
+Priority: optional
+
+Package: mesa-tools
+Version: 2:26.1.6-r0
+Section: x11
+Architecture: cortexa15hf-neon-vfpv4
+Maintainer: OpenViX
+MD5Sum: 35120b99acdf26b5e37fa10793491f0b
+SHA256sum: 022d85190949ac28ff2a63f72dd9a411ebdd8c999505d83610051d8ba59de335
+Size: 720
+Filename: mesa-tools_26.1.6-r0_cortexa15hf-neon-vfpv4.ipk
+Source: mesa.bb
+Description: A free implementation of the OpenGL API
+OE: mesa
+HomePage: http://mesa3d.org
+License: MIT
 Priority: optional
 
 Package: meta-enigma2-dvdburn-dbg
@@ -85097,9 +85566,9 @@ Conflicts: glibc-binary-localedata-ar-ae, glibc-binary-localedata-ar-bh, glibc-b
 Section: base
 Architecture: cortexa15hf-neon-vfpv4
 Maintainer: OE-Alliance
-MD5Sum: dcbcb413ab430492d7ac49ac33de79e8
-SHA256sum: 5fbcac3f6d6cb2d82e26f28de212d1632b7496bca86242823feb1df9c6616d0b
-Size: 7639620
+MD5Sum: c6c88d8b38ac703f7a49dd999b290286
+SHA256sum: 92150f844d97eb802932f9ef76c2654e4f4dce2a0006ea37df9202b4685e987c
+Size: 810648
 Filename: minilocale_0.13-r0_cortexa15hf-neon-vfpv4.ipk
 Source: minilocale.bb
 Description: Size reduced but fully functional locale support
@@ -104268,9 +104737,9 @@ Recommends: glibc-dbg, libgcc-dbg, libpng-dbg, libstdc++-dbg
 Section: devel
 Architecture: cortexa15hf-neon-vfpv4
 Maintainer: OpenViX
-MD5Sum: 3fc84af0bfc94ccc75e7778095f541c0
-SHA256sum: 33d19f23947b8e1deaef809f08b61ff712a5cd0830084c86a0208d5f76970aa3
-Size: 5792
+MD5Sum: 7025fcbe3561f9f8f1f8b3da79e12bc6
+SHA256sum: 66b601f7c8dfc9ed24ccc4d31c9b478ec38d5153b3664d92d9c935533f0fe1d2
+Size: 5796
 Filename: png-util-dbg_1.0-r0_cortexa15hf-neon-vfpv4.ipk
 Source: png-util_1.0.bb
 Description: PNG Assistant - Debugging files
@@ -104302,9 +104771,9 @@ Depends: libc6 (>= 2.44+git0+7cba77790f), libgcc1 (>= 16.2.0), libpng16-16 (>= 1
 Section: base
 Architecture: cortexa15hf-neon-vfpv4
 Maintainer: OpenViX
-MD5Sum: 770085d387b8759e6113ee93e9c364dd
-SHA256sum: 058caca1f90c2e65c24b132a305b737065179acc3eac940101f5659c3b179fea
-Size: 18482
+MD5Sum: 0d833664b4bd5e3792af26b6f7e6077e
+SHA256sum: c5243f06c80cbb9dc8e71e4509e783be44baa9636957fa767d8cff0bb6f85df6
+Size: 18466
 Filename: png-util_1.0-r0_cortexa15hf-neon-vfpv4.ipk
 Source: png-util_1.0.bb
 Description: PNG Assistant
@@ -111946,8 +112415,8 @@ Depends: libc6 (>= 2.44+git0+7cba77790f), libgcc1 (>= 16.2.0), libstdc++6 (>= 16
 Section: devel/python
 Architecture: cortexa15hf-neon-vfpv4
 Maintainer: OpenViX
-MD5Sum: bb6515c313d34304c5cb5ed9af4d0927
-SHA256sum: 05626cac53ba217cf770052cce09875c8ea90ab3aeff19c5aa8d2b6c7654a50b
+MD5Sum: 4ab53d47d102388f6b94aa7893dbfbbe
+SHA256sum: 989b6efbafec7ba4de55b930aa9c46698d918e1a40acd004962b05f027825c74
 Size: 172378
 Filename: python3-levenshtein_0.27.3-r0_cortexa15hf-neon-vfpv4.ipk
 Source: python3-levenshtein_0.27.3.bb
@@ -119822,14 +120291,14 @@ License: LGPL-2.1-only
 Priority: optional
 
 Package: python3-yt-dlp-dbg
-Version: 2026.07.04-git23948+5d6b8c80+5d6b8c8cd1-r0
+Version: 2026.07.04-git23956+874af890+874af899e7-r0
 Section: devel
 Architecture: cortexa15hf-neon-vfpv4
 Maintainer: OpenViX
-MD5Sum: e3d7b7d845bd9d57794eda3c2a97d73c
-SHA256sum: da83a1738e2b3b7f2bea7daff8f6104ebb2f31fe1927b3b90d3cee1eb10f45c9
+MD5Sum: a32e38b88096bad88ce9b340f5e8b31e
+SHA256sum: 2b3f39c800e4991e477f20ec543ff40a3089fc22cded4c32cd1ee5ffc842ef1b
 Size: 720
-Filename: python3-yt-dlp-dbg_2026.07.04-git23948+5d6b8c80+5d6b8c8cd1-r0_cortexa15hf-neon-vfpv4.ipk
+Filename: python3-yt-dlp-dbg_2026.07.04-git23956+874af890+874af899e7-r0_cortexa15hf-neon-vfpv4.ipk
 Source: python3-yt-dlp.bb
 Description: A youtube-dl fork with additional features and fixes - Debugging files
 OE: python3-yt-dlp
@@ -119838,15 +120307,15 @@ License: Unlicense
 Priority: optional
 
 Package: python3-yt-dlp-dev
-Version: 2026.07.04-git23948+5d6b8c80+5d6b8c8cd1-r0
-Recommends: bash-completion-dev, libxml2-dev, python3-core-dev, python3-ctypes-dev, python3-dev, python3-email-dev, python3-gdata-python3-dev, python3-html-dev, python3-unixadmin-dev, python3-yt-dlp (= 2026.07.04-git23948+5d6b8c80+5d6b8c8cd1-r0)
+Version: 2026.07.04-git23956+874af890+874af899e7-r0
+Recommends: bash-completion-dev, libxml2-dev, python3-core-dev, python3-ctypes-dev, python3-dev, python3-email-dev, python3-gdata-python3-dev, python3-html-dev, python3-unixadmin-dev, python3-yt-dlp (= 2026.07.04-git23956+874af890+874af899e7-r0)
 Section: devel
 Architecture: cortexa15hf-neon-vfpv4
 Maintainer: OpenViX
-MD5Sum: 26c2eee0389a0edb533ab27881383d2d
-SHA256sum: 96800cdecd47c43f19188cc70079f31db721f41637a9cf067d7060ee47a1ab8d
+MD5Sum: b3a5bd1960ba56bdf675f617802a8085
+SHA256sum: af2ae488ece52f9faa7a0b5a6cd28378dbe3dde627554a7283b60ef38b87a58d
 Size: 816
-Filename: python3-yt-dlp-dev_2026.07.04-git23948+5d6b8c80+5d6b8c8cd1-r0_cortexa15hf-neon-vfpv4.ipk
+Filename: python3-yt-dlp-dev_2026.07.04-git23956+874af890+874af899e7-r0_cortexa15hf-neon-vfpv4.ipk
 Source: python3-yt-dlp.bb
 Description: A youtube-dl fork with additional features and fixes - Development files
 OE: python3-yt-dlp
@@ -119855,15 +120324,15 @@ License: Unlicense
 Priority: optional
 
 Package: python3-yt-dlp-src
-Version: 2026.07.04-git23948+5d6b8c80+5d6b8c8cd1-r0
+Version: 2026.07.04-git23956+874af890+874af899e7-r0
 Depends: python3-yt-dlp
 Section: devel
 Architecture: cortexa15hf-neon-vfpv4
 Maintainer: OpenViX
-MD5Sum: a31b3a958524b876f661f264e215e812
-SHA256sum: 95e9d036121e1ee6c3626fb84ab7b01ac6f934b3d67ffd3ded53dc96d1cfc24d
-Size: 2423936
-Filename: python3-yt-dlp-src_2026.07.04-git23948+5d6b8c80+5d6b8c8cd1-r0_cortexa15hf-neon-vfpv4.ipk
+MD5Sum: c92a046111e713ce8c34a58551683dec
+SHA256sum: 4f9003a017b10cb696f190f21d8a680818b9a11af00893f838847a012136aa99
+Size: 2424494
+Filename: python3-yt-dlp-src_2026.07.04-git23956+874af890+874af899e7-r0_cortexa15hf-neon-vfpv4.ipk
 Source: python3-yt-dlp.bb
 Description: A youtube-dl fork with additional features and fixes - Source files
 OE: python3-yt-dlp
@@ -119872,15 +120341,15 @@ License: Unlicense
 Priority: optional
 
 Package: python3-yt-dlp
-Version: 2026.07.04-git23948+5d6b8c80+5d6b8c8cd1-r0
+Version: 2026.07.04-git23956+874af890+874af899e7-r0
 Depends: python3-core, python3-ctypes, python3-email, python3-gdata-python3, python3-html, python3-unixadmin
 Section: devel/python
 Architecture: cortexa15hf-neon-vfpv4
 Maintainer: OpenViX
-MD5Sum: e2900a0f8a3d9ffd7e168404227f3e39
-SHA256sum: 65c00fc27f526e65a096b60f95e4dac9a72e212ee74a6f25aa6a61728d1a74e7
-Size: 4591184
-Filename: python3-yt-dlp_2026.07.04-git23948+5d6b8c80+5d6b8c8cd1-r0_cortexa15hf-neon-vfpv4.ipk
+MD5Sum: e1eea4fb4ff11fb66f62b8df4f50b3c4
+SHA256sum: 8cb32fe25557fc639209f467ffd900fd28389c3ad9f765b0a26afbac12d91472
+Size: 4591310
+Filename: python3-yt-dlp_2026.07.04-git23956+874af890+874af899e7-r0_cortexa15hf-neon-vfpv4.ipk
 Source: python3-yt-dlp.bb
 Description: A youtube-dl fork with additional features and fixes
 OE: python3-yt-dlp
@@ -120296,9 +120765,9 @@ Depends: bash
 Section: base
 Architecture: cortexa15hf-neon-vfpv4
 Maintainer: OpenViX
-MD5Sum: 255e8bf8e55753a36ed2f7f1f0fc0cb8
-SHA256sum: 545a3d1be2f3c2da24fba8bc4b6bb3e756346c035203ba5fb18f41f96237a6c7
-Size: 16155410
+MD5Sum: 5f19ff13456bf4d0c634d9e1a52adf02
+SHA256sum: e5f1014749591190a14f25da8fd79c1cda4fa5b65940e4fd8791d0b603f0ead9
+Size: 23749436
 Filename: rclone_1.73.0-git9536+cdb3ecb0+cdb3ecb0fb-r1_cortexa15hf-neon-vfpv4.ipk
 Source: rclone.bb
 Description: rsync for cloud storage
@@ -121145,9 +121614,9 @@ Depends: libc6 (>= 2.44+git0+7cba77790f), sg3-utils (>= 1.49)
 Section: console/utils
 Architecture: cortexa15hf-neon-vfpv4
 Maintainer: OpenViX
-MD5Sum: bfbda388b06ccfa589dd68fb5240fffb
-SHA256sum: 8183127435daea684f75c3412750b406f4c0594834d2fc37a59b08d59b4bdf44
-Size: 72692
+MD5Sum: 86126f21117d6883fd65c9be4ecdebbf
+SHA256sum: 24d35d0a1f6a56f42f8f2087518fe76886487d811c5135a90a183d193baecbd5
+Size: 74562
 Filename: sdparm_1.12-r0_cortexa15hf-neon-vfpv4.ipk
 Source: sdparm_1.12.bb
 Description: fetch and change SCSI mode pages
@@ -121230,9 +121699,9 @@ Depends: libc6 (>= 2.44+git0+7cba77790f), libcrypt2 (>= 4.5.2), libpam (>= 1.7.2
 Section: console/utils
 Architecture: cortexa15hf-neon-vfpv4
 Maintainer: OpenViX
-MD5Sum: 3ff979b19eb96e3f813b8e024d34a60e
-SHA256sum: 3f36788191da14eb28a4f94c317806fde76b94b753149dc60fe9df2e4dbd69f2
-Size: 56912
+MD5Sum: 48aad0f0d1334e89aa6e9088256e033d
+SHA256sum: c6c625c30b6b14e6c57d517e83c9e34db45487aad4b00c3c1e6df5ca15ac06f8
+Size: 46310
 Filename: shadow-base_4.20.0-r0_cortexa15hf-neon-vfpv4.ipk
 Source: shadow_4.20.0.bb
 Description: Tools to change and administer password and group data
@@ -121315,9 +121784,9 @@ Depends: base-passwd, libacl1 (>= 2.4.0), libc6 (>= 2.44+git0+7cba77790f), libcr
 Section: console/utils
 Architecture: cortexa15hf-neon-vfpv4
 Maintainer: OpenViX
-MD5Sum: c2dd28583fddcb23c79592fef08eff92
-SHA256sum: 8177aa394c27757a1b3e7fc6660e3c4a63df63b7091a847bde2998aac84c4d52
-Size: 522864
+MD5Sum: ba32dfa4dc4316d78e6f94f2fe0652f5
+SHA256sum: 4e902b5118b55b8aba7003a699d5a4b34a4d906ecd991f95393f2d40fc725f3a
+Size: 283372
 Filename: shadow_4.20.0-r0_cortexa15hf-neon-vfpv4.ipk
 Source: shadow_4.20.0.bb
 Description: Tools to change and administer password and group data
@@ -123242,9 +123711,9 @@ Depends: libc6 (>= 2.44+git0+7cba77790f)
 Section: networking
 Architecture: cortexa15hf-neon-vfpv4
 Maintainer: OpenViX
-MD5Sum: 4b9547cb64419802d65aeebe25055ea5
-SHA256sum: ce4985ab30f415417805044ddf16c2cbb2293fd4e7b54b5b508cd463ec5f5b93
-Size: 9863330
+MD5Sum: c00e2dcb655bd57bd4f061470b3cb3e7
+SHA256sum: 97fdaba598c855bfa4d0ad7939ab269a041dadcd96b4516371178aedd496de90
+Size: 14170786
 Filename: tailscale_1.98.3-r0_cortexa15hf-neon-vfpv4.ipk
 Source: tailscale_1.98.3.bb
 Description: Tailscale client and daemon
@@ -123496,9 +123965,9 @@ Depends: libc6 (>= 2.44+git0+7cba77790f), libcrypto4 (>= 4.0.1), libcurl4 (>= 8.
 Section: network
 Architecture: cortexa15hf-neon-vfpv4
 Maintainer: OpenViX
-MD5Sum: 8dddce1b46bd88c18d16dbb446b75305
-SHA256sum: abdf3276ff68fe0fffcea9e26dbd0088923d2b2882bbed591ac28e947b737ced
-Size: 1689422
+MD5Sum: c5c6554e3a1c342cbc0bc76e4582dcb7
+SHA256sum: 29b68c047dfb36f970414293fc5b9334649afee34da6ab272c237ab8d03915e8
+Size: 1672764
 Filename: transmission-client_4.1.0-2_cortexa15hf-neon-vfpv4.ipk
 Source: transmission_4.1.0.bb
 Description: transmission version 4.1.0-2
@@ -123513,9 +123982,9 @@ Recommends: glibc-dbg, libcrypto-dbg, libcurl-dbg, libevent-dbg, libgcc-dbg, lib
 Section: devel
 Architecture: cortexa15hf-neon-vfpv4
 Maintainer: OpenViX
-MD5Sum: 5ac9bbcda91986caa72970a3a41a3707
-SHA256sum: 2b16da72abb74837275a4af8bfeb9c316a0064459e1d7d5ddd25c078bddbfa31
-Size: 104877738
+MD5Sum: d2eb3dd6cff8c40859c6f0b478e181f2
+SHA256sum: 8c7240b6e0fd23fad97ccb768eb1989c7bebd70d8362cdf9ea837737bd95d9d4
+Size: 104877930
 Filename: transmission-dbg_4.1.0-2_cortexa15hf-neon-vfpv4.ipk
 Source: transmission_4.1.0.bb
 Description: transmission version 4.1.0-2 - Debugging files
@@ -123564,9 +124033,9 @@ Recommends: update-rc.d
 Section: network
 Architecture: cortexa15hf-neon-vfpv4
 Maintainer: OpenViX
-MD5Sum: 2f5c3e12011438cd9b7e6d445dae90e4
-SHA256sum: 92db1b1c68b3a339395e71a4f9f3c42cc4d4d8ab2ffa9c0044da388bbe524c2d
-Size: 806398
+MD5Sum: cad16e3ca5d3d2deb18c1df20f27f2b9
+SHA256sum: 39f9d907591fb91c406257f26dc6977565571ccd33889bce9deadc61b40c5d57
+Size: 807642
 Filename: transmission_4.1.0-2_cortexa15hf-neon-vfpv4.ipk
 Source: transmission_4.1.0.bb
 Description: transmission version 4.1.0-2
@@ -123965,15 +124434,15 @@ License: MPL-1.1
 Priority: optional
 
 Package: udev-extraconf-automount
-Version: 1.1-r0.34
+Version: 1.1-r0.35
 Depends: udev, util-linux-blkid
 Section: base
 Architecture: cortexa15hf-neon-vfpv4
 Maintainer: OpenViX
-MD5Sum: 5d08fad6b0064bd0e38bfab7cd38bb2e
-SHA256sum: 8f3efab7dc9c6e3b98135b81c8325fa86505d272c4cbab8ba2a0aa0fc2bb4185
-Size: 5340
-Filename: udev-extraconf-automount_1.1-r0.34_cortexa15hf-neon-vfpv4.ipk
+MD5Sum: 1cb7fdc0f40bf91ada027dfef906d332
+SHA256sum: 2ccbad325a420ecfe7cdd0958122de992616ca0fdf78fe523ddabdaa832a90c8
+Size: 5464
+Filename: udev-extraconf-automount_1.1-r0.35_cortexa15hf-neon-vfpv4.ipk
 Source: udev-extraconf_1.1.bb
 Description: Extra machine specific configuration files
 OE: udev-extraconf
@@ -123982,15 +124451,15 @@ License: MIT
 Priority: optional
 
 Package: udev-extraconf-autonet
-Version: 1.1-r0.34
+Version: 1.1-r0.35
 Depends: udev
 Section: base
 Architecture: cortexa15hf-neon-vfpv4
 Maintainer: OpenViX
-MD5Sum: 78d6c0b554c627ca479384e98a6fa7ad
-SHA256sum: df2ec4d7a2c6d2ae37d224ea7d4daf172229381ce8057b2008fff7795a9b2bed
+MD5Sum: f6a4fbaabc58219c8d2160bb65a0a93b
+SHA256sum: 33a6fb0fea421acd6ff2c292ed16058199262fea942e213261398dcf180106bf
 Size: 1420
-Filename: udev-extraconf-autonet_1.1-r0.34_cortexa15hf-neon-vfpv4.ipk
+Filename: udev-extraconf-autonet_1.1-r0.35_cortexa15hf-neon-vfpv4.ipk
 Source: udev-extraconf_1.1.bb
 Description: Extra machine specific configuration files
 OE: udev-extraconf
@@ -123999,14 +124468,14 @@ License: MIT
 Priority: optional
 
 Package: udev-extraconf-dbg
-Version: 1.1-r0.34
+Version: 1.1-r0.35
 Section: devel
 Architecture: cortexa15hf-neon-vfpv4
 Maintainer: OpenViX
-MD5Sum: 8864d333bb87a2ed79c6e729eae41db1
-SHA256sum: 66c63900bcbc21ee828060caeb570247bc2bfd884f158079eecfba3e8f9dd6c2
+MD5Sum: 6d64451b879245480a97b78a919e62b8
+SHA256sum: c1ec7110a00fff8147814b53ef631a2504e9bb90986d3eb307b7a2096b17e5b2
 Size: 632
-Filename: udev-extraconf-dbg_1.1-r0.34_cortexa15hf-neon-vfpv4.ipk
+Filename: udev-extraconf-dbg_1.1-r0.35_cortexa15hf-neon-vfpv4.ipk
 Source: udev-extraconf_1.1.bb
 Description: Extra machine specific configuration files - Debugging files
 OE: udev-extraconf
@@ -124015,15 +124484,15 @@ License: MIT
 Priority: optional
 
 Package: udev-extraconf-dev
-Version: 1.1-r0.34
-Recommends: udev-dev, udev-extraconf (= 1.1-r0.34), udev-extraconf-automount-dev, udev-extraconf-autonet-dev, util-linux-blkid-dev
+Version: 1.1-r0.35
+Recommends: udev-dev, udev-extraconf (= 1.1-r0.35), udev-extraconf-automount-dev, udev-extraconf-autonet-dev, util-linux-blkid-dev
 Section: devel
 Architecture: cortexa15hf-neon-vfpv4
 Maintainer: OpenViX
-MD5Sum: 91a5cadef069671f33db7bf507159e34
-SHA256sum: 23acac84d2dd9d0190b99c347ac7788e8e89162e83eccc2a140fb68d1e81d011
-Size: 700
-Filename: udev-extraconf-dev_1.1-r0.34_cortexa15hf-neon-vfpv4.ipk
+MD5Sum: 8432856a297c204796dd87d3bec56c30
+SHA256sum: d01d52dc2c9b88048ec669ec8b183bfdf2d24471281b9b924a91f0f633ecf2bd
+Size: 702
+Filename: udev-extraconf-dev_1.1-r0.35_cortexa15hf-neon-vfpv4.ipk
 Source: udev-extraconf_1.1.bb
 Description: Extra machine specific configuration files - Development files
 OE: udev-extraconf
@@ -124032,7 +124501,7 @@ License: MIT
 Priority: optional
 
 Package: udev-extraconf
-Version: 1.1-r0.34
+Version: 1.1-r0.35
 Depends: udev-extraconf-automount, udev-extraconf-autonet
 Provides: udev-extra-rules
 Replaces: udev-extra-rules
@@ -124040,10 +124509,10 @@ Conflicts: udev-extra-rules
 Section: base
 Architecture: cortexa15hf-neon-vfpv4
 Maintainer: OpenViX
-MD5Sum: 34b827daabf10746bd16320060a75ed2
-SHA256sum: 38f7b199dd59e0023d429140fab5ace999df2bc88f58d6a866232237ce82d654
+MD5Sum: 3454819d8727f2ee7f1651fa7d66f0d7
+SHA256sum: b5d0679e974aaffe7b37f17f0554775bafe7c2aa210bc6de253c538a9eca5a0b
 Size: 2434
-Filename: udev-extraconf_1.1-r0.34_cortexa15hf-neon-vfpv4.ipk
+Filename: udev-extraconf_1.1-r0.35_cortexa15hf-neon-vfpv4.ipk
 Source: udev-extraconf_1.1.bb
 Description: Extra machine specific configuration files
 OE: udev-extraconf
@@ -124159,9 +124628,9 @@ Depends: libc6 (>= 2.44+git0+7cba77790f), libgcc1 (>= 16.2.0), libstdc++6 (>= 16
 Section: base
 Architecture: cortexa15hf-neon-vfpv4
 Maintainer: OpenViX
-MD5Sum: ec2e923c1cdb17f454591dc3ff3b24df
-SHA256sum: af962528cfb52da910538efb4b23aee4efaa6a0009e1fb699fa1754bb396a217
-Size: 168628
+MD5Sum: 890ba5d0d314bdf2d820db068807334e
+SHA256sum: ccd281d577301105d8fd9230d894da22dadbdc772dca367b0ae47b42a073714c
+Size: 188612
 Filename: unrar_7.1.8-r0_cortexa15hf-neon-vfpv4.ipk
 Source: unrar_7.1.8.bb
 Description: RAR archivers
@@ -127194,106 +127663,6 @@ HomePage: https://security.appspot.com/vsftpd.html
 License: GPL-2.0-only
 Priority: optional
 
-Package: vuplus-dvb-proxy-vuuno4kse-dbg
-Version: 4.1.20-20250706.r1
-Section: devel
-Architecture: cortexa15hf-neon-vfpv4
-Maintainer: OpenViX
-MD5Sum: bfc5e860f66bfb66e4c89bdeb048680d
-SHA256sum: 7ee9c107d81aee1bbd865f3611504d508bf94d8eb8fb99db77aa2f9937142f57
-Size: 620
-Filename: vuplus-dvb-proxy-vuuno4kse-dbg_4.1.20-20250706.r1_cortexa15hf-neon-vfpv4.ipk
-Source: vuplus-dvb-proxy-vuuno4kse.bb
-Description: Hardware drivers for vuuno4kse - Debugging files
-OE: vuplus-dvb-proxy-vuuno4kse
-HomePage: https://www.world-of-satellite.com
-License: LicenseRef-Proprietary
-Priority: required
-
-Package: vuplus-dvb-proxy-vuuno4kse-dev
-Version: 4.1.20-20250706.r1
-Recommends: vuplus-dvb-proxy-vuuno4kse (>= 4.1.20-20250706.r1), vuplus-dvb-proxy-vuuno4kse (<< 4.1.20-20250706.r1.0)
-Section: devel
-Architecture: cortexa15hf-neon-vfpv4
-Maintainer: OpenViX
-MD5Sum: 62ff784f79523983db6e6ab08345ee39
-SHA256sum: 63bd662573bdf68ca748395561591193dd48585eb8b51f7b014396a959c76d27
-Size: 666
-Filename: vuplus-dvb-proxy-vuuno4kse-dev_4.1.20-20250706.r1_cortexa15hf-neon-vfpv4.ipk
-Source: vuplus-dvb-proxy-vuuno4kse.bb
-Description: Hardware drivers for vuuno4kse - Development files
-OE: vuplus-dvb-proxy-vuuno4kse
-HomePage: https://www.world-of-satellite.com
-License: LicenseRef-Proprietary
-Priority: required
-
-Package: vuplus-dvb-proxy-vuuno4kse
-Version: 4.1.20-20250706.r1
-Section: base
-Architecture: cortexa15hf-neon-vfpv4
-Maintainer: OpenViX
-MD5Sum: 4b527d0b49dc1770a080bb714632df44
-SHA256sum: 3015e0400dbfbaf3f6364420fc2eb246f4917bc0b3b2bd9df664d67a628ab9ac
-Size: 2731618
-Filename: vuplus-dvb-proxy-vuuno4kse_4.1.20-20250706.r1_cortexa15hf-neon-vfpv4.ipk
-Source: vuplus-dvb-proxy-vuuno4kse.bb
-Description: Hardware drivers for vuuno4kse
-OE: vuplus-dvb-proxy-vuuno4kse
-HomePage: https://www.world-of-satellite.com
-License: LicenseRef-Proprietary
-Priority: required
-
-Package: vuplus-webkithbbtv-dumpait-dbg
-Version: git15+34177490+34177494ba-r0
-Recommends: glibc-dbg, libdvbsi++-dbg, libgcc-dbg, libstdc++-dbg
-Section: devel
-Architecture: cortexa15hf-neon-vfpv4
-Maintainer: OpenViX
-MD5Sum: e082b7940e6019b6df106af06766f78b
-SHA256sum: bbdb7c328a59247c59bd2fbe3d809dbd7f77af391f29560f424abdbd53d9ded5
-Size: 166506
-Filename: vuplus-webkithbbtv-dumpait-dbg_git15+34177490+34177494ba-r0_cortexa15hf-neon-vfpv4.ipk
-Source: vuplus-webkithbbtv-dumpait.bb
-Description: dumpait - Debugging files
-OE: vuplus-webkithbbtv-dumpait
-HomePage: https://www.world-of-satellite.com
-License: GPL-3.0-only
-Priority: required
-
-Package: vuplus-webkithbbtv-dumpait-dev
-Version: git15+34177490+34177494ba-r0
-Recommends: glibc-dev, libdvbsi++-dev, libgcc-dev, libstdc++-dev, vuplus-webkithbbtv-dumpait (= git15+34177490+34177494ba-r0)
-Section: devel
-Architecture: cortexa15hf-neon-vfpv4
-Maintainer: OpenViX
-MD5Sum: e393d84031ff262b63b32946e1ed5b58
-SHA256sum: fbd1041c7233618cd4469c541b26a38f674b2f1696495873d690e3a73cf18f83
-Size: 670
-Filename: vuplus-webkithbbtv-dumpait-dev_git15+34177490+34177494ba-r0_cortexa15hf-neon-vfpv4.ipk
-Source: vuplus-webkithbbtv-dumpait.bb
-Description: dumpait - Development files
-OE: vuplus-webkithbbtv-dumpait
-HomePage: https://www.world-of-satellite.com
-License: GPL-3.0-only
-Priority: required
-
-Package: vuplus-webkithbbtv-dumpait
-Version: git15+34177490+34177494ba-r0
-Depends: libc6 (>= 2.44+git0+7cba77790f), libdvbsi++1 (>= 0.3.9+git130+f3c40ea0+f3c40ea6da), libgcc1 (>= 16.2.0), libstdc++6 (>= 16.2.0)
-Section: base
-Architecture: cortexa15hf-neon-vfpv4
-Maintainer: OpenViX
-MD5Sum: 53d9ad3d67deafb2c7e2896d921643c5
-SHA256sum: a055b1e895f5d9652690047fa3f957d5bdbdfdd08fdc9bd7949fe597396507bf
-Size: 11018
-Filename: vuplus-webkithbbtv-dumpait_git15+34177490+34177494ba-r0_cortexa15hf-neon-vfpv4.ipk
-Source: vuplus-webkithbbtv-dumpait.bb
-Description: dumpait
-OE: vuplus-webkithbbtv-dumpait
-HomePage: https://www.world-of-satellite.com
-License: GPL-3.0-only
-Priority: required
-
 Package: wakelan-dbg
 Version: 1.1-r0
 Recommends: glibc-dbg
@@ -127345,702 +127714,56 @@ HomePage: https://www.world-of-satellite.com
 License: GPL-2.0-or-later
 Priority: optional
 
-Package: webkit-gtk-bin
-Version: r95199-r6
-Depends: libc6 (>= 2.44+git0+7cba77790f), libcairo2 (>= 1.17.4), libglib-2.0-0 (>= 2.88.3), libgtk-2.0 (>= 2.24.33), libsoup-2.4 (>= 2.74.3), libstdc++6 (>= 16.2.0), webkit-gtk (>= r95199)
-Section: base
-Architecture: cortexa15hf-neon-vfpv4
-Maintainer: OpenViX
-MD5Sum: 409f5a7b042e766bad09a4047486545a
-SHA256sum: 87cefa4acc20b429109a7dbd3481bebd55251fa691ff2089da9819c90c99ef40
-Size: 28080
-Filename: webkit-gtk-bin_r95199-r6_cortexa15hf-neon-vfpv4.ipk
-Source: webkit-gtk_git.bb
-Description: WebKit web rendering engine for the GTK+ platform
-OE: webkit-gtk
-HomePage: http://www.webkitgtk.org/
-License: BSD-3-Clause AND LGPL-2.0-or-later
-Priority: optional
-
-Package: webkit-gtk-dbg
-Version: r95199-r6
-Recommends: at-spi2-core-dbg, cairo-dbg, fontconfig-dbg, freetype-dbg, gdk-pixbuf-dbg, glib-2.0-dbg, glibc-dbg, gtk+-dbg, libgcc-dbg, libjpeg-turbo-dbg, libpng-dbg, libsoup-2.4-dbg, libsqlite3-dbg, libstdc++-dbg, libxml2-dbg, pango-dbg, zlib-dbg
+Package: webkit-hbbtv-plugin-dbg
+Version: 2.0-r0-71+c60e1a60+c60e1a69d5-r0
+Recommends: glibc-dbg, libgcc-dbg, libstdc++-dbg
 Section: devel
 Architecture: cortexa15hf-neon-vfpv4
 Maintainer: OpenViX
-MD5Sum: 87cb466dd6f72204385289879816f229
-SHA256sum: 9cf5c8959b16064c89b1070f5b6b056fc44877d1168b707b1a271f33e9cc49ab
-Size: 194183044
-Filename: webkit-gtk-dbg_r95199-r6_cortexa15hf-neon-vfpv4.ipk
-Source: webkit-gtk_git.bb
-Description: WebKit web rendering engine for the GTK+ platform - Debugging files
-OE: webkit-gtk
-HomePage: http://www.webkitgtk.org/
-License: BSD-3-Clause AND LGPL-2.0-or-later
-Priority: optional
+MD5Sum: a760490fc5b36ae2874c09a71a92eceb
+SHA256sum: d125685ec6653c6e734c78447ae4ebd450eb24693bf35a927f516d8383eacef3
+Size: 656
+Filename: webkit-hbbtv-plugin-dbg_2.0-r0-71+c60e1a60+c60e1a69d5-r0_cortexa15hf-neon-vfpv4.ipk
+Source: webkit-hbbtv-plugin.bb
+Description: webkit-hbbtv-plugin version 2.0-r0--r0 - Debugging files
+OE: webkit-hbbtv-plugin
+HomePage: https://www.world-of-satellite.com
+License: LicenseRef-Proprietary
+Priority: required
 
-Package: webkit-gtk-dev
-Version: r95199-r6
-Depends: glib-2.0-dev, gtk+-dev, libsoup-2.4-dev, webkit-gtk
-Recommends: at-spi2-core-dev, atk-dev, cairo-dev, curl-dev, enchant2-dev, fontconfig-dev, freetype-dev, gdk-pixbuf-dev, glib-2.0-dev, glibc-dev, gnutls-dev, gstreamer1.0-dev, gstreamer1.0-plugins-base-dev, gtk+-dev, harfbuzz-dev, libgcc-dev, libidn2-dev, libjpeg-turbo-dev, libpcre-dev, libpng-dev, libsoup-2.4-dev, libsqlite3-dev, libstdc++-dev, libxml2-dev, libxslt-dev, pango-dev, sqlite3-dev, udev-dev, webkit-gtk (= r95199-r6), zlib-dev
+Package: webkit-hbbtv-plugin-dev
+Version: 2.0-r0-71+c60e1a60+c60e1a69d5-r0
+Recommends: glibc-dev, gstreamer1.0-dev, gstreamer1.0-plugin-dvbmediasink-dev, gstreamer1.0-plugins-bad-autoconvert-dev, gstreamer1.0-plugins-bad-dash-dev, gstreamer1.0-plugins-bad-faad-dev, gstreamer1.0-plugins-bad-hls-dev, gstreamer1.0-plugins-bad-mpegpsdemux-dev, gstreamer1.0-plugins-bad-mpegtsdemux-dev, gstreamer1.0-plugins-bad-mpegtsmux-dev, gstreamer1.0-plugins-bad-rtmp-dev, gstreamer1.0-plugins-bad-smoothstreaming-dev, gstreamer1.0-plugins-bad-videoparsersbad-dev, gstreamer1.0-plugins-base-alsa-dev, gstreamer1.0-plugins-base-app-dev, gstreamer1.0-plugins-base-audioconvert-dev, gstreamer1.0-plugins-base-audiorate-dev, gstreamer1.0-plugins-base-audioresample-dev, gstreamer1.0-plugins-base-dev, gstreamer1.0-plugins-base-ivorbisdec-dev, gstreamer1.0-plugins-base-ogg-dev, gstreamer1.0-plugins-base-opus-dev, gstreamer1.0-plugins-base-playback-dev, gstreamer1.0-plugins-base-rawparse-dev, gstreamer1.0-plugins-base-subparse-dev, gstreamer1.0-plugins-base-typefindfunctions-dev, gstreamer1.0-plugins-base-videoconvertscale-dev, gstreamer1.0-plugins-base-vorbis-dev, gstreamer1.0-plugins-good-apetag-dev, gstreamer1.0-plugins-good-audioparsers-dev, gstreamer1.0-plugins-good-autodetect-dev, gstreamer1.0-plugins-good-avi-dev, gstreamer1.0-plugins-good-flac-dev, gstreamer1.0-plugins-good-flv-dev, gstreamer1.0-plugins-good-icydemux-dev, gstreamer1.0-plugins-good-id3demux-dev, gstreamer1.0-plugins-good-isomp4-dev, gstreamer1.0-plugins-good-matroska-dev, gstreamer1.0-plugins-good-rtp-dev, gstreamer1.0-plugins-good-rtpmanager-dev, gstreamer1.0-plugins-good-rtsp-dev, gstreamer1.0-plugins-good-soup-dev, gstreamer1.0-plugins-good-udp-dev, gstreamer1.0-plugins-good-wavpack-dev, gstreamer1.0-plugins-good-wavparse-dev, libgcc-dev, libstdc++-dev, libupnp1.6-dev, webkit-classic-browser-dev, webkit-classic-dev, webkit-hbbtv-plugin (= 2.0-r0-71+c60e1a60+c60e1a69d5-r0)
 Section: devel
 Architecture: cortexa15hf-neon-vfpv4
 Maintainer: OpenViX
-MD5Sum: ac43e29eb31a79d6a469a142b75fe64a
-SHA256sum: 751e3dc1103987d5ff22fd0983138ab4472b77cb312740bbef114dbbaa0478b9
-Size: 80938
-Filename: webkit-gtk-dev_r95199-r6_cortexa15hf-neon-vfpv4.ipk
-Source: webkit-gtk_git.bb
-Description: WebKit web rendering engine for the GTK+ platform - Development files
-OE: webkit-gtk
-HomePage: http://www.webkitgtk.org/
-License: BSD-3-Clause AND LGPL-2.0-or-later
-Priority: optional
+MD5Sum: d1ea733a498ae422d7a788bf8d2fcd9d
+SHA256sum: 0ec9e43e91c243b9a03a6dcaa4548b6acd21581bd63003d281cf9622023a97fc
+Size: 976
+Filename: webkit-hbbtv-plugin-dev_2.0-r0-71+c60e1a60+c60e1a69d5-r0_cortexa15hf-neon-vfpv4.ipk
+Source: webkit-hbbtv-plugin.bb
+Description: webkit-hbbtv-plugin version 2.0-r0--r0 - Development files
+OE: webkit-hbbtv-plugin
+HomePage: https://www.world-of-satellite.com
+License: LicenseRef-Proprietary
+Priority: required
 
-Package: webkit-gtk-locale-ar
-Version: r95199-r6
-Provides: ar-translation, webkit-gtk-locale
-Recommends: virtual-locale-ar
+Package: webkit-hbbtv-plugin
+Version: 2.0-r0-71+c60e1a60+c60e1a69d5-r0
+Depends: gstreamer1.0, gstreamer1.0-plugin-dvbmediasink, gstreamer1.0-plugins-bad-autoconvert, gstreamer1.0-plugins-bad-dash, gstreamer1.0-plugins-bad-faad, gstreamer1.0-plugins-bad-hls, gstreamer1.0-plugins-bad-mpegpsdemux, gstreamer1.0-plugins-bad-mpegtsdemux, gstreamer1.0-plugins-bad-mpegtsmux, gstreamer1.0-plugins-bad-rtmp, gstreamer1.0-plugins-bad-smoothstreaming, gstreamer1.0-plugins-bad-videoparsersbad, gstreamer1.0-plugins-base, gstreamer1.0-plugins-base-alsa, gstreamer1.0-plugins-base-app, gstreamer1.0-plugins-base-audioconvert, gstreamer1.0-plugins-base-audiorate, gstreamer1.0-plugins-base-audioresample, gstreamer1.0-plugins-base-ivorbisdec, gstreamer1.0-plugins-base-ogg, gstreamer1.0-plugins-base-opus, gstreamer1.0-plugins-base-playback, gstreamer1.0-plugins-base-rawparse, gstreamer1.0-plugins-base-subparse, gstreamer1.0-plugins-base-typefindfunctions, gstreamer1.0-plugins-base-videoconvertscale, gstreamer1.0-plugins-base-vorbis, gstreamer1.0-plugins-good-apetag, gstreamer1.0-plugins-good-audioparsers, gstreamer1.0-plugins-good-autodetect, gstreamer1.0-plugins-good-avi, gstreamer1.0-plugins-good-flac, gstreamer1.0-plugins-good-flv, gstreamer1.0-plugins-good-icydemux, gstreamer1.0-plugins-good-id3demux, gstreamer1.0-plugins-good-isomp4, gstreamer1.0-plugins-good-matroska, gstreamer1.0-plugins-good-rtp, gstreamer1.0-plugins-good-rtpmanager, gstreamer1.0-plugins-good-rtsp, gstreamer1.0-plugins-good-soup, gstreamer1.0-plugins-good-udp, gstreamer1.0-plugins-good-wavpack, gstreamer1.0-plugins-good-wavparse, libc6 (>= 2.44+git0+7cba77790f), libgcc1 (>= 16.2.0), libstdc++6 (>= 16.2.0), libupnp1.6, webkit-classic, webkit-classic-browser
 Section: base
 Architecture: cortexa15hf-neon-vfpv4
 Maintainer: OpenViX
-MD5Sum: 8491da6efe67e59b4b07221fb0cd1005
-SHA256sum: 545055ee764341739753752bbf3245440f01074f390a49f448123cf65e88105f
-Size: 10410
-Filename: webkit-gtk-locale-ar_r95199-r6_cortexa15hf-neon-vfpv4.ipk
-Source: webkit-gtk_git.bb
-Description: WebKit web rendering engine for the GTK+ platform - ar translations
-OE: webkit-gtk
-HomePage: http://www.webkitgtk.org/
-License: BSD-3-Clause AND LGPL-2.0-or-later
-Priority: optional
-
-Package: webkit-gtk-locale-bg
-Version: r95199-r6
-Provides: bg-translation, webkit-gtk-locale
-Recommends: virtual-locale-bg
-Section: base
-Architecture: cortexa15hf-neon-vfpv4
-Maintainer: OpenViX
-MD5Sum: 030afd85067aaa2a26bcc92f510a74d5
-SHA256sum: 3a6b338394b2bddc0e3961b49932176a2137b0c324f90d8aa49aa199e7f79c31
-Size: 11740
-Filename: webkit-gtk-locale-bg_r95199-r6_cortexa15hf-neon-vfpv4.ipk
-Source: webkit-gtk_git.bb
-Description: WebKit web rendering engine for the GTK+ platform - bg translations
-OE: webkit-gtk
-HomePage: http://www.webkitgtk.org/
-License: BSD-3-Clause AND LGPL-2.0-or-later
-Priority: optional
-
-Package: webkit-gtk-locale-cs
-Version: r95199-r6
-Provides: cs-translation, webkit-gtk-locale
-Recommends: virtual-locale-cs
-Section: base
-Architecture: cortexa15hf-neon-vfpv4
-Maintainer: OpenViX
-MD5Sum: 6e3f0c752ff890c6c2b503c54f8cf6ff
-SHA256sum: dc880cc5ad2e1b82ff6dca1bf32d281eae4ca21b9b14b6ba5e7fb2b52eb4ab3d
-Size: 9862
-Filename: webkit-gtk-locale-cs_r95199-r6_cortexa15hf-neon-vfpv4.ipk
-Source: webkit-gtk_git.bb
-Description: WebKit web rendering engine for the GTK+ platform - cs translations
-OE: webkit-gtk
-HomePage: http://www.webkitgtk.org/
-License: BSD-3-Clause AND LGPL-2.0-or-later
-Priority: optional
-
-Package: webkit-gtk-locale-de
-Version: r95199-r6
-Provides: de-translation, webkit-gtk-locale
-Recommends: virtual-locale-de
-Section: base
-Architecture: cortexa15hf-neon-vfpv4
-Maintainer: OpenViX
-MD5Sum: d736f12cb4c765fdadb0430b65b89ccd
-SHA256sum: 85160243fd44d00b30dd9f395e91279e161e04b536e75075bcbc492971636372
-Size: 9990
-Filename: webkit-gtk-locale-de_r95199-r6_cortexa15hf-neon-vfpv4.ipk
-Source: webkit-gtk_git.bb
-Description: WebKit web rendering engine for the GTK+ platform - de translations
-OE: webkit-gtk
-HomePage: http://www.webkitgtk.org/
-License: BSD-3-Clause AND LGPL-2.0-or-later
-Priority: optional
-
-Package: webkit-gtk-locale-el
-Version: r95199-r6
-Provides: el-translation, webkit-gtk-locale
-Recommends: virtual-locale-el
-Section: base
-Architecture: cortexa15hf-neon-vfpv4
-Maintainer: OpenViX
-MD5Sum: 1c46830b387f2364323dd000c3d6327c
-SHA256sum: e1f261b03b666a5e18c72ba70370e1f2b1543fc7a92cce37b30279da00c2e432
-Size: 7906
-Filename: webkit-gtk-locale-el_r95199-r6_cortexa15hf-neon-vfpv4.ipk
-Source: webkit-gtk_git.bb
-Description: WebKit web rendering engine for the GTK+ platform - el translations
-OE: webkit-gtk
-HomePage: http://www.webkitgtk.org/
-License: BSD-3-Clause AND LGPL-2.0-or-later
-Priority: optional
-
-Package: webkit-gtk-locale-en-ca
-Version: r95199-r6
-Provides: en-ca-translation, webkit-gtk-locale
-Recommends: virtual-locale-en-ca
-Section: base
-Architecture: cortexa15hf-neon-vfpv4
-Maintainer: OpenViX
-MD5Sum: 19994107c4f0140ac8dc35f37b1396f9
-SHA256sum: a45c59e3ea2f1beec06c0dc8be725efdf6eaa98ed7bbf745746a6791248f284e
-Size: 8214
-Filename: webkit-gtk-locale-en-ca_r95199-r6_cortexa15hf-neon-vfpv4.ipk
-Source: webkit-gtk_git.bb
-Description: WebKit web rendering engine for the GTK+ platform - en_CA translations
-OE: webkit-gtk
-HomePage: http://www.webkitgtk.org/
-License: BSD-3-Clause AND LGPL-2.0-or-later
-Priority: optional
-
-Package: webkit-gtk-locale-en-gb
-Version: r95199-r6
-Provides: en-gb-translation, webkit-gtk-locale
-Recommends: virtual-locale-en-gb
-Section: base
-Architecture: cortexa15hf-neon-vfpv4
-Maintainer: OpenViX
-MD5Sum: bf0bf6ab01aae5b01fd0e0af2757bb74
-SHA256sum: 0067119b72882db0a9bb7316ddc292ebaf2bd2e85d0e5bbf9a0f138f3317568d
-Size: 4600
-Filename: webkit-gtk-locale-en-gb_r95199-r6_cortexa15hf-neon-vfpv4.ipk
-Source: webkit-gtk_git.bb
-Description: WebKit web rendering engine for the GTK+ platform - en_GB translations
-OE: webkit-gtk
-HomePage: http://www.webkitgtk.org/
-License: BSD-3-Clause AND LGPL-2.0-or-later
-Priority: optional
-
-Package: webkit-gtk-locale-es
-Version: r95199-r6
-Provides: es-translation, webkit-gtk-locale
-Recommends: virtual-locale-es
-Section: base
-Architecture: cortexa15hf-neon-vfpv4
-Maintainer: OpenViX
-MD5Sum: bb66ca1b16a19ed809e7190bfd9be09d
-SHA256sum: b9c97801670749dab14b2ca9360149369da9d29e50da11804108d6faa958dfd5
-Size: 8602
-Filename: webkit-gtk-locale-es_r95199-r6_cortexa15hf-neon-vfpv4.ipk
-Source: webkit-gtk_git.bb
-Description: WebKit web rendering engine for the GTK+ platform - es translations
-OE: webkit-gtk
-HomePage: http://www.webkitgtk.org/
-License: BSD-3-Clause AND LGPL-2.0-or-later
-Priority: optional
-
-Package: webkit-gtk-locale-et
-Version: r95199-r6
-Provides: et-translation, webkit-gtk-locale
-Recommends: virtual-locale-et
-Section: base
-Architecture: cortexa15hf-neon-vfpv4
-Maintainer: OpenViX
-MD5Sum: 6c17397a5f38422bc05285de5e0848ae
-SHA256sum: 83a29cf122f200de73acdc8dcfd7316c3a4390049abebb278f08d4f65afc782c
-Size: 8922
-Filename: webkit-gtk-locale-et_r95199-r6_cortexa15hf-neon-vfpv4.ipk
-Source: webkit-gtk_git.bb
-Description: WebKit web rendering engine for the GTK+ platform - et translations
-OE: webkit-gtk
-HomePage: http://www.webkitgtk.org/
-License: BSD-3-Clause AND LGPL-2.0-or-later
-Priority: optional
-
-Package: webkit-gtk-locale-eu
-Version: r95199-r6
-Provides: eu-translation, webkit-gtk-locale
-Recommends: virtual-locale-eu
-Section: base
-Architecture: cortexa15hf-neon-vfpv4
-Maintainer: OpenViX
-MD5Sum: 666298fc0032dd128f10bb04896b46d9
-SHA256sum: f5e09d757aae4a60b6e6981093a5ea9d40e05b9115d5f81b74ad4035515dfde8
-Size: 9730
-Filename: webkit-gtk-locale-eu_r95199-r6_cortexa15hf-neon-vfpv4.ipk
-Source: webkit-gtk_git.bb
-Description: WebKit web rendering engine for the GTK+ platform - eu translations
-OE: webkit-gtk
-HomePage: http://www.webkitgtk.org/
-License: BSD-3-Clause AND LGPL-2.0-or-later
-Priority: optional
-
-Package: webkit-gtk-locale-fr
-Version: r95199-r6
-Provides: fr-translation, webkit-gtk-locale
-Recommends: virtual-locale-fr
-Section: base
-Architecture: cortexa15hf-neon-vfpv4
-Maintainer: OpenViX
-MD5Sum: f175723aef634edd91ee67951e998a68
-SHA256sum: 4ef303d51b79fa9c3578a7a4348105911c5a578e981d6dff9386f225ac9307b2
-Size: 10858
-Filename: webkit-gtk-locale-fr_r95199-r6_cortexa15hf-neon-vfpv4.ipk
-Source: webkit-gtk_git.bb
-Description: WebKit web rendering engine for the GTK+ platform - fr translations
-OE: webkit-gtk
-HomePage: http://www.webkitgtk.org/
-License: BSD-3-Clause AND LGPL-2.0-or-later
-Priority: optional
-
-Package: webkit-gtk-locale-gl
-Version: r95199-r6
-Provides: gl-translation, webkit-gtk-locale
-Recommends: virtual-locale-gl
-Section: base
-Architecture: cortexa15hf-neon-vfpv4
-Maintainer: OpenViX
-MD5Sum: ef4424a4d113dba52fc9e8e0c934062e
-SHA256sum: 1b1230b25184bc1def1bfb2aa81f93a53a7d2b14c3878855b8603cc57dd1980f
-Size: 9730
-Filename: webkit-gtk-locale-gl_r95199-r6_cortexa15hf-neon-vfpv4.ipk
-Source: webkit-gtk_git.bb
-Description: WebKit web rendering engine for the GTK+ platform - gl translations
-OE: webkit-gtk
-HomePage: http://www.webkitgtk.org/
-License: BSD-3-Clause AND LGPL-2.0-or-later
-Priority: optional
-
-Package: webkit-gtk-locale-gu
-Version: r95199-r6
-Provides: gu-translation, webkit-gtk-locale
-Recommends: virtual-locale-gu
-Section: base
-Architecture: cortexa15hf-neon-vfpv4
-Maintainer: OpenViX
-MD5Sum: 171649bbe7c14450d96b4f6a08d65c05
-SHA256sum: 7ad579e2bd38867d433598abe7303665114fd102206bc987faf9614fc4960086
-Size: 10810
-Filename: webkit-gtk-locale-gu_r95199-r6_cortexa15hf-neon-vfpv4.ipk
-Source: webkit-gtk_git.bb
-Description: WebKit web rendering engine for the GTK+ platform - gu translations
-OE: webkit-gtk
-HomePage: http://www.webkitgtk.org/
-License: BSD-3-Clause AND LGPL-2.0-or-later
-Priority: optional
-
-Package: webkit-gtk-locale-he
-Version: r95199-r6
-Provides: he-translation, webkit-gtk-locale
-Recommends: virtual-locale-he
-Section: base
-Architecture: cortexa15hf-neon-vfpv4
-Maintainer: OpenViX
-MD5Sum: aff0de267a01a6735cafa524baa91573
-SHA256sum: 463d3090a58bdcdfb9c09a2e82c46fb43dba18b2fd41c1085d29e8cbe5dbd039
-Size: 6896
-Filename: webkit-gtk-locale-he_r95199-r6_cortexa15hf-neon-vfpv4.ipk
-Source: webkit-gtk_git.bb
-Description: WebKit web rendering engine for the GTK+ platform - he translations
-OE: webkit-gtk
-HomePage: http://www.webkitgtk.org/
-License: BSD-3-Clause AND LGPL-2.0-or-later
-Priority: optional
-
-Package: webkit-gtk-locale-hu
-Version: r95199-r6
-Provides: hu-translation, webkit-gtk-locale
-Recommends: virtual-locale-hu
-Section: base
-Architecture: cortexa15hf-neon-vfpv4
-Maintainer: OpenViX
-MD5Sum: 53c7cef7179b45115bd5a249a2f97712
-SHA256sum: b2b3a4479786ae80dd26b05aeaead788307f14a71ac1450ac110cc972a8c32c8
-Size: 9912
-Filename: webkit-gtk-locale-hu_r95199-r6_cortexa15hf-neon-vfpv4.ipk
-Source: webkit-gtk_git.bb
-Description: WebKit web rendering engine for the GTK+ platform - hu translations
-OE: webkit-gtk
-HomePage: http://www.webkitgtk.org/
-License: BSD-3-Clause AND LGPL-2.0-or-later
-Priority: optional
-
-Package: webkit-gtk-locale-id
-Version: r95199-r6
-Provides: id-translation, webkit-gtk-locale
-Recommends: virtual-locale-id
-Section: base
-Architecture: cortexa15hf-neon-vfpv4
-Maintainer: OpenViX
-MD5Sum: bdff6faa332c158a749b0b84c5c78789
-SHA256sum: 2d71150a4e65a5e119dccabca979a4a3156c60dffd39a75ee724f414d0f8ce29
-Size: 9410
-Filename: webkit-gtk-locale-id_r95199-r6_cortexa15hf-neon-vfpv4.ipk
-Source: webkit-gtk_git.bb
-Description: WebKit web rendering engine for the GTK+ platform - id translations
-OE: webkit-gtk
-HomePage: http://www.webkitgtk.org/
-License: BSD-3-Clause AND LGPL-2.0-or-later
-Priority: optional
-
-Package: webkit-gtk-locale-it
-Version: r95199-r6
-Provides: it-translation, webkit-gtk-locale
-Recommends: virtual-locale-it
-Section: base
-Architecture: cortexa15hf-neon-vfpv4
-Maintainer: OpenViX
-MD5Sum: 5b1b01050b10579007e0675b162157d9
-SHA256sum: 5ba46af8421155905d68c73ddc26e06b5dbce07e249a9a4b33152e42ebe1462f
-Size: 12254
-Filename: webkit-gtk-locale-it_r95199-r6_cortexa15hf-neon-vfpv4.ipk
-Source: webkit-gtk_git.bb
-Description: WebKit web rendering engine for the GTK+ platform - it translations
-OE: webkit-gtk
-HomePage: http://www.webkitgtk.org/
-License: BSD-3-Clause AND LGPL-2.0-or-later
-Priority: optional
-
-Package: webkit-gtk-locale-ko
-Version: r95199-r6
-Provides: ko-translation, webkit-gtk-locale
-Recommends: virtual-locale-ko
-Section: base
-Architecture: cortexa15hf-neon-vfpv4
-Maintainer: OpenViX
-MD5Sum: faea70fcf58f98f42ac81746a12cc759
-SHA256sum: abd9b3791d06050e574e7a0e9feb41013be24af67129c29b303113fbdd98d946
-Size: 12244
-Filename: webkit-gtk-locale-ko_r95199-r6_cortexa15hf-neon-vfpv4.ipk
-Source: webkit-gtk_git.bb
-Description: WebKit web rendering engine for the GTK+ platform - ko translations
-OE: webkit-gtk
-HomePage: http://www.webkitgtk.org/
-License: BSD-3-Clause AND LGPL-2.0-or-later
-Priority: optional
-
-Package: webkit-gtk-locale-lt
-Version: r95199-r6
-Provides: lt-translation, webkit-gtk-locale
-Recommends: virtual-locale-lt
-Section: base
-Architecture: cortexa15hf-neon-vfpv4
-Maintainer: OpenViX
-MD5Sum: e36caaaf3cacfab3437a4ee5e6856fa1
-SHA256sum: 0c6926802958dfb581c5369016e2e0259e8c6c0f5f77776ea81e5e46ff552054
-Size: 10054
-Filename: webkit-gtk-locale-lt_r95199-r6_cortexa15hf-neon-vfpv4.ipk
-Source: webkit-gtk_git.bb
-Description: WebKit web rendering engine for the GTK+ platform - lt translations
-OE: webkit-gtk
-HomePage: http://www.webkitgtk.org/
-License: BSD-3-Clause AND LGPL-2.0-or-later
-Priority: optional
-
-Package: webkit-gtk-locale-lv
-Version: r95199-r6
-Provides: lv-translation, webkit-gtk-locale
-Recommends: virtual-locale-lv
-Section: base
-Architecture: cortexa15hf-neon-vfpv4
-Maintainer: OpenViX
-MD5Sum: 76db1855a5e91a80bbb559c1430c07f0
-SHA256sum: f46de65091628d77221cce5f7072173674903add3c14d934c0017fc3087a76b2
-Size: 6948
-Filename: webkit-gtk-locale-lv_r95199-r6_cortexa15hf-neon-vfpv4.ipk
-Source: webkit-gtk_git.bb
-Description: WebKit web rendering engine for the GTK+ platform - lv translations
-OE: webkit-gtk
-HomePage: http://www.webkitgtk.org/
-License: BSD-3-Clause AND LGPL-2.0-or-later
-Priority: optional
-
-Package: webkit-gtk-locale-nb
-Version: r95199-r6
-Provides: nb-translation, webkit-gtk-locale
-Recommends: virtual-locale-nb
-Section: base
-Architecture: cortexa15hf-neon-vfpv4
-Maintainer: OpenViX
-MD5Sum: 237408466b63717ce9b87f37c6d8a752
-SHA256sum: 226f645a9b691c7450da613e6f8adf2b7e677e5ed870ef76bab9169eecb0859c
-Size: 2560
-Filename: webkit-gtk-locale-nb_r95199-r6_cortexa15hf-neon-vfpv4.ipk
-Source: webkit-gtk_git.bb
-Description: WebKit web rendering engine for the GTK+ platform - nb translations
-OE: webkit-gtk
-HomePage: http://www.webkitgtk.org/
-License: BSD-3-Clause AND LGPL-2.0-or-later
-Priority: optional
-
-Package: webkit-gtk-locale-nl
-Version: r95199-r6
-Provides: nl-translation, webkit-gtk-locale
-Recommends: virtual-locale-nl
-Section: base
-Architecture: cortexa15hf-neon-vfpv4
-Maintainer: OpenViX
-MD5Sum: ea1c9c39ca3fef68024798290a8c055f
-SHA256sum: 0917ec9fd64410f70135af41638c08e3363cabfa08462d19aacba91035bd86d6
-Size: 11638
-Filename: webkit-gtk-locale-nl_r95199-r6_cortexa15hf-neon-vfpv4.ipk
-Source: webkit-gtk_git.bb
-Description: WebKit web rendering engine for the GTK+ platform - nl translations
-OE: webkit-gtk
-HomePage: http://www.webkitgtk.org/
-License: BSD-3-Clause AND LGPL-2.0-or-later
-Priority: optional
-
-Package: webkit-gtk-locale-pa
-Version: r95199-r6
-Provides: pa-translation, webkit-gtk-locale
-Recommends: virtual-locale-pa
-Section: base
-Architecture: cortexa15hf-neon-vfpv4
-Maintainer: OpenViX
-MD5Sum: 300c43c84bb56e9ed398a0b8db9045b0
-SHA256sum: ab8769f2584f2bc010138d97e0d49c5950efb692e31e4aab2a898d468ae667a5
-Size: 7564
-Filename: webkit-gtk-locale-pa_r95199-r6_cortexa15hf-neon-vfpv4.ipk
-Source: webkit-gtk_git.bb
-Description: WebKit web rendering engine for the GTK+ platform - pa translations
-OE: webkit-gtk
-HomePage: http://www.webkitgtk.org/
-License: BSD-3-Clause AND LGPL-2.0-or-later
-Priority: optional
-
-Package: webkit-gtk-locale-pl
-Version: r95199-r6
-Provides: pl-translation, webkit-gtk-locale
-Recommends: virtual-locale-pl
-Section: base
-Architecture: cortexa15hf-neon-vfpv4
-Maintainer: OpenViX
-MD5Sum: 8013bd1efbc0e970c127bc2947e70227
-SHA256sum: e5a5ddb9a376de86eefad943d87bd96dffc1c7cb80ed8ada160d4ec4d4df79ad
-Size: 12626
-Filename: webkit-gtk-locale-pl_r95199-r6_cortexa15hf-neon-vfpv4.ipk
-Source: webkit-gtk_git.bb
-Description: WebKit web rendering engine for the GTK+ platform - pl translations
-OE: webkit-gtk
-HomePage: http://www.webkitgtk.org/
-License: BSD-3-Clause AND LGPL-2.0-or-later
-Priority: optional
-
-Package: webkit-gtk-locale-pt-br
-Version: r95199-r6
-Provides: pt-br-translation, webkit-gtk-locale
-Recommends: virtual-locale-pt-br
-Section: base
-Architecture: cortexa15hf-neon-vfpv4
-Maintainer: OpenViX
-MD5Sum: 0231b2196b9dac9036f10d779351697a
-SHA256sum: bb2800ed9f6b59ee74341d9c9ac9b22d1dddd3586d371d9ef72109a9ced89f88
-Size: 9786
-Filename: webkit-gtk-locale-pt-br_r95199-r6_cortexa15hf-neon-vfpv4.ipk
-Source: webkit-gtk_git.bb
-Description: WebKit web rendering engine for the GTK+ platform - pt_BR translations
-OE: webkit-gtk
-HomePage: http://www.webkitgtk.org/
-License: BSD-3-Clause AND LGPL-2.0-or-later
-Priority: optional
-
-Package: webkit-gtk-locale-pt
-Version: r95199-r6
-Provides: pt-translation, webkit-gtk-locale
-Recommends: virtual-locale-pt
-Section: base
-Architecture: cortexa15hf-neon-vfpv4
-Maintainer: OpenViX
-MD5Sum: 9af7ddaf606105242315bff75a66dc9e
-SHA256sum: 97976db76712b6fe2915d02b23b0b66f8cf64c419c5758e61fca8d655173c6da
-Size: 11812
-Filename: webkit-gtk-locale-pt_r95199-r6_cortexa15hf-neon-vfpv4.ipk
-Source: webkit-gtk_git.bb
-Description: WebKit web rendering engine for the GTK+ platform - pt translations
-OE: webkit-gtk
-HomePage: http://www.webkitgtk.org/
-License: BSD-3-Clause AND LGPL-2.0-or-later
-Priority: optional
-
-Package: webkit-gtk-locale-ru
-Version: r95199-r6
-Provides: ru-translation, webkit-gtk-locale
-Recommends: virtual-locale-ru
-Section: base
-Architecture: cortexa15hf-neon-vfpv4
-Maintainer: OpenViX
-MD5Sum: d07d9539ab072521cafe20802e0afd62
-SHA256sum: de34da4c16aa3f6055a19055a419c05e67d86db60359e5079b2c2abb997cfe9c
-Size: 7078
-Filename: webkit-gtk-locale-ru_r95199-r6_cortexa15hf-neon-vfpv4.ipk
-Source: webkit-gtk_git.bb
-Description: WebKit web rendering engine for the GTK+ platform - ru translations
-OE: webkit-gtk
-HomePage: http://www.webkitgtk.org/
-License: BSD-3-Clause AND LGPL-2.0-or-later
-Priority: optional
-
-Package: webkit-gtk-locale-sl
-Version: r95199-r6
-Provides: sl-translation, webkit-gtk-locale
-Recommends: virtual-locale-sl
-Section: base
-Architecture: cortexa15hf-neon-vfpv4
-Maintainer: OpenViX
-MD5Sum: f674dd0f585c15e9062c9cd3cd215fba
-SHA256sum: 0bf9badf82386bb47b87a01d72b7a094e129c59de2925d68a15a4501026d4d9c
-Size: 8942
-Filename: webkit-gtk-locale-sl_r95199-r6_cortexa15hf-neon-vfpv4.ipk
-Source: webkit-gtk_git.bb
-Description: WebKit web rendering engine for the GTK+ platform - sl translations
-OE: webkit-gtk
-HomePage: http://www.webkitgtk.org/
-License: BSD-3-Clause AND LGPL-2.0-or-later
-Priority: optional
-
-Package: webkit-gtk-locale-sr+latin
-Version: r95199-r6
-Provides: sr+latin-translation, webkit-gtk-locale
-Recommends: virtual-locale-sr+latin
-Section: base
-Architecture: cortexa15hf-neon-vfpv4
-Maintainer: OpenViX
-MD5Sum: be5d4bfed3afd0b79275d723a9606027
-SHA256sum: 1a59539cf4ef36376feb44446376b0fc82e6a87d585b7bea0f3fd21533baa2c5
-Size: 9800
-Filename: webkit-gtk-locale-sr+latin_r95199-r6_cortexa15hf-neon-vfpv4.ipk
-Source: webkit-gtk_git.bb
-Description: WebKit web rendering engine for the GTK+ platform - sr@latin translations
-OE: webkit-gtk
-HomePage: http://www.webkitgtk.org/
-License: BSD-3-Clause AND LGPL-2.0-or-later
-Priority: optional
-
-Package: webkit-gtk-locale-sr
-Version: r95199-r6
-Provides: sr-translation, webkit-gtk-locale
-Recommends: virtual-locale-sr
-Section: base
-Architecture: cortexa15hf-neon-vfpv4
-Maintainer: OpenViX
-MD5Sum: 5740eeaf90060f6ea45da6240a53ce6c
-SHA256sum: 2fe0aa418242a6b46f991836de19e4637003ff64c1be66faaf3a7bc2ebcdeaf6
-Size: 10920
-Filename: webkit-gtk-locale-sr_r95199-r6_cortexa15hf-neon-vfpv4.ipk
-Source: webkit-gtk_git.bb
-Description: WebKit web rendering engine for the GTK+ platform - sr translations
-OE: webkit-gtk
-HomePage: http://www.webkitgtk.org/
-License: BSD-3-Clause AND LGPL-2.0-or-later
-Priority: optional
-
-Package: webkit-gtk-locale-sv
-Version: r95199-r6
-Provides: sv-translation, webkit-gtk-locale
-Recommends: virtual-locale-sv
-Section: base
-Architecture: cortexa15hf-neon-vfpv4
-Maintainer: OpenViX
-MD5Sum: f8b084ba616a277933e38ab6f44abe7c
-SHA256sum: 0d6e83d71bdbd4ea9ac4ee7ac7f0334f467413f75f522d16662be347a5a65067
-Size: 6446
-Filename: webkit-gtk-locale-sv_r95199-r6_cortexa15hf-neon-vfpv4.ipk
-Source: webkit-gtk_git.bb
-Description: WebKit web rendering engine for the GTK+ platform - sv translations
-OE: webkit-gtk
-HomePage: http://www.webkitgtk.org/
-License: BSD-3-Clause AND LGPL-2.0-or-later
-Priority: optional
-
-Package: webkit-gtk-locale-uk
-Version: r95199-r6
-Provides: uk-translation, webkit-gtk-locale
-Recommends: virtual-locale-uk
-Section: base
-Architecture: cortexa15hf-neon-vfpv4
-Maintainer: OpenViX
-MD5Sum: 98fb50ac35e3749d45b70851086750bc
-SHA256sum: e589f30a8061cc8cfd02cf2833ed34ff254247f7f2bda030a7efdb5e8e1aa3e7
-Size: 12416
-Filename: webkit-gtk-locale-uk_r95199-r6_cortexa15hf-neon-vfpv4.ipk
-Source: webkit-gtk_git.bb
-Description: WebKit web rendering engine for the GTK+ platform - uk translations
-OE: webkit-gtk
-HomePage: http://www.webkitgtk.org/
-License: BSD-3-Clause AND LGPL-2.0-or-later
-Priority: optional
-
-Package: webkit-gtk-locale-vi
-Version: r95199-r6
-Provides: vi-translation, webkit-gtk-locale
-Recommends: virtual-locale-vi
-Section: base
-Architecture: cortexa15hf-neon-vfpv4
-Maintainer: OpenViX
-MD5Sum: 24c2d9ae87c09c93087885b2c3fbf3c0
-SHA256sum: d65e24500e6c9d7d8240a13c588e35cc2fb98b201f7919875bb0c83ea7786a13
-Size: 9730
-Filename: webkit-gtk-locale-vi_r95199-r6_cortexa15hf-neon-vfpv4.ipk
-Source: webkit-gtk_git.bb
-Description: WebKit web rendering engine for the GTK+ platform - vi translations
-OE: webkit-gtk
-HomePage: http://www.webkitgtk.org/
-License: BSD-3-Clause AND LGPL-2.0-or-later
-Priority: optional
-
-Package: webkit-gtk-locale-zh-cn
-Version: r95199-r6
-Provides: webkit-gtk-locale, zh-cn-translation
-Recommends: virtual-locale-zh-cn
-Section: base
-Architecture: cortexa15hf-neon-vfpv4
-Maintainer: OpenViX
-MD5Sum: a440c57a84f0dc56e82a8ba334cff070
-SHA256sum: 219f320652829d99f4a101e27681368d0c3a928d8afe87d0f9aa1cd8a14f6c79
-Size: 9712
-Filename: webkit-gtk-locale-zh-cn_r95199-r6_cortexa15hf-neon-vfpv4.ipk
-Source: webkit-gtk_git.bb
-Description: WebKit web rendering engine for the GTK+ platform - zh_CN translations
-OE: webkit-gtk
-HomePage: http://www.webkitgtk.org/
-License: BSD-3-Clause AND LGPL-2.0-or-later
-Priority: optional
-
-Package: webkit-gtk-webinspector
-Version: r95199-r6
-Section: base
-Architecture: cortexa15hf-neon-vfpv4
-Maintainer: OpenViX
-MD5Sum: e99ed8cb1549237a894e194317585f30
-SHA256sum: 1f8cefd3e6bbd3db9b63d2aa04a3ba88e162fbacdb467e175c32d5c629ff09f2
-Size: 634366
-Filename: webkit-gtk-webinspector_r95199-r6_cortexa15hf-neon-vfpv4.ipk
-Source: webkit-gtk_git.bb
-Description: WebKit web rendering engine for the GTK+ platform
-OE: webkit-gtk
-HomePage: http://www.webkitgtk.org/
-License: BSD-3-Clause AND LGPL-2.0-or-later
-Priority: optional
-
-Package: webkit-gtk
-Version: r95199-r6
-Depends: at-spi2-core (>= 2.60.6), libc6 (>= 2.44+git0+7cba77790f), libcairo2 (>= 1.17.4), libfontconfig1 (>= 2.18.2), libfreetype6 (>= 2.14.3), libgcc1 (>= 16.2.0), libgdk-pixbuf-2.0-0 (>= 2.44.7), libglib-2.0-0 (>= 2.88.3), libgtk-2.0 (>= 2.24.33), libjpeg62 (>= 3.2.0), libpng16-16 (>= 1.6.58), libsoup-2.4 (>= 2.74.3), libsqlite3-0 (>= 3.53.4), libstdc++6 (>= 16.2.0), libxml2 (>= 2.15.3), libz1 (>= 1.3.2), pango (>= 1.58.0)
-Section: base
-Architecture: cortexa15hf-neon-vfpv4
-Maintainer: OpenViX
-MD5Sum: 1b98fb099d2f6114d77e03b04ffab3c3
-SHA256sum: 013d506c023d251cd44193c7e629b824898aab5f3de032e0f818987f3587d130
-Size: 5229602
-Filename: webkit-gtk_r95199-r6_cortexa15hf-neon-vfpv4.ipk
-Source: webkit-gtk_git.bb
-Description: WebKit web rendering engine for the GTK+ platform
-OE: webkit-gtk
-HomePage: http://www.webkitgtk.org/
-License: BSD-3-Clause AND LGPL-2.0-or-later
-Priority: optional
+MD5Sum: ceccbea328a8d618d03ad0698401765b
+SHA256sum: b8d26910a8ce7b4bb21fc49ffe869f2647104128c0f501f52a6327b53d983187
+Size: 350188
+Filename: webkit-hbbtv-plugin_2.0-r0-71+c60e1a60+c60e1a69d5-r0_cortexa15hf-neon-vfpv4.ipk
+Source: webkit-hbbtv-plugin.bb
+Description: webkit-hbbtv-plugin version 2.0-r0--r0
+OE: webkit-hbbtv-plugin
+HomePage: https://www.world-of-satellite.com
+License: LicenseRef-Proprietary
+Priority: required
 
 Package: wget-dbg
 Version: 1.25.0-r0.1
