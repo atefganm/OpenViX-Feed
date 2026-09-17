@@ -112,15 +112,15 @@ License: GPL-2.0-or-later
 Priority: optional
 
 Package: ca-certificates-dbg
-Version: 20260601-r0
+Version: 20260816-r0
 Section: devel
 Architecture: all
 Maintainer: OpenViX
-MD5Sum: 9726c966a5c38f43c101e076a4e23f3c
-SHA256sum: 33591cf6e16553c2b9b9226db2a995eba4503ad2d14d2afca34afb3549c6d558
+MD5Sum: 16af09aadd1f591d0c9a6133d276b457
+SHA256sum: 3468929bbfc193ca58d606e0e4cc0960b839eae62a75c2c873597a07bcd36995
 Size: 678
-Filename: ca-certificates-dbg_20260601-r0_all.ipk
-Source: ca-certificates_20260601.bb
+Filename: ca-certificates-dbg_20260816-r0_all.ipk
+Source: ca-certificates_20260816.bb
 Description: Common CA certificates - Debugging files
 OE: ca-certificates
 HomePage: http://packages.debian.org/sid/ca-certificates
@@ -128,16 +128,16 @@ License: GPL-2.0-or-later AND MPL-2.0
 Priority: optional
 
 Package: ca-certificates-dev
-Version: 20260601-r0
-Recommends: ca-certificates (= 20260601-r0), openssl-bin-dev, openssl-dev
+Version: 20260816-r0
+Recommends: ca-certificates (= 20260816-r0), openssl-bin-dev, openssl-dev
 Section: devel
 Architecture: all
 Maintainer: OpenViX
-MD5Sum: e8bea30b4839d721ae40f136612adcca
-SHA256sum: 29d15009bad3ed35fc6f08786c143dc7e754d3c04d85f3b2135b55360d5ff797
+MD5Sum: 358ed4c0d208cb4fbfa31181777e1755
+SHA256sum: e875761c25930669cd093a8ddae21cf9334af272a306c920dd3e71808cd2eed4
 Size: 728
-Filename: ca-certificates-dev_20260601-r0_all.ipk
-Source: ca-certificates_20260601.bb
+Filename: ca-certificates-dev_20260816-r0_all.ipk
+Source: ca-certificates_20260816.bb
 Description: Common CA certificates - Development files
 OE: ca-certificates
 HomePage: http://packages.debian.org/sid/ca-certificates
@@ -145,15 +145,15 @@ License: GPL-2.0-or-later AND MPL-2.0
 Priority: optional
 
 Package: ca-certificates-doc
-Version: 20260601-r0
+Version: 20260816-r0
 Section: doc
 Architecture: all
 Maintainer: OpenViX
-MD5Sum: 65dffbcde8892cede6e8734da7179bfd
-SHA256sum: 5be0a5f5f6cb19a6ec02f49c919db6fa5a33e7065cb22d8082414049630da6a7
-Size: 2306
-Filename: ca-certificates-doc_20260601-r0_all.ipk
-Source: ca-certificates_20260601.bb
+MD5Sum: 592db4e5ba4ea199d75801097f52da66
+SHA256sum: 020b70a2595dc51d1f1bd7f5991e1c633300925ccc12e790414cec48ca2535a6
+Size: 2308
+Filename: ca-certificates-doc_20260816-r0_all.ipk
+Source: ca-certificates_20260816.bb
 Description: Common CA certificates - Documentation files
 OE: ca-certificates
 HomePage: http://packages.debian.org/sid/ca-certificates
@@ -161,16 +161,16 @@ License: GPL-2.0-or-later AND MPL-2.0
 Priority: optional
 
 Package: ca-certificates
-Version: 20260601-r0
+Version: 20260816-r0
 Depends: openssl, openssl-bin
 Section: libs/network
 Architecture: all
 Maintainer: OpenViX
-MD5Sum: 955a8a180a334c2444bbb0bab4bab939
-SHA256sum: 0f7c2f8e48deee6ff29a3282094747fb023aa7221982b67ec588eed93d954ead
-Size: 112878
-Filename: ca-certificates_20260601-r0_all.ipk
-Source: ca-certificates_20260601.bb
+MD5Sum: 6922ff4bdb9b9d0da97271edd90126ba
+SHA256sum: 195973392f53eb12a784d6f48ad0a7a14d3fcc86a0bd894c0d69ed6d891daa1f
+Size: 112678
+Filename: ca-certificates_20260816-r0_all.ipk
+Source: ca-certificates_20260816.bb
 Description: Common CA certificates
 OE: ca-certificates
 HomePage: http://packages.debian.org/sid/ca-certificates
@@ -2896,56 +2896,6 @@ HomePage: https://www.world-of-satellite.com
 License: GPL-2.0-or-later
 Priority: optional
 
-Package: enigma2-plugin-drivers-dvb-usb-a867-dbg
-Version: 1.0-r0
-Section: devel
-Architecture: all
-Maintainer: OpenViX
-MD5Sum: 03cdab71c7b15c04b297d6a8c3616242
-SHA256sum: b105ec66c12ac791a450ff6a2db046fba5d40f2bc0311f395d4ec7734d6580b5
-Size: 610
-Filename: enigma2-plugin-drivers-dvb-usb-a867-dbg_1.0-r0_all.ipk
-Source: enigma2-plugin-drivers-dvb-usb-a867.bb
-Description: USB DVB driver for Afatech 867 chipset - Debugging files
-OE: enigma2-plugin-drivers-dvb-usb-a867
-HomePage: https://www.world-of-satellite.com
-License: GPL-2.0-or-later
-Priority: optional
-
-Package: enigma2-plugin-drivers-dvb-usb-a867-dev
-Version: 1.0-r0
-Recommends: enigma2-plugin-drivers-dvb-usb-a867 (= 1.0-r0)
-Section: devel
-Architecture: all
-Maintainer: OpenViX
-MD5Sum: 64032d640dd3786b229078df057b4b1b
-SHA256sum: 3e8a11044972faa6533673ee8411bbda2a8084e35b5a86c629d99c84dffe67c6
-Size: 644
-Filename: enigma2-plugin-drivers-dvb-usb-a867-dev_1.0-r0_all.ipk
-Source: enigma2-plugin-drivers-dvb-usb-a867.bb
-Description: USB DVB driver for Afatech 867 chipset - Development files
-OE: enigma2-plugin-drivers-dvb-usb-a867
-HomePage: https://www.world-of-satellite.com
-License: GPL-2.0-or-later
-Priority: optional
-
-Package: enigma2-plugin-drivers-dvb-usb-a867
-Version: 1.0-r0
-Recommends: firmware-dvb-usb-af9035-02, kernel-module-dvb-usb-a867
-Section: base
-Architecture: all
-Maintainer: OpenViX
-MD5Sum: 15a23915781c11b849fc073609de98e9
-SHA256sum: 69004e051f4d183bf4b46a1bc8eba1bebe853d048526bf3c9e1f2c662ba5ef8d
-Size: 582
-Filename: enigma2-plugin-drivers-dvb-usb-a867_1.0-r0_all.ipk
-Source: enigma2-plugin-drivers-dvb-usb-a867.bb
-Description: USB DVB driver for Afatech 867 chipset
-OE: enigma2-plugin-drivers-dvb-usb-a867
-HomePage: https://www.world-of-satellite.com
-License: GPL-2.0-or-later
-Priority: optional
-
 Package: enigma2-plugin-drivers-dvb-usb-af9015-dbg
 Version: 1.0-r0
 Section: devel
@@ -3231,13 +3181,13 @@ Priority: optional
 
 Package: enigma2-plugin-drivers-dvb-usb-dvbsky-classic
 Version: 2.0-r2
-Recommends: firmware-dvb-fe-ds3000, firmware-dvb-fe-ds3xxx, firmware-dvb-fe-si2168, firmware-dvb-usb-s660, kernel-module-dvb-usb-dvbsky, kernel-module-dvb-usb-v2, kernel-module-dvbsky-m88ds3103, kernel-module-dvbsky-m88rs6000, kernel-module-m88ds3103, kernel-module-si2157, kernel-module-si2168, kernel-module-sit2fe, kernel-module-ts2020
+Recommends: firmware-dvb-fe-ds3000, firmware-dvb-fe-ds3xxx, firmware-dvb-fe-si2168, firmware-dvb-usb-s660, kernel-module-dvb-usb-dvbsky, kernel-module-dvb-usb-v2-media-tree, kernel-module-dvbsky-m88ds3103, kernel-module-dvbsky-m88rs6000, kernel-module-m88ds3103, kernel-module-si2157, kernel-module-si2168, kernel-module-sit2fe, kernel-module-ts2020
 Section: base
 Architecture: all
 Maintainer: OpenViX
-MD5Sum: e4cb0558e16a814aa0190e9d76547621
-SHA256sum: bd824040ebf679fd0df9e54d011c31d59d95bbbb7ee7a648545409c0abefc3fa
-Size: 650
+MD5Sum: 554b479f02e0a2809e148c058af6bf38
+SHA256sum: 988d1b9d13e09c44e40d154c13c7678548c314c4254450208cafd489d2804c35
+Size: 656
 Filename: enigma2-plugin-drivers-dvb-usb-dvbsky-classic_2.0-r2_all.ipk
 Source: enigma2-plugin-drivers-dvb-usb-dvbsky-classic.bb
 Description: USB DVB driver for DVB-SKY Family
@@ -3647,100 +3597,600 @@ License: GPL-2.0-or-later
 Priority: optional
 
 Package: enigma2-plugin-drivers-dvb-usb-tbs-dbg
-Version: 1.1-r0
+Version: 2.0-r0
 Section: devel
 Architecture: all
 Maintainer: OpenViX
-MD5Sum: 94f659ca4b3f6b0f1a913539266ddd21
-SHA256sum: 4b4d7671657b77c1fadb3a06a7995538774998af6b9c08af247c21755413a95c
-Size: 608
-Filename: enigma2-plugin-drivers-dvb-usb-tbs-dbg_1.1-r0_all.ipk
+MD5Sum: 1074a56c8daa4ccb3d32da67e0244913
+SHA256sum: 4953010865041c3eaa9cd450d28a932de7c6e3a3b0fe64fee567e669c763b6dd
+Size: 678
+Filename: enigma2-plugin-drivers-dvb-usb-tbs-dbg_2.0-r0_all.ipk
 Source: enigma2-plugin-drivers-dvb-usb-tbs.bb
-Description: enigma2-plugin-drivers-dvb-usb-tbs version 1.1-r0 - Debugging files
+Description: Legacy USB DVB driver package for TBS tuners - Debugging files
 OE: enigma2-plugin-drivers-dvb-usb-tbs
 HomePage: https://www.world-of-satellite.com
 License: GPL-2.0-or-later
 Priority: optional
 
 Package: enigma2-plugin-drivers-dvb-usb-tbs-dev
-Version: 1.1-r0
-Recommends: enigma2-plugin-drivers-dvb-usb-tbs (= 1.1-r0)
+Version: 2.0-r0
+Recommends: enigma2-plugin-drivers-dvb-usb-tbs (= 2.0-r0)
 Section: devel
 Architecture: all
 Maintainer: OpenViX
-MD5Sum: 2f30c080a9d76edb21224933ffc96f10
-SHA256sum: fa36e23edb65c1a033976df045285813343512f9b6a3fd3ad9b1f744efe642ac
-Size: 642
-Filename: enigma2-plugin-drivers-dvb-usb-tbs-dev_1.1-r0_all.ipk
+MD5Sum: 811a19585f0f9a8b20ea22990f909593
+SHA256sum: 9d94f826ca95d36ce4d0f2cea5c23b63143c5d14bb44b6c7da7b28a2b69c37cb
+Size: 714
+Filename: enigma2-plugin-drivers-dvb-usb-tbs-dev_2.0-r0_all.ipk
 Source: enigma2-plugin-drivers-dvb-usb-tbs.bb
-Description: enigma2-plugin-drivers-dvb-usb-tbs version 1.1-r0 - Development files
+Description: Legacy USB DVB driver package for TBS tuners - Development files
 OE: enigma2-plugin-drivers-dvb-usb-tbs
 HomePage: https://www.world-of-satellite.com
 License: GPL-2.0-or-later
 Priority: optional
 
 Package: enigma2-plugin-drivers-dvb-usb-tbs5520-dbg
-Version: 1.0-r0
+Version: 1.0-r1
 Section: devel
 Architecture: all
 Maintainer: OpenViX
-MD5Sum: 3156251093655cb9f41799e1d545945b
-SHA256sum: 51c766551284d54e23cad1a85fbc92e6a206b8a36510b90e7d820aa162bdfa90
-Size: 610
-Filename: enigma2-plugin-drivers-dvb-usb-tbs5520-dbg_1.0-r0_all.ipk
+MD5Sum: 2344496fd3272d63940eed02f8771c66
+SHA256sum: 9896f76a2c4470aef6660674a663bce9185bcd818735e7440f12e3e790a69da1
+Size: 650
+Filename: enigma2-plugin-drivers-dvb-usb-tbs5520-dbg_1.0-r1_all.ipk
 Source: enigma2-plugin-drivers-dvb-usb-tbs5520.bb
-Description: enigma2-plugin-drivers-dvb-usb-tbs5520 version 1.0-r0 - Debugging files
+Description: Legacy USB DVB driver package for the TBS5520 tuner - Debugging files
 OE: enigma2-plugin-drivers-dvb-usb-tbs5520
 HomePage: https://www.world-of-satellite.com
 License: GPL-2.0-or-later
 Priority: optional
 
 Package: enigma2-plugin-drivers-dvb-usb-tbs5520-dev
-Version: 1.0-r0
-Recommends: enigma2-plugin-drivers-dvb-usb-tbs5520 (= 1.0-r0)
+Version: 1.0-r1
+Recommends: enigma2-plugin-drivers-dvb-usb-tbs5520 (= 1.0-r1)
 Section: devel
 Architecture: all
 Maintainer: OpenViX
-MD5Sum: 9deeef7534086e6232c47362e943b458
-SHA256sum: d3e258e9ce9aabf19988e3efca294f07ca28a34bbfd99f8466fd01a9b1d1b5c8
-Size: 646
-Filename: enigma2-plugin-drivers-dvb-usb-tbs5520-dev_1.0-r0_all.ipk
+MD5Sum: baca6064612725df72349f07c9500a95
+SHA256sum: 1db9fcf877078d9a932204b7938815f3bdf718695bcc69f74e9f3e13ac6961f2
+Size: 688
+Filename: enigma2-plugin-drivers-dvb-usb-tbs5520-dev_1.0-r1_all.ipk
 Source: enigma2-plugin-drivers-dvb-usb-tbs5520.bb
-Description: enigma2-plugin-drivers-dvb-usb-tbs5520 version 1.0-r0 - Development files
+Description: Legacy USB DVB driver package for the TBS5520 tuner - Development files
 OE: enigma2-plugin-drivers-dvb-usb-tbs5520
 HomePage: https://www.world-of-satellite.com
 License: GPL-2.0-or-later
 Priority: optional
 
 Package: enigma2-plugin-drivers-dvb-usb-tbs5520
-Version: 1.0-r0
+Version: 1.0-r1
 Recommends: firmware-avl6882, firmware-dvb-usb-tbs5520, kernel-module-avl6882, kernel-module-dvb-usb-tbs5520, kernel-module-r848
 Section: base
 Architecture: all
 Maintainer: OpenViX
-MD5Sum: 6fafb1f874f3c1013d59518c400e8e64
-SHA256sum: 13b3442ce2072f43d5bfc5b163b4fe0b8e1b84db1d1c2b2ae85bd97ad52a2b86
-Size: 594
-Filename: enigma2-plugin-drivers-dvb-usb-tbs5520_1.0-r0_all.ipk
+MD5Sum: 725426066fb2ed7749a7da591f426f32
+SHA256sum: 595a7b2cc6ff3b006d6ead364a416d830ced21df35b8ad3f36c79e56ece41831
+Size: 638
+Filename: enigma2-plugin-drivers-dvb-usb-tbs5520_1.0-r1_all.ipk
 Source: enigma2-plugin-drivers-dvb-usb-tbs5520.bb
-Description: enigma2-plugin-drivers-dvb-usb-tbs5520 version 1.0-r0
+Description: Legacy USB DVB driver package for the TBS5520 tuner
 OE: enigma2-plugin-drivers-dvb-usb-tbs5520
 HomePage: https://www.world-of-satellite.com
 License: GPL-2.0-or-later
 Priority: optional
 
+Package: enigma2-plugin-drivers-dvb-usb-tbs5520se-dbg
+Version: 2.0-r0
+Section: devel
+Architecture: all
+Maintainer: OpenViX
+MD5Sum: 0e4dbf376b693fc71a9578cd9bc8e6f0
+SHA256sum: b9d5f4279576c1c690a7b144b0d649759928f215790966546b0efc841bb182c1
+Size: 612
+Filename: enigma2-plugin-drivers-dvb-usb-tbs5520se-dbg_2.0-r0_all.ipk
+Source: enigma2-plugin-drivers-dvb-usb-tbs5520se.bb
+Description: USB DVB driver package for the TBS5520SE tuner - Debugging files
+OE: enigma2-plugin-drivers-dvb-usb-tbs5520se
+HomePage: https://www.world-of-satellite.com
+License: GPL-2.0-or-later
+Priority: optional
+
+Package: enigma2-plugin-drivers-dvb-usb-tbs5520se-dev
+Version: 2.0-r0
+Recommends: enigma2-plugin-drivers-dvb-usb-tbs5520se (= 2.0-r0)
+Section: devel
+Architecture: all
+Maintainer: OpenViX
+MD5Sum: 038ce35842057ee999eb15d71358fde7
+SHA256sum: af0382134463b67b4343b604e99a9f6da1c61cdc907cdb451a3868e6e045158e
+Size: 650
+Filename: enigma2-plugin-drivers-dvb-usb-tbs5520se-dev_2.0-r0_all.ipk
+Source: enigma2-plugin-drivers-dvb-usb-tbs5520se.bb
+Description: USB DVB driver package for the TBS5520SE tuner - Development files
+OE: enigma2-plugin-drivers-dvb-usb-tbs5520se
+HomePage: https://www.world-of-satellite.com
+License: GPL-2.0-or-later
+Priority: optional
+
+Package: enigma2-plugin-drivers-dvb-usb-tbs5520se
+Version: 2.0-r0
+Recommends: tbs-usb-bridge-5520se
+Section: base
+Architecture: all
+Maintainer: OpenViX
+MD5Sum: 468192f66e2e16416e74d0a8e94958b9
+SHA256sum: c16986c21026919500fb01dc1f5e3417e55c5350a26f903279f9e9c3eb0a863e
+Size: 568
+Filename: enigma2-plugin-drivers-dvb-usb-tbs5520se_2.0-r0_all.ipk
+Source: enigma2-plugin-drivers-dvb-usb-tbs5520se.bb
+Description: USB DVB driver package for the TBS5520SE tuner
+OE: enigma2-plugin-drivers-dvb-usb-tbs5520se
+HomePage: https://www.world-of-satellite.com
+License: GPL-2.0-or-later
+Priority: optional
+
+Package: enigma2-plugin-drivers-dvb-usb-tbs5530-dbg
+Version: 2.0-r0
+Section: devel
+Architecture: all
+Maintainer: OpenViX
+MD5Sum: 40e907a685224d81d35c39747dca5728
+SHA256sum: a7270af154366d2075cae53253260fcdb0f8975d6f7daeaf15a35ab007b7631b
+Size: 610
+Filename: enigma2-plugin-drivers-dvb-usb-tbs5530-dbg_2.0-r0_all.ipk
+Source: enigma2-plugin-drivers-dvb-usb-tbs5530.bb
+Description: USB DVB driver package for the TBS5530 tuner - Debugging files
+OE: enigma2-plugin-drivers-dvb-usb-tbs5530
+HomePage: https://www.world-of-satellite.com
+License: GPL-2.0-or-later
+Priority: optional
+
+Package: enigma2-plugin-drivers-dvb-usb-tbs5530-dev
+Version: 2.0-r0
+Recommends: enigma2-plugin-drivers-dvb-usb-tbs5530 (= 2.0-r0)
+Section: devel
+Architecture: all
+Maintainer: OpenViX
+MD5Sum: 96a23cc31a650b509b945b00eaab7897
+SHA256sum: a12ad7edba94eeeef94b3b31401a6859b13516aaf434df5c38bbd2a003244e0b
+Size: 646
+Filename: enigma2-plugin-drivers-dvb-usb-tbs5530-dev_2.0-r0_all.ipk
+Source: enigma2-plugin-drivers-dvb-usb-tbs5530.bb
+Description: USB DVB driver package for the TBS5530 tuner - Development files
+OE: enigma2-plugin-drivers-dvb-usb-tbs5530
+HomePage: https://www.world-of-satellite.com
+License: GPL-2.0-or-later
+Priority: optional
+
+Package: enigma2-plugin-drivers-dvb-usb-tbs5530
+Version: 2.0-r0
+Recommends: tbs-usb-bridge-5530
+Section: base
+Architecture: all
+Maintainer: OpenViX
+MD5Sum: 0fce6a2fe2c8513589574c9f4c6149b6
+SHA256sum: 84910fd098cf11029daea5d5282c1b6a243eb2d634b4806430182d82d5a5cbc3
+Size: 566
+Filename: enigma2-plugin-drivers-dvb-usb-tbs5530_2.0-r0_all.ipk
+Source: enigma2-plugin-drivers-dvb-usb-tbs5530.bb
+Description: USB DVB driver package for the TBS5530 tuner
+OE: enigma2-plugin-drivers-dvb-usb-tbs5530
+HomePage: https://www.world-of-satellite.com
+License: GPL-2.0-or-later
+Priority: optional
+
+Package: enigma2-plugin-drivers-dvb-usb-tbs5580-dbg
+Version: 2.0-r0
+Section: devel
+Architecture: all
+Maintainer: OpenViX
+MD5Sum: f967d981c1a6f2d6ad1a375e5cfc6a81
+SHA256sum: ea587bd965c64500b6345f5011bb19761e676d44f323706a0bcf83e2dd061ef6
+Size: 610
+Filename: enigma2-plugin-drivers-dvb-usb-tbs5580-dbg_2.0-r0_all.ipk
+Source: enigma2-plugin-drivers-dvb-usb-tbs5580.bb
+Description: USB DVB driver package for the TBS5580 tuner - Debugging files
+OE: enigma2-plugin-drivers-dvb-usb-tbs5580
+HomePage: https://www.world-of-satellite.com
+License: GPL-2.0-or-later
+Priority: optional
+
+Package: enigma2-plugin-drivers-dvb-usb-tbs5580-dev
+Version: 2.0-r0
+Recommends: enigma2-plugin-drivers-dvb-usb-tbs5580 (= 2.0-r0)
+Section: devel
+Architecture: all
+Maintainer: OpenViX
+MD5Sum: 8db5c28a99309e9e9b1de1b89fa77888
+SHA256sum: 1c7aefe2e40b88678901933883d6c92f1c18e9861246ea81bf8ed2a153583053
+Size: 646
+Filename: enigma2-plugin-drivers-dvb-usb-tbs5580-dev_2.0-r0_all.ipk
+Source: enigma2-plugin-drivers-dvb-usb-tbs5580.bb
+Description: USB DVB driver package for the TBS5580 tuner - Development files
+OE: enigma2-plugin-drivers-dvb-usb-tbs5580
+HomePage: https://www.world-of-satellite.com
+License: GPL-2.0-or-later
+Priority: optional
+
+Package: enigma2-plugin-drivers-dvb-usb-tbs5580
+Version: 2.0-r0
+Recommends: tbs-usb-bridge-5580
+Section: base
+Architecture: all
+Maintainer: OpenViX
+MD5Sum: 2e703d934a98228d94ee7666fbccb7d8
+SHA256sum: 1181020b88184e5f11b8a63211e889c9154f9d7fddf2920fc9a6b7e990b5e311
+Size: 566
+Filename: enigma2-plugin-drivers-dvb-usb-tbs5580_2.0-r0_all.ipk
+Source: enigma2-plugin-drivers-dvb-usb-tbs5580.bb
+Description: USB DVB driver package for the TBS5580 tuner
+OE: enigma2-plugin-drivers-dvb-usb-tbs5580
+HomePage: https://www.world-of-satellite.com
+License: GPL-2.0-or-later
+Priority: optional
+
+Package: enigma2-plugin-drivers-dvb-usb-tbs5590-v2-dbg
+Version: 2.0-r0
+Section: devel
+Architecture: all
+Maintainer: OpenViX
+MD5Sum: 38e73572f345d9c17b74587f36403144
+SHA256sum: 73619bc393b2f7c257738e990b16b48a5bd16d16583da8e4ef304ef3c37d1734
+Size: 614
+Filename: enigma2-plugin-drivers-dvb-usb-tbs5590-v2-dbg_2.0-r0_all.ipk
+Source: enigma2-plugin-drivers-dvb-usb-tbs5590-v2.bb
+Description: USB DVB driver package for the TBS5590 V2 tuner - Debugging files
+OE: enigma2-plugin-drivers-dvb-usb-tbs5590-v2
+HomePage: https://www.world-of-satellite.com
+License: GPL-2.0-or-later
+Priority: optional
+
+Package: enigma2-plugin-drivers-dvb-usb-tbs5590-v2-dev
+Version: 2.0-r0
+Recommends: enigma2-plugin-drivers-dvb-usb-tbs5590-v2 (= 2.0-r0)
+Section: devel
+Architecture: all
+Maintainer: OpenViX
+MD5Sum: 450525c9b7a4a83eb51021299cbdc2f9
+SHA256sum: 3176af21529afb2af41defc59f486d3a9a5f73acb140909368f8b3f830b98e72
+Size: 650
+Filename: enigma2-plugin-drivers-dvb-usb-tbs5590-v2-dev_2.0-r0_all.ipk
+Source: enigma2-plugin-drivers-dvb-usb-tbs5590-v2.bb
+Description: USB DVB driver package for the TBS5590 V2 tuner - Development files
+OE: enigma2-plugin-drivers-dvb-usb-tbs5590-v2
+HomePage: https://www.world-of-satellite.com
+License: GPL-2.0-or-later
+Priority: optional
+
+Package: enigma2-plugin-drivers-dvb-usb-tbs5590-v2
+Version: 2.0-r0
+Recommends: tbs-usb-bridge-5590-v2
+Section: base
+Architecture: all
+Maintainer: OpenViX
+MD5Sum: 92116cf5a08683da361212c48f1ecac5
+SHA256sum: 3f61e462e7a67fadf42f92dc3d4950b7682f7d97d90d695a19f282b9f444b0f3
+Size: 572
+Filename: enigma2-plugin-drivers-dvb-usb-tbs5590-v2_2.0-r0_all.ipk
+Source: enigma2-plugin-drivers-dvb-usb-tbs5590-v2.bb
+Description: USB DVB driver package for the TBS5590 V2 tuner
+OE: enigma2-plugin-drivers-dvb-usb-tbs5590-v2
+HomePage: https://www.world-of-satellite.com
+License: GPL-2.0-or-later
+Priority: optional
+
+Package: enigma2-plugin-drivers-dvb-usb-tbs5881-dbg
+Version: 2.0-r0
+Section: devel
+Architecture: all
+Maintainer: OpenViX
+MD5Sum: 0a10486f13a174085988f56437d3ba61
+SHA256sum: e20320aeabce5fd77f389edec3559b950cd7a11f2055e6271b17fe790ee95ac9
+Size: 608
+Filename: enigma2-plugin-drivers-dvb-usb-tbs5881-dbg_2.0-r0_all.ipk
+Source: enigma2-plugin-drivers-dvb-usb-tbs5881.bb
+Description: USB DVB driver package for the TBS5881 tuner - Debugging files
+OE: enigma2-plugin-drivers-dvb-usb-tbs5881
+HomePage: https://www.world-of-satellite.com
+License: GPL-2.0-or-later
+Priority: optional
+
+Package: enigma2-plugin-drivers-dvb-usb-tbs5881-dev
+Version: 2.0-r0
+Recommends: enigma2-plugin-drivers-dvb-usb-tbs5881 (= 2.0-r0)
+Section: devel
+Architecture: all
+Maintainer: OpenViX
+MD5Sum: 5261378fb5da7c542fc7a2c45ed77a21
+SHA256sum: b815fcaacaf08974f55f0f8698446d9e2629ef228ab3a3369674ce36d65b9fb0
+Size: 646
+Filename: enigma2-plugin-drivers-dvb-usb-tbs5881-dev_2.0-r0_all.ipk
+Source: enigma2-plugin-drivers-dvb-usb-tbs5881.bb
+Description: USB DVB driver package for the TBS5881 tuner - Development files
+OE: enigma2-plugin-drivers-dvb-usb-tbs5881
+HomePage: https://www.world-of-satellite.com
+License: GPL-2.0-or-later
+Priority: optional
+
+Package: enigma2-plugin-drivers-dvb-usb-tbs5881
+Version: 2.0-r0
+Recommends: tbs-usb-bridge-5881
+Section: base
+Architecture: all
+Maintainer: OpenViX
+MD5Sum: 9d0402db2326801f9c53d6eb2d6483a3
+SHA256sum: addfc0fc493fef24a127e6012d7cf69f02199424c84c8944c7ea283f7772c946
+Size: 566
+Filename: enigma2-plugin-drivers-dvb-usb-tbs5881_2.0-r0_all.ipk
+Source: enigma2-plugin-drivers-dvb-usb-tbs5881.bb
+Description: USB DVB driver package for the TBS5881 tuner
+OE: enigma2-plugin-drivers-dvb-usb-tbs5881
+HomePage: https://www.world-of-satellite.com
+License: GPL-2.0-or-later
+Priority: optional
+
+Package: enigma2-plugin-drivers-dvb-usb-tbs5925-dbg
+Version: 2.0-r0
+Section: devel
+Architecture: all
+Maintainer: OpenViX
+MD5Sum: 5cab1fb36880dacf7ad89c0c5bebc37c
+SHA256sum: b26ddd78120c303ca4e0ffd217240659d6c1e6e6a2c55cc1ecb0afc097d4586c
+Size: 610
+Filename: enigma2-plugin-drivers-dvb-usb-tbs5925-dbg_2.0-r0_all.ipk
+Source: enigma2-plugin-drivers-dvb-usb-tbs5925.bb
+Description: USB DVB driver package for the TBS5925 tuner - Debugging files
+OE: enigma2-plugin-drivers-dvb-usb-tbs5925
+HomePage: https://www.world-of-satellite.com
+License: GPL-2.0-or-later
+Priority: optional
+
+Package: enigma2-plugin-drivers-dvb-usb-tbs5925-dev
+Version: 2.0-r0
+Recommends: enigma2-plugin-drivers-dvb-usb-tbs5925 (= 2.0-r0)
+Section: devel
+Architecture: all
+Maintainer: OpenViX
+MD5Sum: 1e8706c9dfaad78335e287a3e3e7d4cc
+SHA256sum: f7a6e3c984747be2080fb8f9fb90720b7097c81fa5d51dafec6cfb16285492a2
+Size: 646
+Filename: enigma2-plugin-drivers-dvb-usb-tbs5925-dev_2.0-r0_all.ipk
+Source: enigma2-plugin-drivers-dvb-usb-tbs5925.bb
+Description: USB DVB driver package for the TBS5925 tuner - Development files
+OE: enigma2-plugin-drivers-dvb-usb-tbs5925
+HomePage: https://www.world-of-satellite.com
+License: GPL-2.0-or-later
+Priority: optional
+
+Package: enigma2-plugin-drivers-dvb-usb-tbs5925
+Version: 2.0-r0
+Recommends: tbs-usb-bridge-5925
+Section: base
+Architecture: all
+Maintainer: OpenViX
+MD5Sum: 82c0b29c6bcb35e82c62a8e66555d95d
+SHA256sum: cace2d23a939ed42ce22170314e9bf3bb4437824be28713e50b9967c7b0c1e0b
+Size: 566
+Filename: enigma2-plugin-drivers-dvb-usb-tbs5925_2.0-r0_all.ipk
+Source: enigma2-plugin-drivers-dvb-usb-tbs5925.bb
+Description: USB DVB driver package for the TBS5925 tuner
+OE: enigma2-plugin-drivers-dvb-usb-tbs5925
+HomePage: https://www.world-of-satellite.com
+License: GPL-2.0-or-later
+Priority: optional
+
+Package: enigma2-plugin-drivers-dvb-usb-tbs5927-dbg
+Version: 2.0-r0
+Section: devel
+Architecture: all
+Maintainer: OpenViX
+MD5Sum: bccc9ff127664e107b792dfa32d4507a
+SHA256sum: ae3709fe407bb31faf93ebcd16279e54be272a5276d58cd97665d8725a4c3d73
+Size: 610
+Filename: enigma2-plugin-drivers-dvb-usb-tbs5927-dbg_2.0-r0_all.ipk
+Source: enigma2-plugin-drivers-dvb-usb-tbs5927.bb
+Description: USB DVB driver package for the TBS5927 tuner - Debugging files
+OE: enigma2-plugin-drivers-dvb-usb-tbs5927
+HomePage: https://www.world-of-satellite.com
+License: GPL-2.0-or-later
+Priority: optional
+
+Package: enigma2-plugin-drivers-dvb-usb-tbs5927-dev
+Version: 2.0-r0
+Recommends: enigma2-plugin-drivers-dvb-usb-tbs5927 (= 2.0-r0)
+Section: devel
+Architecture: all
+Maintainer: OpenViX
+MD5Sum: f898f8729a5f6e58e615e08ab4dbcf54
+SHA256sum: 237fa488dcb32cade1ec74269f71befe888ae7dcaebb18a1a6b834174bed3f92
+Size: 646
+Filename: enigma2-plugin-drivers-dvb-usb-tbs5927-dev_2.0-r0_all.ipk
+Source: enigma2-plugin-drivers-dvb-usb-tbs5927.bb
+Description: USB DVB driver package for the TBS5927 tuner - Development files
+OE: enigma2-plugin-drivers-dvb-usb-tbs5927
+HomePage: https://www.world-of-satellite.com
+License: GPL-2.0-or-later
+Priority: optional
+
+Package: enigma2-plugin-drivers-dvb-usb-tbs5927
+Version: 2.0-r0
+Recommends: tbs-usb-bridge-5927
+Section: base
+Architecture: all
+Maintainer: OpenViX
+MD5Sum: 2de79b7161db92ecacd3fcb6223df005
+SHA256sum: b570666fd051930f80ae36ea2fcaef60d799e8ea357232d7ae439b415415848c
+Size: 566
+Filename: enigma2-plugin-drivers-dvb-usb-tbs5927_2.0-r0_all.ipk
+Source: enigma2-plugin-drivers-dvb-usb-tbs5927.bb
+Description: USB DVB driver package for the TBS5927 tuner
+OE: enigma2-plugin-drivers-dvb-usb-tbs5927
+HomePage: https://www.world-of-satellite.com
+License: GPL-2.0-or-later
+Priority: optional
+
+Package: enigma2-plugin-drivers-dvb-usb-tbs5930-lite-dbg
+Version: 2.0-r0
+Section: devel
+Architecture: all
+Maintainer: OpenViX
+MD5Sum: e52593815d497ce6791e967a62557598
+SHA256sum: 643dd7bf4a17f4b4d4ed2a7a5052763472dcbb45ab8dee792e51a9c21112e21b
+Size: 616
+Filename: enigma2-plugin-drivers-dvb-usb-tbs5930-lite-dbg_2.0-r0_all.ipk
+Source: enigma2-plugin-drivers-dvb-usb-tbs5930-lite.bb
+Description: USB DVB driver package for the TBS5930 Lite tuner - Debugging files
+OE: enigma2-plugin-drivers-dvb-usb-tbs5930-lite
+HomePage: https://www.world-of-satellite.com
+License: GPL-2.0-or-later
+Priority: optional
+
+Package: enigma2-plugin-drivers-dvb-usb-tbs5930-lite-dev
+Version: 2.0-r0
+Recommends: enigma2-plugin-drivers-dvb-usb-tbs5930-lite (= 2.0-r0)
+Section: devel
+Architecture: all
+Maintainer: OpenViX
+MD5Sum: b248479e94935bbb2e3b48c61b738b48
+SHA256sum: 790b8d7116ef5041b056378af545d1cfab1a9205dd731c732550aaa25a88aaf9
+Size: 652
+Filename: enigma2-plugin-drivers-dvb-usb-tbs5930-lite-dev_2.0-r0_all.ipk
+Source: enigma2-plugin-drivers-dvb-usb-tbs5930-lite.bb
+Description: USB DVB driver package for the TBS5930 Lite tuner - Development files
+OE: enigma2-plugin-drivers-dvb-usb-tbs5930-lite
+HomePage: https://www.world-of-satellite.com
+License: GPL-2.0-or-later
+Priority: optional
+
+Package: enigma2-plugin-drivers-dvb-usb-tbs5930-lite
+Version: 2.0-r0
+Recommends: tbs-usb-bridge-5930-lite
+Section: base
+Architecture: all
+Maintainer: OpenViX
+MD5Sum: 0177c180739474f85d1d4bf9a89f4628
+SHA256sum: dc5605ab87e894557ca8215c9dae82319bce34229515737217758dad299084a8
+Size: 574
+Filename: enigma2-plugin-drivers-dvb-usb-tbs5930-lite_2.0-r0_all.ipk
+Source: enigma2-plugin-drivers-dvb-usb-tbs5930-lite.bb
+Description: USB DVB driver package for the TBS5930 Lite tuner
+OE: enigma2-plugin-drivers-dvb-usb-tbs5930-lite
+HomePage: https://www.world-of-satellite.com
+License: GPL-2.0-or-later
+Priority: optional
+
+Package: enigma2-plugin-drivers-dvb-usb-tbs5980-dbg
+Version: 2.0-r0
+Section: devel
+Architecture: all
+Maintainer: OpenViX
+MD5Sum: 48fe90d6f38be5ff791dca891120fdcf
+SHA256sum: 52141536ce72f67df9d37f946a29c39b6423404b1d84321277134be23b58cb88
+Size: 612
+Filename: enigma2-plugin-drivers-dvb-usb-tbs5980-dbg_2.0-r0_all.ipk
+Source: enigma2-plugin-drivers-dvb-usb-tbs5980.bb
+Description: USB DVB driver package for the TBS5980 tuner - Debugging files
+OE: enigma2-plugin-drivers-dvb-usb-tbs5980
+HomePage: https://www.world-of-satellite.com
+License: GPL-2.0-or-later
+Priority: optional
+
+Package: enigma2-plugin-drivers-dvb-usb-tbs5980-dev
+Version: 2.0-r0
+Recommends: enigma2-plugin-drivers-dvb-usb-tbs5980 (= 2.0-r0)
+Section: devel
+Architecture: all
+Maintainer: OpenViX
+MD5Sum: c1b563a79e0176217e5e3a599664a378
+SHA256sum: ee7a3dc9571071271826f7c57ed283a66b940a0d7e2f83b011bd6b6c5ba7dd73
+Size: 648
+Filename: enigma2-plugin-drivers-dvb-usb-tbs5980-dev_2.0-r0_all.ipk
+Source: enigma2-plugin-drivers-dvb-usb-tbs5980.bb
+Description: USB DVB driver package for the TBS5980 tuner - Development files
+OE: enigma2-plugin-drivers-dvb-usb-tbs5980
+HomePage: https://www.world-of-satellite.com
+License: GPL-2.0-or-later
+Priority: optional
+
+Package: enigma2-plugin-drivers-dvb-usb-tbs5980
+Version: 2.0-r0
+Recommends: tbs-usb-bridge-5980
+Section: base
+Architecture: all
+Maintainer: OpenViX
+MD5Sum: 06c85962c6faae9e09ec453a5ef7c5ad
+SHA256sum: 30e5bb5e5afcc5409ec8c3164c7f6b2dacfc32d4d79af7901996f60fa212ce0e
+Size: 566
+Filename: enigma2-plugin-drivers-dvb-usb-tbs5980_2.0-r0_all.ipk
+Source: enigma2-plugin-drivers-dvb-usb-tbs5980.bb
+Description: USB DVB driver package for the TBS5980 tuner
+OE: enigma2-plugin-drivers-dvb-usb-tbs5980
+HomePage: https://www.world-of-satellite.com
+License: GPL-2.0-or-later
+Priority: optional
+
+Package: enigma2-plugin-drivers-dvb-usb-tbs5990-dbg
+Version: 2.0-r0
+Section: devel
+Architecture: all
+Maintainer: OpenViX
+MD5Sum: c08571402f56d59c1e67690d5e2625da
+SHA256sum: 2383b1a1b7de08e5045f99fba73564b9421f1b51499f9cde94c1f5b304b38449
+Size: 614
+Filename: enigma2-plugin-drivers-dvb-usb-tbs5990-dbg_2.0-r0_all.ipk
+Source: enigma2-plugin-drivers-dvb-usb-tbs5990.bb
+Description: USB DVB driver package for the TBS5990 dual tuner - Debugging files
+OE: enigma2-plugin-drivers-dvb-usb-tbs5990
+HomePage: https://www.world-of-satellite.com
+License: GPL-2.0-or-later
+Priority: optional
+
+Package: enigma2-plugin-drivers-dvb-usb-tbs5990-dev
+Version: 2.0-r0
+Recommends: enigma2-plugin-drivers-dvb-usb-tbs5990 (= 2.0-r0)
+Section: devel
+Architecture: all
+Maintainer: OpenViX
+MD5Sum: f98cf1df15382fa31ae3aafe201ed703
+SHA256sum: 003b80cd3b8abe9881ab7f0506cd4eb31327f8dbcad761ff8fcac3a68704a8ca
+Size: 650
+Filename: enigma2-plugin-drivers-dvb-usb-tbs5990-dev_2.0-r0_all.ipk
+Source: enigma2-plugin-drivers-dvb-usb-tbs5990.bb
+Description: USB DVB driver package for the TBS5990 dual tuner - Development files
+OE: enigma2-plugin-drivers-dvb-usb-tbs5990
+HomePage: https://www.world-of-satellite.com
+License: GPL-2.0-or-later
+Priority: optional
+
+Package: enigma2-plugin-drivers-dvb-usb-tbs5990
+Version: 2.0-r0
+Recommends: tbs-cx231xx-stack
+Section: base
+Architecture: all
+Maintainer: OpenViX
+MD5Sum: 3ef41937d4f987fbff7b87af1b092fab
+SHA256sum: 6441d00d38da4ad792c603426cd31c01bf9b1d9d3a25bbf67f15d6f0d8da0b3f
+Size: 574
+Filename: enigma2-plugin-drivers-dvb-usb-tbs5990_2.0-r0_all.ipk
+Source: enigma2-plugin-drivers-dvb-usb-tbs5990.bb
+Description: USB DVB driver package for the TBS5990 dual tuner
+OE: enigma2-plugin-drivers-dvb-usb-tbs5990
+HomePage: https://www.world-of-satellite.com
+License: GPL-2.0-or-later
+Priority: optional
+
 Package: enigma2-plugin-drivers-dvb-usb-tbs
-Version: 1.1-r0
+Version: 2.0-r0
 Recommends: astra-sm, blindscan-s2, enigma2-plugin-systemplugins-blindscan, firmware-dvb-usb-tbs5925, firmware-dvb-usb-tbs5980, kernel-module-cx24116, kernel-module-dvb-usb-tbsusb, kernel-module-stb6000, kernel-module-stb6100, kernel-module-stv0288, kernel-module-stv0299, kernel-module-stv090x, kernel-module-tda10071
 Section: base
 Architecture: all
 Maintainer: OpenViX
-MD5Sum: 28c1d6d5e6775b659d92afa858ed0296
-SHA256sum: 7bf57225e94f83503005aeba056c7bb77933b734d94ef1b65f293ea375f0af78
-Size: 654
-Filename: enigma2-plugin-drivers-dvb-usb-tbs_1.1-r0_all.ipk
+MD5Sum: d2c9f39feb784d07ca57b3dd1c6bf0f4
+SHA256sum: af650f67479f890cfd13d404984b6f4b9dcc488e5f9adb36027f90a478147b36
+Size: 726
+Filename: enigma2-plugin-drivers-dvb-usb-tbs_2.0-r0_all.ipk
 Source: enigma2-plugin-drivers-dvb-usb-tbs.bb
-Description: enigma2-plugin-drivers-dvb-usb-tbs version 1.1-r0
+Description: Legacy USB DVB driver package for TBS tuners
 OE: enigma2-plugin-drivers-dvb-usb-tbs
 HomePage: https://www.world-of-satellite.com
 License: GPL-2.0-or-later
@@ -4147,14 +4597,14 @@ License: GPL-2.0-or-later
 Priority: optional
 
 Package: enigma2-plugin-drivers-network-usb-mt7601u-dbg
-Version: 1.0-r2
+Version: 1.0-r3
 Section: devel
 Architecture: all
 Maintainer: OpenViX
-MD5Sum: 60b5dc632b6af82a04de83ed864b7be3
-SHA256sum: fa0345024564bf3f72d77ba55b1565a4cd693c35ae098507a3e607b70790df7a
+MD5Sum: 8797fb9c417a826e57b13739f31746e6
+SHA256sum: ff6a9d8487605ec378bd0281559d217ae799b85a4315749cb84d1896b8404712
 Size: 598
-Filename: enigma2-plugin-drivers-network-usb-mt7601u-dbg_1.0-r2_all.ipk
+Filename: enigma2-plugin-drivers-network-usb-mt7601u-dbg_1.0-r3_all.ipk
 Source: enigma2-plugin-drivers-network-usb-mt7601u.bb
 Description: mediatek 7601u - Debugging files
 OE: enigma2-plugin-drivers-network-usb-mt7601u
@@ -4163,15 +4613,15 @@ License: GPL-2.0-or-later
 Priority: optional
 
 Package: enigma2-plugin-drivers-network-usb-mt7601u-dev
-Version: 1.0-r2
-Recommends: enigma2-plugin-drivers-network-usb-mt7601u (= 1.0-r2)
+Version: 1.0-r3
+Recommends: enigma2-plugin-drivers-network-usb-mt7601u (= 1.0-r3)
 Section: devel
 Architecture: all
 Maintainer: OpenViX
-MD5Sum: 1a80d1e6ea26a7ba8dedac2fa2a3ff91
-SHA256sum: 570e95299d3024ca90608ed7698768077d3db46b09c21966ebee7436011b8d8e
+MD5Sum: b70d37911c7df073a20626dde68f2114
+SHA256sum: 0785e1ee8099a8d31e5b1a62dcc98e946a1dc3ac34bf0b9b4c6d1230e395a52a
 Size: 630
-Filename: enigma2-plugin-drivers-network-usb-mt7601u-dev_1.0-r2_all.ipk
+Filename: enigma2-plugin-drivers-network-usb-mt7601u-dev_1.0-r3_all.ipk
 Source: enigma2-plugin-drivers-network-usb-mt7601u.bb
 Description: mediatek 7601u - Development files
 OE: enigma2-plugin-drivers-network-usb-mt7601u
@@ -4180,15 +4630,15 @@ License: GPL-2.0-or-later
 Priority: optional
 
 Package: enigma2-plugin-drivers-network-usb-mt7601u
-Version: 1.0-r2
+Version: 1.0-r3
 Recommends: firmware-mt7601u, mt7601u
 Section: base
 Architecture: all
 Maintainer: OpenViX
-MD5Sum: 4dad2e5ca40d565efbecf55a6035a6b3
-SHA256sum: c46e9e86b577120e15dedb6fb777673c8e6078808000a0a670151defd3103aad
+MD5Sum: ac9176afe9bd3f9c1a5e94d03ee41b47
+SHA256sum: 02c8c3634a9af2e995b908f6717bf2f035fd85ee4e80e2406b38126efb8c9f88
 Size: 548
-Filename: enigma2-plugin-drivers-network-usb-mt7601u_1.0-r2_all.ipk
+Filename: enigma2-plugin-drivers-network-usb-mt7601u_1.0-r3_all.ipk
 Source: enigma2-plugin-drivers-network-usb-mt7601u.bb
 Description: mediatek 7601u
 OE: enigma2-plugin-drivers-network-usb-mt7601u
@@ -4197,14 +4647,14 @@ License: GPL-2.0-or-later
 Priority: optional
 
 Package: enigma2-plugin-drivers-network-usb-mt7610u-dbg
-Version: 1.0-r0
+Version: 1.0-r2
 Section: devel
 Architecture: all
 Maintainer: OpenViX
-MD5Sum: 50b1ca2c7360d187c4b21969f8d00781
-SHA256sum: c9233b4a62b9876f2ad60c5f0503f23fc50cbd956d1c5cc1410b703508f48fc4
+MD5Sum: 59663dacc999f3bded1f944de45440f3
+SHA256sum: 51a4931d58cd71a40d9d7887d0231d0de95a8128f82149c70b2c91f379edc052
 Size: 598
-Filename: enigma2-plugin-drivers-network-usb-mt7610u-dbg_1.0-r0_all.ipk
+Filename: enigma2-plugin-drivers-network-usb-mt7610u-dbg_1.0-r2_all.ipk
 Source: enigma2-plugin-drivers-network-usb-mt7610u.bb
 Description: mediatek 7610u - Debugging files
 OE: enigma2-plugin-drivers-network-usb-mt7610u
@@ -4213,15 +4663,15 @@ License: GPL-2.0-or-later
 Priority: optional
 
 Package: enigma2-plugin-drivers-network-usb-mt7610u-dev
-Version: 1.0-r0
-Recommends: enigma2-plugin-drivers-network-usb-mt7610u (= 1.0-r0)
+Version: 1.0-r2
+Recommends: enigma2-plugin-drivers-network-usb-mt7610u (= 1.0-r2)
 Section: devel
 Architecture: all
 Maintainer: OpenViX
-MD5Sum: 36377d5ad8c6fa379f1a46e734a2b32e
-SHA256sum: a3457eb18c66fbabba9eca0fcf12221eab25c29fd67550d67422d8827f833df7
+MD5Sum: ace1ace23a1cfda9b2bd1ddf9cea6180
+SHA256sum: 0641bd394e06559533c00b5eafd44aaa39cb0b0af29ca7dc65f54763c2957ce8
 Size: 630
-Filename: enigma2-plugin-drivers-network-usb-mt7610u-dev_1.0-r0_all.ipk
+Filename: enigma2-plugin-drivers-network-usb-mt7610u-dev_1.0-r2_all.ipk
 Source: enigma2-plugin-drivers-network-usb-mt7610u.bb
 Description: mediatek 7610u - Development files
 OE: enigma2-plugin-drivers-network-usb-mt7610u
@@ -4230,15 +4680,15 @@ License: GPL-2.0-or-later
 Priority: optional
 
 Package: enigma2-plugin-drivers-network-usb-mt7610u
-Version: 1.0-r0
+Version: 1.0-r2
 Recommends: mt7610u
 Section: base
 Architecture: all
 Maintainer: OpenViX
-MD5Sum: f1934b6c0abdab52cf8d04d245a6b9f7
-SHA256sum: 89b172833ad24a8cda6baef2e9e370201647854fc4f1dd66bc75bb91f7823fab
+MD5Sum: f9812715b1c7c2f613c8473ce97ca833
+SHA256sum: 7011b87ac76897775a09c297f1558473ddd5ef2b8748811afb64ae145d3d2f68
 Size: 540
-Filename: enigma2-plugin-drivers-network-usb-mt7610u_1.0-r0_all.ipk
+Filename: enigma2-plugin-drivers-network-usb-mt7610u_1.0-r2_all.ipk
 Source: enigma2-plugin-drivers-network-usb-mt7610u.bb
 Description: mediatek 7610u
 OE: enigma2-plugin-drivers-network-usb-mt7610u
@@ -4297,14 +4747,14 @@ License: GPL-2.0-or-later
 Priority: optional
 
 Package: enigma2-plugin-drivers-network-usb-r8712u-dbg
-Version: 1.0-r0
+Version: 1.0-r1
 Section: devel
 Architecture: all
 Maintainer: OpenViX
-MD5Sum: 177d2d7874049fc0c58d91362d14bdd3
-SHA256sum: 67c706f5b718ef07250f86e160304d9f2432f7be8dff49bdc85db5a972fc3f0a
+MD5Sum: 3c21f825e17741e1c186aea6c2021b52
+SHA256sum: ba49cd6d1419cbe343fd27cb76053bb3feca9c346fda4d103ffd0088ce1043c7
 Size: 614
-Filename: enigma2-plugin-drivers-network-usb-r8712u-dbg_1.0-r0_all.ipk
+Filename: enigma2-plugin-drivers-network-usb-r8712u-dbg_1.0-r1_all.ipk
 Source: enigma2-plugin-drivers-network-usb-r8712u.bb
 Description: Driver for Ralink USB devices R8712U - Debugging files
 OE: enigma2-plugin-drivers-network-usb-r8712u
@@ -4313,15 +4763,15 @@ License: GPL-2.0-or-later
 Priority: optional
 
 Package: enigma2-plugin-drivers-network-usb-r8712u-dev
-Version: 1.0-r0
-Recommends: enigma2-plugin-drivers-network-usb-r8712u (= 1.0-r0)
+Version: 1.0-r1
+Recommends: enigma2-plugin-drivers-network-usb-r8712u (= 1.0-r1)
 Section: devel
 Architecture: all
 Maintainer: OpenViX
-MD5Sum: 38cc4f8423562756cf94ccc863e8357f
-SHA256sum: 7058bda3eb3298503f84c451ee34332541959017e6104c3a66f687478ace1e1a
+MD5Sum: 1341d84ec3f35c272d6ddc332343de3a
+SHA256sum: 3fba466c850b5e5cda4199984ab2cd1ecabe18f0381f766db45e1d3a246c337a
 Size: 646
-Filename: enigma2-plugin-drivers-network-usb-r8712u-dev_1.0-r0_all.ipk
+Filename: enigma2-plugin-drivers-network-usb-r8712u-dev_1.0-r1_all.ipk
 Source: enigma2-plugin-drivers-network-usb-r8712u.bb
 Description: Driver for Ralink USB devices R8712U - Development files
 OE: enigma2-plugin-drivers-network-usb-r8712u
@@ -4330,15 +4780,15 @@ License: GPL-2.0-or-later
 Priority: optional
 
 Package: enigma2-plugin-drivers-network-usb-r8712u
-Version: 1.0-r0
+Version: 1.0-r1
 Recommends: firmware-rtl8712u, kernel-module-r8712u
 Section: base
 Architecture: all
 Maintainer: OpenViX
-MD5Sum: 687064d77afb8877b38702331d2455b5
-SHA256sum: c26c3d1cb51d30a0c3846b3da480121d1c9b566c4fb2daa02bbe4940bc6b98dd
-Size: 578
-Filename: enigma2-plugin-drivers-network-usb-r8712u_1.0-r0_all.ipk
+MD5Sum: cbeee2a639909444198bbd3eb57858d3
+SHA256sum: f34cec01652202c271e7c61ce55db7a35c979276c7dad79280632331f21a1840
+Size: 580
+Filename: enigma2-plugin-drivers-network-usb-r8712u_1.0-r1_all.ipk
 Source: enigma2-plugin-drivers-network-usb-r8712u.bb
 Description: Driver for Ralink USB devices R8712U
 OE: enigma2-plugin-drivers-network-usb-r8712u
@@ -4347,14 +4797,14 @@ License: GPL-2.0-or-later
 Priority: optional
 
 Package: enigma2-plugin-drivers-network-usb-r8723a-dbg
-Version: 1.0-r0
+Version: 1.0-r1
 Section: devel
 Architecture: all
 Maintainer: OpenViX
-MD5Sum: 798ef3f5cbf78fb75d3c852e0374fd78
-SHA256sum: 5f612d1da35b413fd1d80ea4a45a86afd9a2ea8540e65abc8e24efeba674f417
+MD5Sum: 234f01e56070c0319e9d2fca6a853b95
+SHA256sum: 313ac1e11bacf7d0db028fa811b13bd57afab6ad17f9cefa0eb0f6cb3d9a6023
 Size: 616
-Filename: enigma2-plugin-drivers-network-usb-r8723a-dbg_1.0-r0_all.ipk
+Filename: enigma2-plugin-drivers-network-usb-r8723a-dbg_1.0-r1_all.ipk
 Source: enigma2-plugin-drivers-network-usb-r8723a.bb
 Description: WiFi devices for Realtek RTL8723a chipsets. - Debugging files
 OE: enigma2-plugin-drivers-network-usb-r8723a
@@ -4363,15 +4813,15 @@ License: GPL-2.0-or-later
 Priority: optional
 
 Package: enigma2-plugin-drivers-network-usb-r8723a-dev
-Version: 1.0-r0
-Recommends: enigma2-plugin-drivers-network-usb-r8723a (= 1.0-r0)
+Version: 1.0-r1
+Recommends: enigma2-plugin-drivers-network-usb-r8723a (= 1.0-r1)
 Section: devel
 Architecture: all
 Maintainer: OpenViX
-MD5Sum: ff30fbb7c47928003f2422cd306c6022
-SHA256sum: 314ea6f689ebf122712a8d5e7f069413cc567394512474e2839f1df367ccd770
+MD5Sum: 0cb18a0a9823c5991783e17d368b86bf
+SHA256sum: 6f234a7a5d6aba88f735ec2f045e4401bf185d347bba43f3d8e18c32016f3dd5
 Size: 652
-Filename: enigma2-plugin-drivers-network-usb-r8723a-dev_1.0-r0_all.ipk
+Filename: enigma2-plugin-drivers-network-usb-r8723a-dev_1.0-r1_all.ipk
 Source: enigma2-plugin-drivers-network-usb-r8723a.bb
 Description: WiFi devices for Realtek RTL8723a chipsets. - Development files
 OE: enigma2-plugin-drivers-network-usb-r8723a
@@ -4380,15 +4830,15 @@ License: GPL-2.0-or-later
 Priority: optional
 
 Package: enigma2-plugin-drivers-network-usb-r8723a
-Version: 1.0-r0
+Version: 1.0-r1
 Recommends: firmware-rtl8723a, rt8723a
 Section: base
 Architecture: all
 Maintainer: OpenViX
-MD5Sum: 00e3165ff6aed8062e9ea9c494618060
-SHA256sum: 7c7ccdb560257d23c8b6af9a9f5059147fec4425be0ecca7d2632d1b8a72a4ad
+MD5Sum: c0afd97edbe20190b85a49f970332036
+SHA256sum: 173141b1c65a6910133abcc88c1f8393881e8d3bbbba170f90f53e94924133e1
 Size: 574
-Filename: enigma2-plugin-drivers-network-usb-r8723a_1.0-r0_all.ipk
+Filename: enigma2-plugin-drivers-network-usb-r8723a_1.0-r1_all.ipk
 Source: enigma2-plugin-drivers-network-usb-r8723a.bb
 Description: WiFi devices for Realtek RTL8723a chipsets.
 OE: enigma2-plugin-drivers-network-usb-r8723a
@@ -4497,14 +4947,14 @@ License: GPL-2.0-or-later
 Priority: optional
 
 Package: enigma2-plugin-drivers-network-usb-rt3070-dbg
-Version: 1.0-r0
+Version: 1.0-r1
 Section: devel
 Architecture: all
 Maintainer: OpenViX
-MD5Sum: 92f8df333297dc86855632f6545613a7
-SHA256sum: 729d3e80af0fd01afea38ff1199ab8973384d72d991da5c2d42cca835a80ca23
+MD5Sum: 80dc9350ecb1d352c31b64c78a064a76
+SHA256sum: f7035d2062067fdbf0659180266d3c3a1c7e9cd42ae45e7d63502834264db7c7
 Size: 636
-Filename: enigma2-plugin-drivers-network-usb-rt3070-dbg_1.0-r0_all.ipk
+Filename: enigma2-plugin-drivers-network-usb-rt3070-dbg_1.0-r1_all.ipk
 Source: enigma2-plugin-drivers-network-usb-rt3070.bb
 Description: Driver for Ralink RT8070/3070/3370/5370/5372 USB 802.11abgn WiFi sticks - Debugging files
 OE: enigma2-plugin-drivers-network-usb-rt3070
@@ -4513,15 +4963,15 @@ License: GPL-2.0-or-later
 Priority: optional
 
 Package: enigma2-plugin-drivers-network-usb-rt3070-dev
-Version: 1.0-r0
-Recommends: enigma2-plugin-drivers-network-usb-rt3070 (= 1.0-r0)
+Version: 1.0-r1
+Recommends: enigma2-plugin-drivers-network-usb-rt3070 (= 1.0-r1)
 Section: devel
 Architecture: all
 Maintainer: OpenViX
-MD5Sum: 52380701c285351f73405858142d9a92
-SHA256sum: 534d18a7ec9127a95933a411321d985a9305aafc6c44202a80fcf4c151185e69
-Size: 668
-Filename: enigma2-plugin-drivers-network-usb-rt3070-dev_1.0-r0_all.ipk
+MD5Sum: 8cdf3cd8ad6c0c1f435de141b340a0f6
+SHA256sum: 17a3d90e9dba1c5c3f910189969508bad272a1f787731b65d2c05b344f09ba70
+Size: 670
+Filename: enigma2-plugin-drivers-network-usb-rt3070-dev_1.0-r1_all.ipk
 Source: enigma2-plugin-drivers-network-usb-rt3070.bb
 Description: Driver for Ralink RT8070/3070/3370/5370/5372 USB 802.11abgn WiFi sticks - Development files
 OE: enigma2-plugin-drivers-network-usb-rt3070
@@ -4530,15 +4980,15 @@ License: GPL-2.0-or-later
 Priority: optional
 
 Package: enigma2-plugin-drivers-network-usb-rt3070
-Version: 1.0-r0
+Version: 1.0-r1
 Recommends: firmware-rt3070, rt3070
 Section: base
 Architecture: all
 Maintainer: OpenViX
-MD5Sum: 755732d4b1b24b4eb5e49f9377a65dd6
-SHA256sum: 010a82d3e4f4ae7d1dd2e4ea707295e261d406436da2aee4f562a52a92fba231
+MD5Sum: ee6b4547d80dfc7058ff0be4104067a0
+SHA256sum: c8b1aa46205112357eb6fca0f5a3dfea98247adf4b1e8e54b7c5c2601ddd1a50
 Size: 590
-Filename: enigma2-plugin-drivers-network-usb-rt3070_1.0-r0_all.ipk
+Filename: enigma2-plugin-drivers-network-usb-rt3070_1.0-r1_all.ipk
 Source: enigma2-plugin-drivers-network-usb-rt3070.bb
 Description: Driver for Ralink RT8070/3070/3370/5370/5372 USB 802.11abgn WiFi sticks
 OE: enigma2-plugin-drivers-network-usb-rt3070
@@ -4547,14 +4997,14 @@ License: GPL-2.0-or-later
 Priority: optional
 
 Package: enigma2-plugin-drivers-network-usb-rt3573-dbg
-Version: 1.0-r0
+Version: 1.0-r1
 Section: devel
 Architecture: all
 Maintainer: OpenViX
-MD5Sum: 5858b8e034e86ceb984c0444b09c6d23
-SHA256sum: 8f097c38665c01011f022b55fe179d449299ad43b0541b9962b943ec052ca95a
-Size: 622
-Filename: enigma2-plugin-drivers-network-usb-rt3573-dbg_1.0-r0_all.ipk
+MD5Sum: c28b96bd8b59c06e7fcb088ce72b5397
+SHA256sum: 16a422cae055f3c47798eff29d2d751feee30301871381ee954be2dd26a4d8e8
+Size: 620
+Filename: enigma2-plugin-drivers-network-usb-rt3573-dbg_1.0-r1_all.ipk
 Source: enigma2-plugin-drivers-network-usb-rt3573.bb
 Description: rt3573 802.11a/b/g/n 2.4/5 GHz USB Single Chip - Debugging files
 OE: enigma2-plugin-drivers-network-usb-rt3573
@@ -4563,15 +5013,15 @@ License: GPL-2.0-or-later
 Priority: optional
 
 Package: enigma2-plugin-drivers-network-usb-rt3573-dev
-Version: 1.0-r0
-Recommends: enigma2-plugin-drivers-network-usb-rt3573 (= 1.0-r0)
+Version: 1.0-r1
+Recommends: enigma2-plugin-drivers-network-usb-rt3573 (= 1.0-r1)
 Section: devel
 Architecture: all
 Maintainer: OpenViX
-MD5Sum: 9851a6a4615635eb82d73cc1648b8cea
-SHA256sum: 5f88ec114fb068b39b0a527f0c8cfe285f98446ec8a8b868608d8b17a300273c
+MD5Sum: 600620a34c9f86f9d334cd5644535c42
+SHA256sum: 4dd677ea4389c6c5b08e0df480e66def31a81f1a2b742bc11583677828c3db58
 Size: 656
-Filename: enigma2-plugin-drivers-network-usb-rt3573-dev_1.0-r0_all.ipk
+Filename: enigma2-plugin-drivers-network-usb-rt3573-dev_1.0-r1_all.ipk
 Source: enigma2-plugin-drivers-network-usb-rt3573.bb
 Description: rt3573 802.11a/b/g/n 2.4/5 GHz USB Single Chip - Development files
 OE: enigma2-plugin-drivers-network-usb-rt3573
@@ -4580,15 +5030,15 @@ License: GPL-2.0-or-later
 Priority: optional
 
 Package: enigma2-plugin-drivers-network-usb-rt3573
-Version: 1.0-r0
+Version: 1.0-r1
 Recommends: rt3573
 Section: base
 Architecture: all
 Maintainer: OpenViX
-MD5Sum: fea28650410b40509b085333f65d992f
-SHA256sum: f6b3981fe3758a7ddd361fe8831e593e639a1ac83c038941aa79ec1e2d174b23
-Size: 562
-Filename: enigma2-plugin-drivers-network-usb-rt3573_1.0-r0_all.ipk
+MD5Sum: 35c0e18166c05b83f7930ec1b0d019e9
+SHA256sum: 798c53b4270ad93b2245de945ded3c8784e012dfa40eaacc7c67c793c4b5f746
+Size: 564
+Filename: enigma2-plugin-drivers-network-usb-rt3573_1.0-r1_all.ipk
 Source: enigma2-plugin-drivers-network-usb-rt3573.bb
 Description: rt3573 802.11a/b/g/n 2.4/5 GHz USB Single Chip
 OE: enigma2-plugin-drivers-network-usb-rt3573
@@ -4597,14 +5047,14 @@ License: GPL-2.0-or-later
 Priority: optional
 
 Package: enigma2-plugin-drivers-network-usb-rt5572-dbg
-Version: 1.0-r0
+Version: 1.0-r2
 Section: devel
 Architecture: all
 Maintainer: OpenViX
-MD5Sum: b797916142b510f14d7cabe81bb6cc4d
-SHA256sum: 1b1bcb5fc25c937fcf3b9682bb5a33b0ed22bae10660f02802bd99d92417a2cc
+MD5Sum: d6265eae1a880beefbaa8339e64d9585
+SHA256sum: 83b64645321e6bf189c86399671a27c3392514aa279c3f34b7d60e17727dabb3
 Size: 624
-Filename: enigma2-plugin-drivers-network-usb-rt5572-dbg_1.0-r0_all.ipk
+Filename: enigma2-plugin-drivers-network-usb-rt5572-dbg_1.0-r2_all.ipk
 Source: enigma2-plugin-drivers-network-usb-rt5572.bb
 Description: 802.11a/b/g/n 2T2R 2.4/5 GHz USB Single Chip - Debugging files
 OE: enigma2-plugin-drivers-network-usb-rt5572
@@ -4613,15 +5063,15 @@ License: GPL-2.0-or-later
 Priority: optional
 
 Package: enigma2-plugin-drivers-network-usb-rt5572-dev
-Version: 1.0-r0
-Recommends: enigma2-plugin-drivers-network-usb-rt5572 (= 1.0-r0)
+Version: 1.0-r2
+Recommends: enigma2-plugin-drivers-network-usb-rt5572 (= 1.0-r2)
 Section: devel
 Architecture: all
 Maintainer: OpenViX
-MD5Sum: 5d39f15975a6a9ac0505b5c2f7c73c2c
-SHA256sum: ed88b420ebb35c877fb12add77a51c18164472f35d433f20b4a0b9b115e5e85f
-Size: 658
-Filename: enigma2-plugin-drivers-network-usb-rt5572-dev_1.0-r0_all.ipk
+MD5Sum: 12e1ba2f3f56106653ccfd96e68781ca
+SHA256sum: 488b310259cecade519ea6b4e5645c7f355d05068b95fb871197f53d90dfdd7c
+Size: 660
+Filename: enigma2-plugin-drivers-network-usb-rt5572-dev_1.0-r2_all.ipk
 Source: enigma2-plugin-drivers-network-usb-rt5572.bb
 Description: 802.11a/b/g/n 2T2R 2.4/5 GHz USB Single Chip - Development files
 OE: enigma2-plugin-drivers-network-usb-rt5572
@@ -4630,15 +5080,15 @@ License: GPL-2.0-or-later
 Priority: optional
 
 Package: enigma2-plugin-drivers-network-usb-rt5572
-Version: 1.0-r0
+Version: 1.0-r2
 Recommends: rt5572
 Section: base
 Architecture: all
 Maintainer: OpenViX
-MD5Sum: c0ac2095aa74b10eb50cd1088808b793
-SHA256sum: 9e31ba42960acabffdddc66d8bc09f158131647709a9d5088bfd7edcd359fec4
+MD5Sum: 5ac9c94a2b50382a6707c88553bb6bf5
+SHA256sum: d8265c44654d7b22c101cc7d9092b4d5992b20ee7176ccf0713574f9b27e794f
 Size: 566
-Filename: enigma2-plugin-drivers-network-usb-rt5572_1.0-r0_all.ipk
+Filename: enigma2-plugin-drivers-network-usb-rt5572_1.0-r2_all.ipk
 Source: enigma2-plugin-drivers-network-usb-rt5572.bb
 Description: 802.11a/b/g/n 2T2R 2.4/5 GHz USB Single Chip
 OE: enigma2-plugin-drivers-network-usb-rt5572
@@ -4796,6 +5246,56 @@ HomePage: https://www.world-of-satellite.com
 License: GPL-2.0-or-later
 Priority: optional
 
+Package: enigma2-plugin-drivers-network-usb-rtl8156-dbg
+Version: 1.0-r0
+Section: devel
+Architecture: all
+Maintainer: OpenViX
+MD5Sum: 16279041e38997b818827f62e62a2c56
+SHA256sum: fe7d3973022549ea2d4ce38586a7a6cf252e88650728e4a8a86924c665e39125
+Size: 646
+Filename: enigma2-plugin-drivers-network-usb-rtl8156-dbg_1.0-r0_all.ipk
+Source: enigma2-plugin-drivers-network-usb-rtl8156.bb
+Description: Realtek RTL8152/RTL8153/RTL8156 USB 3.0 10/100/1GB/2.5GB Ethernet Network Adapter - Debugging files
+OE: enigma2-plugin-drivers-network-usb-rtl8156
+HomePage: https://www.world-of-satellite.com
+License: GPL-2.0-or-later
+Priority: optional
+
+Package: enigma2-plugin-drivers-network-usb-rtl8156-dev
+Version: 1.0-r0
+Recommends: enigma2-plugin-drivers-network-usb-rtl8156 (= 1.0-r0)
+Section: devel
+Architecture: all
+Maintainer: OpenViX
+MD5Sum: de13600541dc20332f075e2af6ce4672
+SHA256sum: 02cb72550b9e9301dfe627e7aab7bb6186ce9cc83e8819041f5634d47f118d85
+Size: 680
+Filename: enigma2-plugin-drivers-network-usb-rtl8156-dev_1.0-r0_all.ipk
+Source: enigma2-plugin-drivers-network-usb-rtl8156.bb
+Description: Realtek RTL8152/RTL8153/RTL8156 USB 3.0 10/100/1GB/2.5GB Ethernet Network Adapter - Development files
+OE: enigma2-plugin-drivers-network-usb-rtl8156
+HomePage: https://www.world-of-satellite.com
+License: GPL-2.0-or-later
+Priority: optional
+
+Package: enigma2-plugin-drivers-network-usb-rtl8156
+Version: 1.0-r0
+Recommends: kernel-module-r8156, kernel-module-usbnet
+Section: base
+Architecture: all
+Maintainer: OpenViX
+MD5Sum: 36c0503dc7b014916e2e917ebb7eb8ab
+SHA256sum: 30602616ad5c0a1d74e517c5df537dac618249bf50ffbf4ea648805cb807112c
+Size: 608
+Filename: enigma2-plugin-drivers-network-usb-rtl8156_1.0-r0_all.ipk
+Source: enigma2-plugin-drivers-network-usb-rtl8156.bb
+Description: Realtek RTL8152/RTL8153/RTL8156 USB 3.0 10/100/1GB/2.5GB Ethernet Network Adapter
+OE: enigma2-plugin-drivers-network-usb-rtl8156
+HomePage: https://www.world-of-satellite.com
+License: GPL-2.0-or-later
+Priority: optional
+
 Package: enigma2-plugin-drivers-network-usb-rtl8187-dbg
 Version: 1.0-r0
 Section: devel
@@ -4897,164 +5397,114 @@ License: GPL-2.0-or-later
 Priority: optional
 
 Package: enigma2-plugin-drivers-network-usb-rtl8192ce-dbg
-Version: 1.0-r0
+Version: 1.0-r2
 Section: devel
 Architecture: all
 Maintainer: OpenViX
-MD5Sum: bda16b48cfe9bb96195fd1887ad84048
-SHA256sum: 73bcb498c2a6a1e073ce5025767e86cd7b0b750741ca1e4b402c49eb5f7450f4
-Size: 648
-Filename: enigma2-plugin-drivers-network-usb-rtl8192ce-dbg_1.0-r0_all.ipk
+MD5Sum: cc850a1783d0712432fa44a0ea5e3b8a
+SHA256sum: 943e166c222ccef5400083492684430599677229f857d4e7b2c236d261c64f32
+Size: 644
+Filename: enigma2-plugin-drivers-network-usb-rtl8192ce-dbg_1.0-r2_all.ipk
 Source: enigma2-plugin-drivers-network-usb-rtl8192ce.bb
-Description: Single-Chip IEEE 802.11b/g/n 2T2R WLAN Controller with USB 2.0 Interface - Debugging files
+Description: Single-Chip IEEE 802.11b/g/n 2T2R WLAN Controller with PCIe Interface - Debugging files
 OE: enigma2-plugin-drivers-network-usb-rtl8192ce
 HomePage: https://www.world-of-satellite.com
 License: GPL-2.0-or-later
 Priority: optional
 
 Package: enigma2-plugin-drivers-network-usb-rtl8192ce-dev
-Version: 1.0-r0
-Recommends: enigma2-plugin-drivers-network-usb-rtl8192ce (= 1.0-r0)
+Version: 1.0-r2
+Recommends: enigma2-plugin-drivers-network-usb-rtl8192ce (= 1.0-r2)
 Section: devel
 Architecture: all
 Maintainer: OpenViX
-MD5Sum: 5293764f5411206726358d3e1dba6f62
-SHA256sum: 0c2be19c824b878d2a1650d8cfd84168761340bdefa83d691815d4eb082aa376
-Size: 682
-Filename: enigma2-plugin-drivers-network-usb-rtl8192ce-dev_1.0-r0_all.ipk
+MD5Sum: 79f99699b5f21794fe0404bbec8f24a1
+SHA256sum: a8812aa4e090994610f937d589df580478556f2eff794ff04664a99b45388e1c
+Size: 678
+Filename: enigma2-plugin-drivers-network-usb-rtl8192ce-dev_1.0-r2_all.ipk
 Source: enigma2-plugin-drivers-network-usb-rtl8192ce.bb
-Description: Single-Chip IEEE 802.11b/g/n 2T2R WLAN Controller with USB 2.0 Interface - Development files
+Description: Single-Chip IEEE 802.11b/g/n 2T2R WLAN Controller with PCIe Interface - Development files
 OE: enigma2-plugin-drivers-network-usb-rtl8192ce
 HomePage: https://www.world-of-satellite.com
 License: GPL-2.0-or-later
 Priority: optional
 
 Package: enigma2-plugin-drivers-network-usb-rtl8192ce
-Version: 1.0-r0
-Recommends: firmware-rtl8192cu, firmware-rtl8192cufw, firmware-rtl8712u, kernel-module-rtl8192ce, kernel-module-rtl8192cu
+Version: 1.0-r2
+Recommends: firmware-rtl8192cu, firmware-rtl8192cufw, firmware-rtl8712u, kernel-module-rtl8192ce
 Section: base
 Architecture: all
 Maintainer: OpenViX
-MD5Sum: 51b20f22d31abba64a8eee93e0dd74d3
-SHA256sum: dd65ea3036327f7bd1be3697d8c3a719d7c9b0a20e3941006618328648cc57de
-Size: 622
-Filename: enigma2-plugin-drivers-network-usb-rtl8192ce_1.0-r0_all.ipk
+MD5Sum: 26a41f9d1aeee65f8dfa2277678f8e1f
+SHA256sum: d33a70519c67539e29ae1de1a685ba8a993d62458ae580048e0bdb21531448de
+Size: 618
+Filename: enigma2-plugin-drivers-network-usb-rtl8192ce_1.0-r2_all.ipk
 Source: enigma2-plugin-drivers-network-usb-rtl8192ce.bb
-Description: Single-Chip IEEE 802.11b/g/n 2T2R WLAN Controller with USB 2.0 Interface
+Description: Single-Chip IEEE 802.11b/g/n 2T2R WLAN Controller with PCIe Interface
 OE: enigma2-plugin-drivers-network-usb-rtl8192ce
 HomePage: https://www.world-of-satellite.com
 License: GPL-2.0-or-later
 Priority: optional
 
 Package: enigma2-plugin-drivers-network-usb-rtl8192cu-dbg
-Version: 1.0-r0
+Version: 1.0-r2
 Section: devel
 Architecture: all
 Maintainer: OpenViX
-MD5Sum: c9e7f96fd9e93f71eb6f055bc7d11d4a
-SHA256sum: b701b65e541394228140472c753e13fa6e2818f662b17523ab5964bbf6eab211
-Size: 612
-Filename: enigma2-plugin-drivers-network-usb-rtl8192cu-dbg_1.0-r0_all.ipk
+MD5Sum: 1de535b90930bf286ae25aef5dc9d13d
+SHA256sum: 6f3e966ae94121ad7bff274264ae17b1059f783c692cbdfb660fdd9d93afa99a
+Size: 642
+Filename: enigma2-plugin-drivers-network-usb-rtl8192cu-dbg_1.0-r2_all.ipk
 Source: enigma2-plugin-drivers-network-usb-rtl8192cu.bb
-Description: new universal rt18xxx kernel driver - Debugging files
+Description: Single-Chip IEEE 802.11b/g/n WLAN Controller with USB 2.0 Interface - Debugging files
 OE: enigma2-plugin-drivers-network-usb-rtl8192cu
 HomePage: https://www.world-of-satellite.com
 License: GPL-2.0-or-later
 Priority: optional
 
 Package: enigma2-plugin-drivers-network-usb-rtl8192cu-dev
-Version: 1.0-r0
-Recommends: enigma2-plugin-drivers-network-usb-rtl8192cu (= 1.0-r0)
+Version: 1.0-r2
+Recommends: enigma2-plugin-drivers-network-usb-rtl8192cu (= 1.0-r2)
 Section: devel
 Architecture: all
 Maintainer: OpenViX
-MD5Sum: a38a72c14b90331f7bc7330937ca4c97
-SHA256sum: db4052e957fd7cc11ea076471ac9ddbfd305268db7fd32197e229c68702ee568
-Size: 648
-Filename: enigma2-plugin-drivers-network-usb-rtl8192cu-dev_1.0-r0_all.ipk
+MD5Sum: ab23648c047922e683d5e37f058b85c5
+SHA256sum: 8f4a3d3a96d620a992672297149993a8b3845daa8f3b3accb56b51d667e91b53
+Size: 678
+Filename: enigma2-plugin-drivers-network-usb-rtl8192cu-dev_1.0-r2_all.ipk
 Source: enigma2-plugin-drivers-network-usb-rtl8192cu.bb
-Description: new universal rt18xxx kernel driver - Development files
+Description: Single-Chip IEEE 802.11b/g/n WLAN Controller with USB 2.0 Interface - Development files
 OE: enigma2-plugin-drivers-network-usb-rtl8192cu
 HomePage: https://www.world-of-satellite.com
 License: GPL-2.0-or-later
 Priority: optional
 
-Package: enigma2-plugin-drivers-network-usb-rtl8192cu-rev2-dbg
-Version: 1.0-r0
-Section: devel
-Architecture: all
-Maintainer: OpenViX
-MD5Sum: 51474cda6f963e431c43c595e335af41
-SHA256sum: 75be72c9793434355b65806a4546c2d927f26798b2c39fdb0ca43e439aead78a
-Size: 620
-Filename: enigma2-plugin-drivers-network-usb-rtl8192cu-rev2-dbg_1.0-r0_all.ipk
-Source: enigma2-plugin-drivers-network-usb-rtl8192cu-rev2.bb
-Description: rt8192cu Proprietary alternative kernel driver - Debugging files
-OE: enigma2-plugin-drivers-network-usb-rtl8192cu-rev2
-HomePage: https://www.world-of-satellite.com
-License: GPL-2.0-or-later
-Priority: optional
-
-Package: enigma2-plugin-drivers-network-usb-rtl8192cu-rev2-dev
-Version: 1.0-r0
-Recommends: enigma2-plugin-drivers-network-usb-rtl8192cu-rev2 (= 1.0-r0)
-Section: devel
-Architecture: all
-Maintainer: OpenViX
-MD5Sum: 29cce13f1a03a4b88e66128d96e74c1e
-SHA256sum: 34c4d66e4fe550bd9484a01068b0917f7bb59be429dacfdbfb28a074f8b0efc7
-Size: 654
-Filename: enigma2-plugin-drivers-network-usb-rtl8192cu-rev2-dev_1.0-r0_all.ipk
-Source: enigma2-plugin-drivers-network-usb-rtl8192cu-rev2.bb
-Description: rt8192cu Proprietary alternative kernel driver - Development files
-OE: enigma2-plugin-drivers-network-usb-rtl8192cu-rev2
-HomePage: https://www.world-of-satellite.com
-License: GPL-2.0-or-later
-Priority: optional
-
-Package: enigma2-plugin-drivers-network-usb-rtl8192cu-rev2
-Version: 1.0-r0
-Recommends: firmware-rtl8192cu, firmware-rtl8192cufw, rtl8192cu
-Section: base
-Architecture: all
-Maintainer: OpenViX
-MD5Sum: ac809ebdc42bb6f6bf280884871ba169
-SHA256sum: 714d8fce4103132000a98bee592bfdbc951a92e037871563d928b432711acd0d
-Size: 582
-Filename: enigma2-plugin-drivers-network-usb-rtl8192cu-rev2_1.0-r0_all.ipk
-Source: enigma2-plugin-drivers-network-usb-rtl8192cu-rev2.bb
-Description: rt8192cu Proprietary alternative kernel driver
-OE: enigma2-plugin-drivers-network-usb-rtl8192cu-rev2
-HomePage: https://www.world-of-satellite.com
-License: GPL-2.0-or-later
-Priority: optional
-
 Package: enigma2-plugin-drivers-network-usb-rtl8192cu
-Version: 1.0-r0
+Version: 1.0-r2
 Recommends: firmware-rtl8192cu, firmware-rtl8192cufw, rtl8192cu
 Section: base
 Architecture: all
 Maintainer: OpenViX
-MD5Sum: 9ca3ee8c644597f7aa51b4c7d69d0380
-SHA256sum: 32f63799bceee7fae6379b5bcb600db85271962f114a32f2c979e8ca19ebf5b9
-Size: 574
-Filename: enigma2-plugin-drivers-network-usb-rtl8192cu_1.0-r0_all.ipk
+MD5Sum: 58507f980ae76bfd0ec0b4eb56caa636
+SHA256sum: f01cbbff18bf098ae53b942e1944f0cce5e1480eb11a9ee15e24c18ee7ed7bdb
+Size: 602
+Filename: enigma2-plugin-drivers-network-usb-rtl8192cu_1.0-r2_all.ipk
 Source: enigma2-plugin-drivers-network-usb-rtl8192cu.bb
-Description: new universal rt18xxx kernel driver
+Description: Single-Chip IEEE 802.11b/g/n WLAN Controller with USB 2.0 Interface
 OE: enigma2-plugin-drivers-network-usb-rtl8192cu
 HomePage: https://www.world-of-satellite.com
 License: GPL-2.0-or-later
 Priority: optional
 
 Package: enigma2-plugin-drivers-network-usb-rtl8192eu-dbg
-Version: 1.0-r1
+Version: 1.0-r3
 Section: devel
 Architecture: all
 Maintainer: OpenViX
-MD5Sum: b07a852150da3899fc856208cf55328d
-SHA256sum: b50cb63462f8e98b63e34b1e02ec0c13af60bac4552af8ab0b67e8f07648f200
+MD5Sum: 647eba8a0d06aa9c4530515604d26dc1
+SHA256sum: 28cdbe2ace5f72854fc2206fde74c74058b3e1047694e8bb7af79f49336ae012
 Size: 616
-Filename: enigma2-plugin-drivers-network-usb-rtl8192eu-dbg_1.0-r1_all.ipk
+Filename: enigma2-plugin-drivers-network-usb-rtl8192eu-dbg_1.0-r3_all.ipk
 Source: enigma2-plugin-drivers-network-usb-rtl8192eu.bb
 Description: WiFi devices for Realtek 8192EU chipsets. - Debugging files
 OE: enigma2-plugin-drivers-network-usb-rtl8192eu
@@ -5063,15 +5513,15 @@ License: GPL-2.0-or-later
 Priority: optional
 
 Package: enigma2-plugin-drivers-network-usb-rtl8192eu-dev
-Version: 1.0-r1
-Recommends: enigma2-plugin-drivers-network-usb-rtl8192eu (= 1.0-r1)
+Version: 1.0-r3
+Recommends: enigma2-plugin-drivers-network-usb-rtl8192eu (= 1.0-r3)
 Section: devel
 Architecture: all
 Maintainer: OpenViX
-MD5Sum: ff39f381198f35e6f4158541b4aa41f4
-SHA256sum: 3effbce55b83384160b67a2de7135c950ae97adafe5701ffcc26d72269026102
-Size: 652
-Filename: enigma2-plugin-drivers-network-usb-rtl8192eu-dev_1.0-r1_all.ipk
+MD5Sum: 03c5dbc56368fa1c8c8623a0d76245db
+SHA256sum: f4b936ca2238bb06e8f089254b5bb980fed1bc8c71ceb1863dd6aba2005c4946
+Size: 654
+Filename: enigma2-plugin-drivers-network-usb-rtl8192eu-dev_1.0-r3_all.ipk
 Source: enigma2-plugin-drivers-network-usb-rtl8192eu.bb
 Description: WiFi devices for Realtek 8192EU chipsets. - Development files
 OE: enigma2-plugin-drivers-network-usb-rtl8192eu
@@ -5080,15 +5530,15 @@ License: GPL-2.0-or-later
 Priority: optional
 
 Package: enigma2-plugin-drivers-network-usb-rtl8192eu
-Version: 1.0-r1
+Version: 1.0-r3
 Recommends: firmware-rtl8192eu, rtl8192eu
 Section: base
 Architecture: all
 Maintainer: OpenViX
-MD5Sum: 32890e18a2365f2b564352be4af9f963
-SHA256sum: 94b5243854dbb5a2ab2a1abeb9194ac0232687117a16d8d865695e65fb0e2358
-Size: 572
-Filename: enigma2-plugin-drivers-network-usb-rtl8192eu_1.0-r1_all.ipk
+MD5Sum: 60e47627a3464e38284f6e79f56e2d00
+SHA256sum: e5c3e6d5dcb26ed32162a4cae847104ada4baffe0e6f4bf2c331fb6c3487864a
+Size: 574
+Filename: enigma2-plugin-drivers-network-usb-rtl8192eu_1.0-r3_all.ipk
 Source: enigma2-plugin-drivers-network-usb-rtl8192eu.bb
 Description: WiFi devices for Realtek 8192EU chipsets.
 OE: enigma2-plugin-drivers-network-usb-rtl8192eu
@@ -5147,14 +5597,14 @@ License: GPL-2.0-or-later
 Priority: optional
 
 Package: enigma2-plugin-drivers-network-usb-rtl8812au-dbg
-Version: 1.0-r0
+Version: 1.0-r1
 Section: devel
 Architecture: all
 Maintainer: OpenViX
-MD5Sum: 007e147c3ef7d429cd8346f2e84b8081
-SHA256sum: a9c5362b2c938be9b2b7d18dbe6f3295fddcf296c4d922ac253958c563e173fc
+MD5Sum: 873ec3e53f2ae6535bf35be86f9415db
+SHA256sum: d021a1c47f91f4678df8560e51808ee77d4539d44a7e8cee6b05ab5992ed86e3
 Size: 622
-Filename: enigma2-plugin-drivers-network-usb-rtl8812au-dbg_1.0-r0_all.ipk
+Filename: enigma2-plugin-drivers-network-usb-rtl8812au-dbg_1.0-r1_all.ipk
 Source: enigma2-plugin-drivers-network-usb-rtl8812au.bb
 Description: WiFi devices for Realtek 8812AU/8821AU chipsets. - Debugging files
 OE: enigma2-plugin-drivers-network-usb-rtl8812au
@@ -5163,15 +5613,15 @@ License: GPL-2.0-or-later
 Priority: optional
 
 Package: enigma2-plugin-drivers-network-usb-rtl8812au-dev
-Version: 1.0-r0
-Recommends: enigma2-plugin-drivers-network-usb-rtl8812au (= 1.0-r0)
+Version: 1.0-r1
+Recommends: enigma2-plugin-drivers-network-usb-rtl8812au (= 1.0-r1)
 Section: devel
 Architecture: all
 Maintainer: OpenViX
-MD5Sum: f9a1024ac72b4a22c2ee15eb457677fc
-SHA256sum: 00d92be525879500775787e7efb5184516e666808775e3403c7ee82f65b08db7
+MD5Sum: 6db6eb8ae87750c6d4cba7cbcf5b30b2
+SHA256sum: acc64738d423474872c10a3c56db4b4ab83e6c7b07795b5176695a019c85d6c9
 Size: 660
-Filename: enigma2-plugin-drivers-network-usb-rtl8812au-dev_1.0-r0_all.ipk
+Filename: enigma2-plugin-drivers-network-usb-rtl8812au-dev_1.0-r1_all.ipk
 Source: enigma2-plugin-drivers-network-usb-rtl8812au.bb
 Description: WiFi devices for Realtek 8812AU/8821AU chipsets. - Development files
 OE: enigma2-plugin-drivers-network-usb-rtl8812au
@@ -5180,15 +5630,15 @@ License: GPL-2.0-or-later
 Priority: optional
 
 Package: enigma2-plugin-drivers-network-usb-rtl8812au
-Version: 1.0-r0
-Recommends: rt8812au
+Version: 1.0-r1
+Recommends: rtl8821au, rtl88xxau
 Section: base
 Architecture: all
 Maintainer: OpenViX
-MD5Sum: ae906cf6984eec90aa8f24aec4f2eb17
-SHA256sum: f444d1f1b255789ac8b47b1f39f6a66db538a972d7a3c1a49de7590246ae060d
-Size: 570
-Filename: enigma2-plugin-drivers-network-usb-rtl8812au_1.0-r0_all.ipk
+MD5Sum: 6482d9b3a5734cb69456bce681174ccc
+SHA256sum: a5d66720c61666e912c6cbdf2f5eb20c10685606f0d50e7e0dd4c4751e240924
+Size: 580
+Filename: enigma2-plugin-drivers-network-usb-rtl8812au_1.0-r1_all.ipk
 Source: enigma2-plugin-drivers-network-usb-rtl8812au.bb
 Description: WiFi devices for Realtek 8812AU/8821AU chipsets.
 OE: enigma2-plugin-drivers-network-usb-rtl8812au
@@ -5246,6 +5696,56 @@ HomePage: https://www.world-of-satellite.com
 License: GPL-2.0-or-later
 Priority: optional
 
+Package: enigma2-plugin-drivers-network-usb-rtl8821au-dbg
+Version: 1.0-r0
+Section: devel
+Architecture: all
+Maintainer: OpenViX
+MD5Sum: d5cc2766001991017e8aace5da929eaa
+SHA256sum: b6c12a5f6b304a225c5ba4362d8dd58106b522dbd1b2429bc37489aa548a870b
+Size: 624
+Filename: enigma2-plugin-drivers-network-usb-rtl8821au-dbg_1.0-r0_all.ipk
+Source: enigma2-plugin-drivers-network-usb-rtl8821au.bb
+Description: WiFi devices for Realtek 8811AU and 8821AU chipsets. - Debugging files
+OE: enigma2-plugin-drivers-network-usb-rtl8821au
+HomePage: https://www.world-of-satellite.com
+License: GPL-2.0-or-later
+Priority: optional
+
+Package: enigma2-plugin-drivers-network-usb-rtl8821au-dev
+Version: 1.0-r0
+Recommends: enigma2-plugin-drivers-network-usb-rtl8821au (= 1.0-r0)
+Section: devel
+Architecture: all
+Maintainer: OpenViX
+MD5Sum: 8eac7b196c4e9c1b945c438c9a2a2aeb
+SHA256sum: a0e8d69c41771966ded6c50716573107d75b80ac087f03dcd10229304dc147e9
+Size: 660
+Filename: enigma2-plugin-drivers-network-usb-rtl8821au-dev_1.0-r0_all.ipk
+Source: enigma2-plugin-drivers-network-usb-rtl8821au.bb
+Description: WiFi devices for Realtek 8811AU and 8821AU chipsets. - Development files
+OE: enigma2-plugin-drivers-network-usb-rtl8821au
+HomePage: https://www.world-of-satellite.com
+License: GPL-2.0-or-later
+Priority: optional
+
+Package: enigma2-plugin-drivers-network-usb-rtl8821au
+Version: 1.0-r0
+Recommends: rtl8821au
+Section: base
+Architecture: all
+Maintainer: OpenViX
+MD5Sum: c0b975c5030c47f06c40e7516d472a35
+SHA256sum: 3d498b53e3bad6d0034bd03b5e324e04ae340e367bf751731dbc093e9b47cf01
+Size: 572
+Filename: enigma2-plugin-drivers-network-usb-rtl8821au_1.0-r0_all.ipk
+Source: enigma2-plugin-drivers-network-usb-rtl8821au.bb
+Description: WiFi devices for Realtek 8811AU and 8821AU chipsets.
+OE: enigma2-plugin-drivers-network-usb-rtl8821au
+HomePage: https://www.world-of-satellite.com
+License: GPL-2.0-or-later
+Priority: optional
+
 Package: enigma2-plugin-drivers-network-usb-rtl8821cu-dbg
 Version: 1.0-r3
 Section: devel
@@ -5297,14 +5797,14 @@ License: GPL-2.0-or-later
 Priority: optional
 
 Package: enigma2-plugin-drivers-network-usb-rtl8822bu-dbg
-Version: 1.0-r1
+Version: 1.0-r2
 Section: devel
 Architecture: all
 Maintainer: OpenViX
-MD5Sum: ca65cf94567977367c59b718b3d2ab43
-SHA256sum: 45a835f46d5e00aa5e45f1ef865ffcd7f2b04e718f3cacff371bb988c5468505
+MD5Sum: 4e5e8e638ed4b4e46dee895675ec0a29
+SHA256sum: 56379115526d177b144fd4995d999cd002a51b7a5717db349718a21e33d0c96c
 Size: 618
-Filename: enigma2-plugin-drivers-network-usb-rtl8822bu-dbg_1.0-r1_all.ipk
+Filename: enigma2-plugin-drivers-network-usb-rtl8822bu-dbg_1.0-r2_all.ipk
 Source: enigma2-plugin-drivers-network-usb-rtl8822bu.bb
 Description: WiFi devices for Realtek 88x2BU chipsets. - Debugging files
 OE: enigma2-plugin-drivers-network-usb-rtl8822bu
@@ -5313,15 +5813,15 @@ License: GPL-2.0-or-later
 Priority: optional
 
 Package: enigma2-plugin-drivers-network-usb-rtl8822bu-dev
-Version: 1.0-r1
-Recommends: enigma2-plugin-drivers-network-usb-rtl8822bu (= 1.0-r1)
+Version: 1.0-r2
+Recommends: enigma2-plugin-drivers-network-usb-rtl8822bu (= 1.0-r2)
 Section: devel
 Architecture: all
 Maintainer: OpenViX
-MD5Sum: 4250aa524a3fb09c3d56eabfa7afad83
-SHA256sum: a2018f8e9614f4e0c53797041d5ba7963b2cd33fa4738e648002523735fc7e3f
+MD5Sum: 9a815de3205b28d4191420171a547713
+SHA256sum: 45e26422e4da9c1d38310e6d8e3db40453a3357c3b7b1a1e544de84dbfb72406
 Size: 656
-Filename: enigma2-plugin-drivers-network-usb-rtl8822bu-dev_1.0-r1_all.ipk
+Filename: enigma2-plugin-drivers-network-usb-rtl8822bu-dev_1.0-r2_all.ipk
 Source: enigma2-plugin-drivers-network-usb-rtl8822bu.bb
 Description: WiFi devices for Realtek 88x2BU chipsets. - Development files
 OE: enigma2-plugin-drivers-network-usb-rtl8822bu
@@ -5330,18 +5830,68 @@ License: GPL-2.0-or-later
 Priority: optional
 
 Package: enigma2-plugin-drivers-network-usb-rtl8822bu
-Version: 1.0-r1
-Recommends: firmware-rtl8192eu, rt8822bu
+Version: 1.0-r2
+Recommends: firmware-rtl8192eu, rtl88x2bu
 Section: base
 Architecture: all
 Maintainer: OpenViX
-MD5Sum: 5516953cc664daf57c03988994f9666c
-SHA256sum: befcdecdb1b151b6e1e3b0896f7a93a8f67da5c79ab04b71e3dd2f9243237286
+MD5Sum: 02cd1f9517d849d10197893e2ac218ef
+SHA256sum: ef70bfacd035d13eefe0b6d4cd259150ff81b88057a65c7b3eeb6fd00a812e07
 Size: 582
-Filename: enigma2-plugin-drivers-network-usb-rtl8822bu_1.0-r1_all.ipk
+Filename: enigma2-plugin-drivers-network-usb-rtl8822bu_1.0-r2_all.ipk
 Source: enigma2-plugin-drivers-network-usb-rtl8822bu.bb
 Description: WiFi devices for Realtek 88x2BU chipsets.
 OE: enigma2-plugin-drivers-network-usb-rtl8822bu
+HomePage: https://www.world-of-satellite.com
+License: GPL-2.0-or-later
+Priority: optional
+
+Package: enigma2-plugin-drivers-network-usb-rtl8852bu-dbg
+Version: 1.0-r0
+Section: devel
+Architecture: all
+Maintainer: OpenViX
+MD5Sum: 0e687ef1c7b9082a0a5b1b06a0e9be8d
+SHA256sum: eb7a6b076970de306045479f162d8d493eb8968317ed8e3716a2612cf8b5f670
+Size: 624
+Filename: enigma2-plugin-drivers-network-usb-rtl8852bu-dbg_1.0-r0_all.ipk
+Source: enigma2-plugin-drivers-network-usb-rtl8852bu.bb
+Description: WiFi devices for Realtek 8832BU/8852BU chipsets. - Debugging files
+OE: enigma2-plugin-drivers-network-usb-rtl8852bu
+HomePage: https://www.world-of-satellite.com
+License: GPL-2.0-or-later
+Priority: optional
+
+Package: enigma2-plugin-drivers-network-usb-rtl8852bu-dev
+Version: 1.0-r0
+Recommends: enigma2-plugin-drivers-network-usb-rtl8852bu (= 1.0-r0)
+Section: devel
+Architecture: all
+Maintainer: OpenViX
+MD5Sum: d3c24ccc3c5ca38a76b4e8dc1baffd2c
+SHA256sum: 474aed95a5076ea947a44e945f76093e6e86374a2f94df4b0a6c3245d1f75666
+Size: 660
+Filename: enigma2-plugin-drivers-network-usb-rtl8852bu-dev_1.0-r0_all.ipk
+Source: enigma2-plugin-drivers-network-usb-rtl8852bu.bb
+Description: WiFi devices for Realtek 8832BU/8852BU chipsets. - Development files
+OE: enigma2-plugin-drivers-network-usb-rtl8852bu
+HomePage: https://www.world-of-satellite.com
+License: GPL-2.0-or-later
+Priority: optional
+
+Package: enigma2-plugin-drivers-network-usb-rtl8852bu
+Version: 1.0-r0
+Recommends: rtl8852bu
+Section: base
+Architecture: all
+Maintainer: OpenViX
+MD5Sum: a29019e796dacb709e47d0b08f45bd7a
+SHA256sum: 8ba67fe60949ac6d75c94b2039b32eb8f06fbba55ccc5c02d0894ac837aa61f2
+Size: 570
+Filename: enigma2-plugin-drivers-network-usb-rtl8852bu_1.0-r0_all.ipk
+Source: enigma2-plugin-drivers-network-usb-rtl8852bu.bb
+Description: WiFi devices for Realtek 8832BU/8852BU chipsets.
+OE: enigma2-plugin-drivers-network-usb-rtl8852bu
 HomePage: https://www.world-of-satellite.com
 License: GPL-2.0-or-later
 Priority: optional
@@ -5392,56 +5942,6 @@ Filename: enigma2-plugin-drivers-network-usb-rtl8852cu_1.0-r0_all.ipk
 Source: enigma2-plugin-drivers-network-usb-rtl8852cu.bb
 Description: WiFi devices for Realtek 8852CU chipsets.
 OE: enigma2-plugin-drivers-network-usb-rtl8852cu
-HomePage: https://www.world-of-satellite.com
-License: GPL-2.0-or-later
-Priority: optional
-
-Package: enigma2-plugin-drivers-network-usb-rtl88xxau-dbg
-Version: 1.0-r0
-Section: devel
-Architecture: all
-Maintainer: OpenViX
-MD5Sum: 2d1a6c3cb35f29df75ce399309d18c2d
-SHA256sum: 499ffd2f4c63c963c1ab1d5450afbf3eb8e29f55014441b42a87d9189669ff8d
-Size: 618
-Filename: enigma2-plugin-drivers-network-usb-rtl88xxau-dbg_1.0-r0_all.ipk
-Source: enigma2-plugin-drivers-network-usb-rtl88xxau.bb
-Description: WiFi devices for Realtek 88xxAU chipsets. - Debugging files
-OE: enigma2-plugin-drivers-network-usb-rtl88xxau
-HomePage: https://www.world-of-satellite.com
-License: GPL-2.0-or-later
-Priority: optional
-
-Package: enigma2-plugin-drivers-network-usb-rtl88xxau-dev
-Version: 1.0-r0
-Recommends: enigma2-plugin-drivers-network-usb-rtl88xxau (= 1.0-r0)
-Section: devel
-Architecture: all
-Maintainer: OpenViX
-MD5Sum: 3c8bed815d53e9dcc617ddc40cc3a9b7
-SHA256sum: 62442e5d6528d3f0642dca95c51607ff2a4e48f8f5035194bd6a50a79e773f5d
-Size: 654
-Filename: enigma2-plugin-drivers-network-usb-rtl88xxau-dev_1.0-r0_all.ipk
-Source: enigma2-plugin-drivers-network-usb-rtl88xxau.bb
-Description: WiFi devices for Realtek 88xxAU chipsets. - Development files
-OE: enigma2-plugin-drivers-network-usb-rtl88xxau
-HomePage: https://www.world-of-satellite.com
-License: GPL-2.0-or-later
-Priority: optional
-
-Package: enigma2-plugin-drivers-network-usb-rtl88xxau
-Version: 1.0-r0
-Recommends: rtl88xxau
-Section: base
-Architecture: all
-Maintainer: OpenViX
-MD5Sum: 410423c0a6c876c132a4d77c98b29f27
-SHA256sum: 1a4adc9ec8a628692450f4a82461928b7c87f092a4b1d6baf3805bdd0184f257
-Size: 562
-Filename: enigma2-plugin-drivers-network-usb-rtl88xxau_1.0-r0_all.ipk
-Source: enigma2-plugin-drivers-network-usb-rtl88xxau.bb
-Description: WiFi devices for Realtek 88xxAU chipsets.
-OE: enigma2-plugin-drivers-network-usb-rtl88xxau
 HomePage: https://www.world-of-satellite.com
 License: GPL-2.0-or-later
 Priority: optional
@@ -5727,14 +6227,14 @@ License: GPL-2.0-or-later
 Priority: optional
 
 Package: enigma2-plugin-extensions-e2embyclient-dbg
-Version: 1.0+git141+99fd45d0+99fd45dd22-r0
+Version: 1.0+git164+41d57250+41d57257db-r0
 Section: devel
 Architecture: all
 Maintainer: DimitarCC
-MD5Sum: 45e03301d3b8294424ef3a839db52e1e
-SHA256sum: c119fca826fa63f5322670251e32e106a9d9a63530997f41e908372e3126068b
+MD5Sum: 9d4e9cb3758cf628b285646982e045f5
+SHA256sum: 13bac89873a561c4ea36b7405ed3c1580d49134f69961065e2b987c3a45220f0
 Size: 624
-Filename: enigma2-plugin-extensions-e2embyclient-dbg_1.0+git141+99fd45d0+99fd45dd22-r0_all.ipk
+Filename: enigma2-plugin-extensions-e2embyclient-dbg_1.0+git164+41d57250+41d57257db-r0_all.ipk
 Source: enigma2-plugin-extensions-e2embyclient.bb
 Description: enigma2-plugin-extensions-e2embyclient version 1.0+git-r0 - Debugging files
 OE: enigma2-plugin-extensions-e2embyclient
@@ -5743,15 +6243,15 @@ License: GPL-3.0-only
 Priority: optional
 
 Package: enigma2-plugin-extensions-e2embyclient-dev
-Version: 1.0+git141+99fd45d0+99fd45dd22-r0
-Recommends: enigma2-plugin-extensions-e2embyclient (= 1.0+git141+99fd45d0+99fd45dd22-r0), python3-core-dev, python3-dev, python3-pillow-dev, python3-requests-dev, python3-yt-dlp-dev
+Version: 1.0+git164+41d57250+41d57257db-r0
+Recommends: enigma2-plugin-extensions-e2embyclient (= 1.0+git164+41d57250+41d57257db-r0), python3-core-dev, python3-dev, python3-pillow-dev, python3-requests-dev, python3-yt-dlp-dev
 Section: devel
 Architecture: all
 Maintainer: DimitarCC
-MD5Sum: 13ec173c006b392ee5cc901abdaa989d
-SHA256sum: 103f32a070d28078032e230185dc90186bdfefd6cee1b1f51994c37229e9a1c8
+MD5Sum: c57f0e6fe405d02f24b86348935175f8
+SHA256sum: 8701c95e4c89d4a1130550d2d5e4ebc6b50c077c3e1731ac09cacf286143b256
 Size: 696
-Filename: enigma2-plugin-extensions-e2embyclient-dev_1.0+git141+99fd45d0+99fd45dd22-r0_all.ipk
+Filename: enigma2-plugin-extensions-e2embyclient-dev_1.0+git164+41d57250+41d57257db-r0_all.ipk
 Source: enigma2-plugin-extensions-e2embyclient.bb
 Description: enigma2-plugin-extensions-e2embyclient version 1.0+git-r0 - Development files
 OE: enigma2-plugin-extensions-e2embyclient
@@ -5760,14 +6260,14 @@ License: GPL-3.0-only
 Priority: optional
 
 Package: enigma2-plugin-extensions-e2embyclient-src
-Version: 1.0+git141+99fd45d0+99fd45dd22-r0
+Version: 1.0+git164+41d57250+41d57257db-r0
 Section: devel
 Architecture: all
 Maintainer: DimitarCC
-MD5Sum: 9d8fca018496a2e4b2dd430dc5717525
-SHA256sum: 084ee3dd98d517d1088f8a26811e1cea43e8775b2398079bc0fd05dbdb0162be
-Size: 50440
-Filename: enigma2-plugin-extensions-e2embyclient-src_1.0+git141+99fd45d0+99fd45dd22-r0_all.ipk
+MD5Sum: ee2d0f6261e378f56a4119ac6e46be34
+SHA256sum: 6fd250bd2ac1fe8f839cf1d5ac2f64f6395ad2626104c45dfbb603b99059096c
+Size: 71886
+Filename: enigma2-plugin-extensions-e2embyclient-src_1.0+git164+41d57250+41d57257db-r0_all.ipk
 Source: enigma2-plugin-extensions-e2embyclient.bb
 Description: enigma2-plugin-extensions-e2embyclient version 1.0+git-r0 - Source files
 OE: enigma2-plugin-extensions-e2embyclient
@@ -5776,15 +6276,15 @@ License: GPL-3.0-only
 Priority: optional
 
 Package: enigma2-plugin-extensions-e2embyclient
-Version: 1.0+git141+99fd45d0+99fd45dd22-r0
+Version: 1.0+git164+41d57250+41d57257db-r0
 Depends: python3-core, python3-pillow, python3-requests, python3-yt-dlp
 Section: base
 Architecture: all
 Maintainer: DimitarCC
-MD5Sum: 3bde80bae769075589626544c2bd4d57
-SHA256sum: f5b6f833d3a43148accceb7c495365ad0ede65d8a58f051bf66133740cabefaf
-Size: 238788
-Filename: enigma2-plugin-extensions-e2embyclient_1.0+git141+99fd45d0+99fd45dd22-r0_all.ipk
+MD5Sum: e8a6cc68d5c9b3d03bc40100f67c4f09
+SHA256sum: 615d094a33ff34a584ab7433276604243cd5c0eb0d5cb8d986264aeb56c08377
+Size: 284618
+Filename: enigma2-plugin-extensions-e2embyclient_1.0+git164+41d57250+41d57257db-r0_all.ipk
 Source: enigma2-plugin-extensions-e2embyclient.bb
 Description: enigma2-plugin-extensions-e2embyclient version 1.0+git-r0
 OE: enigma2-plugin-extensions-e2embyclient
@@ -5923,14 +6423,14 @@ License: GPL-2.0-or-later
 Priority: optional
 
 Package: enigma2-plugin-extensions-estalker-dbg
-Version: 1.44-20260807-git62+b302b1e0+b302b1eaa4-r0
+Version: 1.50-20260914-git66+94f7be40+94f7be4286-r0
 Section: devel
 Architecture: all
 Maintainer: kiddac
-MD5Sum: 324ec8754710d202d14f5749f5f623e2
-SHA256sum: 8a38d17a24db38c442a7e8e5dafa66a5c86df88518edc7674890c76c2df5c3d8
-Size: 628
-Filename: enigma2-plugin-extensions-estalker-dbg_1.44-20260807-git62+b302b1e0+b302b1eaa4-r0_all.ipk
+MD5Sum: 471bf3ca5e99dbed45680ea0d3b52798
+SHA256sum: 50ee8dfdc25985a693a6fe5b52cfc87f50366de635b2b45677874a8ee3cfbc3c
+Size: 630
+Filename: enigma2-plugin-extensions-estalker-dbg_1.50-20260914-git66+94f7be40+94f7be4286-r0_all.ipk
 Source: enigma2-plugin-extensions-estalker.bb
 Description: IPTV Ministra stalker player by KiddaC - Debugging files
 OE: enigma2-plugin-extensions-estalker
@@ -5939,15 +6439,15 @@ License: GPL-2.0-or-later
 Priority: optional
 
 Package: enigma2-plugin-extensions-estalker-dev
-Version: 1.44-20260807-git62+b302b1e0+b302b1eaa4-r0
-Recommends: enigma2-plugin-extensions-estalker (= 1.44-20260807-git62+b302b1e0+b302b1eaa4-r0), enigma2-plugin-systemplugins-serviceapp-dev, gstplayer-dev, gstplayer2-dev, python3-multiprocessing-dev, python3-pillow-dev, python3-requests-dev
+Version: 1.50-20260914-git66+94f7be40+94f7be4286-r0
+Recommends: enigma2-plugin-extensions-estalker (= 1.50-20260914-git66+94f7be40+94f7be4286-r0), enigma2-plugin-systemplugins-serviceapp-dev, gstplayer-dev, gstplayer2-dev, python3-multiprocessing-dev, python3-pillow-dev, python3-requests-dev
 Section: devel
 Architecture: all
 Maintainer: kiddac
-MD5Sum: 9f92390bdd65228c09893d5961dc64b0
-SHA256sum: 6f2ed81e304b4b12c6ae73c35843dfacbf28906c35b32904b65b1165339915c6
-Size: 726
-Filename: enigma2-plugin-extensions-estalker-dev_1.44-20260807-git62+b302b1e0+b302b1eaa4-r0_all.ipk
+MD5Sum: c6028bb4ec4c2718d6af10bc5efac9cc
+SHA256sum: 50cab0477a2577e0980d561952538214365af35cafd15ca70e625eea121a1883
+Size: 728
+Filename: enigma2-plugin-extensions-estalker-dev_1.50-20260914-git66+94f7be40+94f7be4286-r0_all.ipk
 Source: enigma2-plugin-extensions-estalker.bb
 Description: IPTV Ministra stalker player by KiddaC - Development files
 OE: enigma2-plugin-extensions-estalker
@@ -5956,14 +6456,14 @@ License: GPL-2.0-or-later
 Priority: optional
 
 Package: enigma2-plugin-extensions-estalker-src
-Version: 1.44-20260807-git62+b302b1e0+b302b1eaa4-r0
+Version: 1.50-20260914-git66+94f7be40+94f7be4286-r0
 Section: devel
 Architecture: all
 Maintainer: kiddac
-MD5Sum: 231c51e42572d3de3fc2d52decb3a96c
-SHA256sum: 63b53daeeaf5883c0ee5d1681e1e7a594eb47826556d74f544a18705bcb8717f
-Size: 92426
-Filename: enigma2-plugin-extensions-estalker-src_1.44-20260807-git62+b302b1e0+b302b1eaa4-r0_all.ipk
+MD5Sum: e5219f8453a9432d0fb5dfb014b798ee
+SHA256sum: 4cfe8f759b6ecfba1ed7a962e120f4f9af09a020dccf126dd4aeed0f8b554ae9
+Size: 103884
+Filename: enigma2-plugin-extensions-estalker-src_1.50-20260914-git66+94f7be40+94f7be4286-r0_all.ipk
 Source: enigma2-plugin-extensions-estalker.bb
 Description: IPTV Ministra stalker player by KiddaC - Source files
 OE: enigma2-plugin-extensions-estalker
@@ -5972,15 +6472,15 @@ License: GPL-2.0-or-later
 Priority: optional
 
 Package: enigma2-plugin-extensions-estalker
-Version: 1.44-20260807-git62+b302b1e0+b302b1eaa4-r0
+Version: 1.50-20260914-git66+94f7be40+94f7be4286-r0
 Depends: enigma2-plugin-systemplugins-serviceapp, gstplayer, gstplayer2, python3-multiprocessing, python3-pillow, python3-requests
 Section: base
 Architecture: all
 Maintainer: kiddac
-MD5Sum: dab29db34105df13fe6eeede279a14c4
-SHA256sum: 9e4cb0920e00be54ba8f26e7cf2885260c97d9daaea4b9eca95faf9ac042f6ed
-Size: 3364218
-Filename: enigma2-plugin-extensions-estalker_1.44-20260807-git62+b302b1e0+b302b1eaa4-r0_all.ipk
+MD5Sum: a517497b1e8f8139ab64b6acc1c94cb3
+SHA256sum: d1f56d77c2eafa956f6e4e277e67fbf405a1d163bc31ba7ba12e08e476282683
+Size: 3398374
+Filename: enigma2-plugin-extensions-estalker_1.50-20260914-git66+94f7be40+94f7be4286-r0_all.ipk
 Source: enigma2-plugin-extensions-estalker.bb
 Description: IPTV Ministra stalker player by KiddaC
 OE: enigma2-plugin-extensions-estalker
@@ -5993,8 +6493,8 @@ Version: 1.0+git10+4d0456a0+4d0456a218-r0
 Section: devel
 Architecture: all
 Maintainer: Huevos
-MD5Sum: 4f2ef125c45788a4b22020d5bc952179
-SHA256sum: d53a0843c4cc479991faa50ae476a5ae7212f63b900f94437d640301ebd46c26
+MD5Sum: b8f7936291e696e98956f393daa474df
+SHA256sum: 6f7987f996f8b3456666b1ab8edaf2788be93d13285a7fe670ca5f28b84b6997
 Size: 646
 Filename: enigma2-plugin-extensions-iptv-org-playlists-dbg_1.0+git10+4d0456a0+4d0456a218-r0_all.ipk
 Source: enigma2-plugin-extensions-iptv-org-playlists.bb
@@ -6010,8 +6510,8 @@ Recommends: enigma2-plugin-extensions-iptv-org-playlists (= 1.0+git10+4d0456a0+4
 Section: devel
 Architecture: all
 Maintainer: Huevos
-MD5Sum: 7d3c48f63734a7750e192092acbcd624
-SHA256sum: 08046216bc33e6c267075e6999ed69a4d34836f79bfb9aa4b6730b386b2a781a
+MD5Sum: 467d643fcf7748517aa3c2998e21c98b
+SHA256sum: 563b9ad6aa6597dfaa882e34eec6fe0b2ba8f38b988997b949f79fa3500433a4
 Size: 696
 Filename: enigma2-plugin-extensions-iptv-org-playlists-dev_1.0+git10+4d0456a0+4d0456a218-r0_all.ipk
 Source: enigma2-plugin-extensions-iptv-org-playlists.bb
@@ -6026,8 +6526,8 @@ Version: 1.0+git10+4d0456a0+4d0456a218-r0
 Section: devel
 Architecture: all
 Maintainer: Huevos
-MD5Sum: a2115438f73d23c11700f26f3454fd37
-SHA256sum: d49cd5aecd705d54b171cb378409fa31c4bc71e2b29a6aa149eaada42f57dc70
+MD5Sum: afc1276665fcfcbe00d0282ef22d1f30
+SHA256sum: c4a5da45624ee8087549f290459a01fe0730cc957d7463efbd35f425cb2093ec
 Size: 7206
 Filename: enigma2-plugin-extensions-iptv-org-playlists-src_1.0+git10+4d0456a0+4d0456a218-r0_all.ipk
 Source: enigma2-plugin-extensions-iptv-org-playlists.bb
@@ -6043,8 +6543,8 @@ Depends: python3-requests
 Section: base
 Architecture: all
 Maintainer: Huevos
-MD5Sum: c83fd1a60f2d1907dd2a2e8f5c1d3e8f
-SHA256sum: 9a49d885bfe7ccddf61f6ac459e9c5f71a623fe7883656449784cfcf8e91240a
+MD5Sum: 3366658a32a9f2ecab6fb1b594b38925
+SHA256sum: deee90a8326bd29688fd28e323c408210b0b85a91324062edb09d7ccb8aa39ea
 Size: 24314
 Filename: enigma2-plugin-extensions-iptv-org-playlists_1.0+git10+4d0456a0+4d0456a218-r0_all.ipk
 Source: enigma2-plugin-extensions-iptv-org-playlists.bb
@@ -6182,6 +6682,71 @@ Description: enigma2-plugin-extensions-lamedbmerger version 1.0+git-r0
 OE: enigma2-plugin-extensions-lamedbmerger
 HomePage: https://www.world-of-satellite.com
 License: GPL-2.0-or-later
+Priority: optional
+
+Package: enigma2-plugin-extensions-mediaplayer3-dbg
+Version: 1.0+git15+9289e880+9289e88667-r0
+Section: devel
+Architecture: all
+Maintainer: OpenViX
+MD5Sum: 813e95bdccbaa190d3cbd2bf461e1061
+SHA256sum: af38efc4b64c5c69badb71ae842d85db3b695e5b67435d92825bbed30924337d
+Size: 696
+Filename: enigma2-plugin-extensions-mediaplayer3-dbg_1.0+git15+9289e880+9289e88667-r0_all.ipk
+Source: enigma2-plugin-extensions-mediaplayer3.bb
+Description: MediaPlayer3 - A modern audio player for Enigma2 receivers - Debugging files
+OE: enigma2-plugin-extensions-mediaplayer3
+HomePage: https://github.com/onni-k/mediaplayer3
+License: GPL-3.0-or-later
+Priority: optional
+
+Package: enigma2-plugin-extensions-mediaplayer3-dev
+Version: 1.0+git15+9289e880+9289e88667-r0
+Recommends: enigma2-plugin-extensions-mediaplayer3 (= 1.0+git15+9289e880+9289e88667-r0)
+Section: devel
+Architecture: all
+Maintainer: OpenViX
+MD5Sum: 6cf434b7ee0cb3d535a7b2698ce1b913
+SHA256sum: 86fb4d311e8353426d665b668bb22339c6144d90e0ee60eb155525c8ad801c67
+Size: 732
+Filename: enigma2-plugin-extensions-mediaplayer3-dev_1.0+git15+9289e880+9289e88667-r0_all.ipk
+Source: enigma2-plugin-extensions-mediaplayer3.bb
+Description: MediaPlayer3 - A modern audio player for Enigma2 receivers - Development files
+OE: enigma2-plugin-extensions-mediaplayer3
+HomePage: https://github.com/onni-k/mediaplayer3
+License: GPL-3.0-or-later
+Priority: optional
+
+Package: enigma2-plugin-extensions-mediaplayer3-src
+Version: 1.0+git15+9289e880+9289e88667-r0
+Section: devel
+Architecture: all
+Maintainer: OpenViX
+MD5Sum: f3eaef5d144c6381a17e9771b46534a6
+SHA256sum: 9b7d62f7ce48f07f139bf0b991452d0fe33c7a2dc4f625916e6c0e6dd43f7596
+Size: 304722
+Filename: enigma2-plugin-extensions-mediaplayer3-src_1.0+git15+9289e880+9289e88667-r0_all.ipk
+Source: enigma2-plugin-extensions-mediaplayer3.bb
+Description: MediaPlayer3 - A modern audio player for Enigma2 receivers - Source files
+OE: enigma2-plugin-extensions-mediaplayer3
+HomePage: https://github.com/onni-k/mediaplayer3
+License: GPL-3.0-or-later
+Priority: optional
+
+Package: enigma2-plugin-extensions-mediaplayer3
+Version: 1.0+git15+9289e880+9289e88667-r0
+Section: base
+Architecture: all
+Maintainer: OpenViX
+MD5Sum: 027f3f741448e23856ae7f3905fe3ba1
+SHA256sum: 4ef66bf7ab6280163c197e450a2d78ebf2420a39490b626e2637cec8a6f42874
+Size: 6731570
+Filename: enigma2-plugin-extensions-mediaplayer3_1.0+git15+9289e880+9289e88667-r0_all.ipk
+Source: enigma2-plugin-extensions-mediaplayer3.bb
+Description: MediaPlayer3 - A modern audio player for Enigma2 receivers
+OE: enigma2-plugin-extensions-mediaplayer3
+HomePage: https://github.com/onni-k/mediaplayer3
+License: GPL-3.0-or-later
 Priority: optional
 
 Package: enigma2-plugin-extensions-movieorganisor-dbg
@@ -6366,14 +6931,14 @@ License: GPL-2.0-only
 Priority: optional
 
 Package: enigma2-plugin-extensions-serienrecorder-dbg
-Version: .4.7.12-git605+30b0cb80+30b0cb8b03-r0
+Version: .4.7.12-2-g870e77a-git607+870e77a0+870e77a3da-r0
 Section: devel
 Architecture: all
 Maintainer: einfall & w22754 & egn & MacDisein
-MD5Sum: 84ca9a7b4b57fc9278565cbc8882a250
-SHA256sum: 88ca0671ea9c0a8ffc3fcc8ffe0b64038d66f301d40fff19bc01dd1f85593099
-Size: 676
-Filename: enigma2-plugin-extensions-serienrecorder-dbg_.4.7.12-git605+30b0cb80+30b0cb8b03-r0_all.ipk
+MD5Sum: 4f9c6de811feb1e28bfa85200816417f
+SHA256sum: 12e2649f9ef7f306af58aaf8c7b86375db05f9013e26c9f179a225c1feb344a4
+Size: 680
+Filename: enigma2-plugin-extensions-serienrecorder-dbg_.4.7.12-2-g870e77a-git607+870e77a0+870e77a3da-r0_all.ipk
 Source: enigma2-plugin-extensions-serienrecorder.bb
 Description: Erstellt automatisiert Timer fuer deine Lieblings-Serien - nie mehr eine Folge verpassen! - Debugging files
 OE: enigma2-plugin-extensions-serienrecorder
@@ -6382,15 +6947,15 @@ License: GPL-2.0-or-later
 Priority: optional
 
 Package: enigma2-plugin-extensions-serienrecorder-dev
-Version: .4.7.12-git605+30b0cb80+30b0cb8b03-r0
-Recommends: enigma2-plugin-extensions-serienrecorder (= .4.7.12-git605+30b0cb80+30b0cb8b03-r0), python3-email-dev, python3-json-dev, python3-sqlite3-dev, python3-xmlrpc-dev
+Version: .4.7.12-2-g870e77a-git607+870e77a0+870e77a3da-r0
+Recommends: enigma2-plugin-extensions-serienrecorder (= .4.7.12-2-g870e77a-git607+870e77a0+870e77a3da-r0), python3-email-dev, python3-json-dev, python3-sqlite3-dev, python3-xmlrpc-dev
 Section: devel
 Architecture: all
 Maintainer: einfall & w22754 & egn & MacDisein
-MD5Sum: 7f7703af656f71d56cad34db89783ed6
-SHA256sum: 32f9b3d9884c80ffe62c93211ef4a5362c6dffc9fd9caa2e87c25acab82ca5a3
-Size: 748
-Filename: enigma2-plugin-extensions-serienrecorder-dev_.4.7.12-git605+30b0cb80+30b0cb8b03-r0_all.ipk
+MD5Sum: 53c76c9ddc927a2b87157d30a77fcbea
+SHA256sum: 7efe47938cf8dd13274deca997efa4816a5c22b4a66967430d82ab2c26dbcd54
+Size: 754
+Filename: enigma2-plugin-extensions-serienrecorder-dev_.4.7.12-2-g870e77a-git607+870e77a0+870e77a3da-r0_all.ipk
 Source: enigma2-plugin-extensions-serienrecorder.bb
 Description: Erstellt automatisiert Timer fuer deine Lieblings-Serien - nie mehr eine Folge verpassen! - Development files
 OE: enigma2-plugin-extensions-serienrecorder
@@ -6399,14 +6964,14 @@ License: GPL-2.0-or-later
 Priority: optional
 
 Package: enigma2-plugin-extensions-serienrecorder-src
-Version: .4.7.12-git605+30b0cb80+30b0cb8b03-r0
+Version: .4.7.12-2-g870e77a-git607+870e77a0+870e77a3da-r0
 Section: devel
 Architecture: all
 Maintainer: einfall & w22754 & egn & MacDisein
-MD5Sum: 93b856a5b909c199fd9207e30f0c1e3b
-SHA256sum: 5200248ef42f451d5c87e9b6949562f64504cb3d966356bb8ddd440ce32a254b
-Size: 231856
-Filename: enigma2-plugin-extensions-serienrecorder-src_.4.7.12-git605+30b0cb80+30b0cb8b03-r0_all.ipk
+MD5Sum: f3cb62e7c1f771aa91051706ad73a21b
+SHA256sum: ffb85973fdaf81fa288a19fcc9f604d7615d3e8082518ba7015e4934d34a7876
+Size: 231962
+Filename: enigma2-plugin-extensions-serienrecorder-src_.4.7.12-2-g870e77a-git607+870e77a0+870e77a3da-r0_all.ipk
 Source: enigma2-plugin-extensions-serienrecorder.bb
 Description: Erstellt automatisiert Timer fuer deine Lieblings-Serien - nie mehr eine Folge verpassen! - Source files
 OE: enigma2-plugin-extensions-serienrecorder
@@ -6415,15 +6980,15 @@ License: GPL-2.0-or-later
 Priority: optional
 
 Package: enigma2-plugin-extensions-serienrecorder
-Version: .4.7.12-git605+30b0cb80+30b0cb8b03-r0
+Version: .4.7.12-2-g870e77a-git607+870e77a0+870e77a3da-r0
 Depends: python3-email, python3-json, python3-sqlite3, python3-xmlrpc
 Section: extra
 Architecture: all
 Maintainer: einfall & w22754 & egn & MacDisein
-MD5Sum: c573aedc413c00c1c488e2c2b89c4147
-SHA256sum: 1f4004bd2d0c9794ea9f2dc13d86ef7e0498462763cbb349cd67d390d149027b
-Size: 844926
-Filename: enigma2-plugin-extensions-serienrecorder_.4.7.12-git605+30b0cb80+30b0cb8b03-r0_all.ipk
+MD5Sum: 4b8a586b225e72cc40794bae4e0ecf1c
+SHA256sum: df3d5b5dc8663120755c673468263d3e8797c8aa96e95522724196095d7cf82f
+Size: 844978
+Filename: enigma2-plugin-extensions-serienrecorder_.4.7.12-2-g870e77a-git607+870e77a0+870e77a3da-r0_all.ipk
 Source: enigma2-plugin-extensions-serienrecorder.bb
 Description: Erstellt automatisiert Timer fuer deine Lieblings-Serien - nie mehr eine Folge verpassen!
 OE: enigma2-plugin-extensions-serienrecorder
@@ -6432,14 +6997,14 @@ License: GPL-2.0-or-later
 Priority: optional
 
 Package: enigma2-plugin-extensions-xstreamity-dbg
-Version: 5.58-20260720-git622+10494cd0+10494cd17c-r1
+Version: 5.59-20260914-git624+ff812960+ff81296bf5-r1
 Section: devel
 Architecture: all
 Maintainer: kiddac
-MD5Sum: 1c6e17d5dcfc97a6748e70e90b8cc191
-SHA256sum: e004a04a66104a15049c72a0da94f00a21a306fbf124b9d7dd05bd2101adcd27
-Size: 636
-Filename: enigma2-plugin-extensions-xstreamity-dbg_5.58-20260720-git622+10494cd0+10494cd17c-r1_all.ipk
+MD5Sum: 441de58ed27054ba577c3570f072da06
+SHA256sum: 3fc11a953b28eb39c346e8ca446fdc528bbf45ce25df31109d4d81b3cb78222d
+Size: 638
+Filename: enigma2-plugin-extensions-xstreamity-dbg_5.59-20260914-git624+ff812960+ff81296bf5-r1_all.ipk
 Source: enigma2-plugin-extensions-xstreamity.bb
 Description: IPTV Xtream Codes playlists player by KiddaC - Debugging files
 OE: enigma2-plugin-extensions-xstreamity
@@ -6448,15 +7013,15 @@ License: GPL-2.0-or-later
 Priority: optional
 
 Package: enigma2-plugin-extensions-xstreamity-dev
-Version: 5.58-20260720-git622+10494cd0+10494cd17c-r1
-Recommends: enigma2-plugin-extensions-xstreamity (= 5.58-20260720-git622+10494cd0+10494cd17c-r1), python3-multiprocessing-dev, python3-pillow-dev, python3-requests-dev
+Version: 5.59-20260914-git624+ff812960+ff81296bf5-r1
+Recommends: enigma2-plugin-extensions-xstreamity (= 5.59-20260914-git624+ff812960+ff81296bf5-r1), python3-multiprocessing-dev, python3-pillow-dev, python3-requests-dev
 Section: devel
 Architecture: all
 Maintainer: kiddac
-MD5Sum: 268792cad27c520e03a1e07caf9eb0c4
-SHA256sum: 00acd04baf825f3d78d47c070e21593f7f88a59727723f4b02484bcc9a11d8cb
-Size: 708
-Filename: enigma2-plugin-extensions-xstreamity-dev_5.58-20260720-git622+10494cd0+10494cd17c-r1_all.ipk
+MD5Sum: 5f121cc7785f6c07f3cb30612248546a
+SHA256sum: 3531137dea9eec647455fefd5ce8736c0f815a43049c9db9366807e743c346b6
+Size: 710
+Filename: enigma2-plugin-extensions-xstreamity-dev_5.59-20260914-git624+ff812960+ff81296bf5-r1_all.ipk
 Source: enigma2-plugin-extensions-xstreamity.bb
 Description: IPTV Xtream Codes playlists player by KiddaC - Development files
 OE: enigma2-plugin-extensions-xstreamity
@@ -6465,14 +7030,14 @@ License: GPL-2.0-or-later
 Priority: optional
 
 Package: enigma2-plugin-extensions-xstreamity-src
-Version: 5.58-20260720-git622+10494cd0+10494cd17c-r1
+Version: 5.59-20260914-git624+ff812960+ff81296bf5-r1
 Section: devel
 Architecture: all
 Maintainer: kiddac
-MD5Sum: 3f1eb5c979f6c7a685a04e4e636ee161
-SHA256sum: 1c001c779154715a81228de96c3f675bb0289c6039941c0c3ae94020045fe97d
-Size: 119266
-Filename: enigma2-plugin-extensions-xstreamity-src_5.58-20260720-git622+10494cd0+10494cd17c-r1_all.ipk
+MD5Sum: b12315b10bca6adfc4ad48c87a40803c
+SHA256sum: 9494563391405dbaa4975d56e7ce5a86b29eb2a8fbf2a00bfebe5c59bb943299
+Size: 119630
+Filename: enigma2-plugin-extensions-xstreamity-src_5.59-20260914-git624+ff812960+ff81296bf5-r1_all.ipk
 Source: enigma2-plugin-extensions-xstreamity.bb
 Description: IPTV Xtream Codes playlists player by KiddaC - Source files
 OE: enigma2-plugin-extensions-xstreamity
@@ -6481,15 +7046,15 @@ License: GPL-2.0-or-later
 Priority: optional
 
 Package: enigma2-plugin-extensions-xstreamity
-Version: 5.58-20260720-git622+10494cd0+10494cd17c-r1
+Version: 5.59-20260914-git624+ff812960+ff81296bf5-r1
 Depends: python3-multiprocessing, python3-pillow, python3-requests
 Section: base
 Architecture: all
 Maintainer: kiddac
-MD5Sum: c9bf7b1d8d52697eed3f7c6110906df4
-SHA256sum: 3f739e7f5b7d6112537ed924854bf4199c3024a026d358c3185e8d5794b7164d
-Size: 8835116
-Filename: enigma2-plugin-extensions-xstreamity_5.58-20260720-git622+10494cd0+10494cd17c-r1_all.ipk
+MD5Sum: 68cd11cc0635fe9c642e662d823cb0d7
+SHA256sum: 4a4ae6a2ae85fef74021100707aeaf9b314141699de16ebf8bfe458587912281
+Size: 8837324
+Filename: enigma2-plugin-extensions-xstreamity_5.59-20260914-git624+ff812960+ff81296bf5-r1_all.ipk
 Source: enigma2-plugin-extensions-xstreamity.bb
 Description: IPTV Xtream Codes playlists player by KiddaC
 OE: enigma2-plugin-extensions-xstreamity
@@ -6498,14 +7063,14 @@ License: GPL-2.0-or-later
 Priority: optional
 
 Package: enigma2-plugin-picons-tv-australia
-Version: 3.0+git488+011cc2c0+011cc2cebd-r1
+Version: 3.0+git500+cee51200+cee512043a-r1
 Section: base
 Architecture: all
 Maintainer: Beyonwiz
-MD5Sum: bc486cfb4db4a63dc7c9efc50edee447
-SHA256sum: b52cbf738d478c29cb22c6f88e792fb0374c92c6fb57dbb5de0dacbd4d6e4a23
-Size: 557384
-Filename: enigma2-plugin-picons-tv-australia_3.0+git488+011cc2c0+011cc2cebd-r1_all.ipk
+MD5Sum: eaba2a01cd450fd4a41b44ac91c62c85
+SHA256sum: 843ce162451e3ffa6ddf7b39da030f6caee1929a6f4d717b44ff44f7dedefa85
+Size: 507402
+Filename: enigma2-plugin-picons-tv-australia_3.0+git500+cee51200+cee512043a-r1_all.ipk
 Source: enigma2-plugin-picons-tv-australia.bb
 Description: Australia Picons
 OE: enigma2-plugin-picons-tv-australia
@@ -6551,8 +7116,8 @@ Version: 6.9+git136+117c9380+117c9385f8-r0
 Section: base
 Architecture: all
 Maintainer: openATV Team
-MD5Sum: 0deb029f4e2297359b2feec7367470a0
-SHA256sum: 81182c9e81e4808fbf0ce69c87ccbd34cc8bcaf445e54d9a6ad444c709b95553
+MD5Sum: 5afe5a6432d47e1ca74558bcd42da16e
+SHA256sum: 99c86170911a56dddb259753007c1306d01fb7871bf4057642eaa9fcf2504440
 Size: 48444
 Filename: enigma2-plugin-settings-defaultsat_6.9+git136+117c9380+117c9385f8-r0_all.ipk
 Source: enigma2-plugin-settings-defaultsat.bb
@@ -6643,14 +7208,14 @@ License: GPL-2.0-or-later
 Priority: optional
 
 Package: enigma2-plugin-skins-e2-darkos-dbg
-Version: 1.1+git297+9ef0e970+9ef0e97fe9-r0
+Version: 1.1+git299+fcc60110+fcc6011ba7-r0
 Section: devel
 Architecture: all
 Maintainer: DimitarCC
-MD5Sum: bac736df985a0703eda3046b48483215
-SHA256sum: fb161b785381acca691cb6900ba4b842fd3bb3a86623a2c156b47787e38ed941
+MD5Sum: 249a67cccfebb99cbe49b21f9ceb993e
+SHA256sum: 536b2d1297bc83caf2005069ae2d187da8b78d446dbec963c8ecc4bdedd4bafb
 Size: 630
-Filename: enigma2-plugin-skins-e2-darkos-dbg_1.1+git297+9ef0e970+9ef0e97fe9-r0_all.ipk
+Filename: enigma2-plugin-skins-e2-darkos-dbg_1.1+git299+fcc60110+fcc6011ba7-r0_all.ipk
 Source: enigma2-plugin-skins-e2-darkos.bb
 Description: enigma2-plugin-skins-e2-darkos version 1.1+git-r0 - Debugging files
 OE: enigma2-plugin-skins-e2-darkos
@@ -6659,15 +7224,15 @@ License: GPL-3.0-only
 Priority: optional
 
 Package: enigma2-plugin-skins-e2-darkos-dev
-Version: 1.1+git297+9ef0e970+9ef0e97fe9-r0
-Recommends: enigma2-plugin-skins-e2-darkos (= 1.1+git297+9ef0e970+9ef0e97fe9-r0)
+Version: 1.1+git299+fcc60110+fcc6011ba7-r0
+Recommends: enigma2-plugin-skins-e2-darkos (= 1.1+git299+fcc60110+fcc6011ba7-r0)
 Section: devel
 Architecture: all
 Maintainer: DimitarCC
-MD5Sum: 5c2f47dce58868b10e510f713e5f03b5
-SHA256sum: 97879bac5f6eeefb380abac185fac0d3dc0148bc08aa117dde3a8eb1831fa441
-Size: 668
-Filename: enigma2-plugin-skins-e2-darkos-dev_1.1+git297+9ef0e970+9ef0e97fe9-r0_all.ipk
+MD5Sum: ccc24f4ce9626d6917606daaf1a9b097
+SHA256sum: 78411d1edcc7123236a284ce5f8222e3f552c37a51fe0d645583805ca29e8142
+Size: 666
+Filename: enigma2-plugin-skins-e2-darkos-dev_1.1+git299+fcc60110+fcc6011ba7-r0_all.ipk
 Source: enigma2-plugin-skins-e2-darkos.bb
 Description: enigma2-plugin-skins-e2-darkos version 1.1+git-r0 - Development files
 OE: enigma2-plugin-skins-e2-darkos
@@ -6676,15 +7241,15 @@ License: GPL-3.0-only
 Priority: optional
 
 Package: enigma2-plugin-skins-e2-darkos
-Version: 1.1+git297+9ef0e970+9ef0e97fe9-r0
+Version: 1.1+git299+fcc60110+fcc6011ba7-r0
 Recommends: enigma2-boxlogos
 Section: base
 Architecture: all
 Maintainer: DimitarCC
-MD5Sum: 44a90a3465daa146306ea5969ff19791
-SHA256sum: 630203ac52044e90c9b38e503e37855f76b6ceac4698d2ac26f1aac29bcd295f
-Size: 3314644
-Filename: enigma2-plugin-skins-e2-darkos_1.1+git297+9ef0e970+9ef0e97fe9-r0_all.ipk
+MD5Sum: 74753e817c4572dc9d4ed081785d87bc
+SHA256sum: 715f420a29da1036dc0de8ed8ed003accadae2844db8f9680271b24b4d81f589
+Size: 3316334
+Filename: enigma2-plugin-skins-e2-darkos_1.1+git299+fcc60110+fcc6011ba7-r0_all.ipk
 Source: enigma2-plugin-skins-e2-darkos.bb
 Description: enigma2-plugin-skins-e2-darkos version 1.1+git-r0
 OE: enigma2-plugin-skins-e2-darkos
@@ -6742,14 +7307,14 @@ License: GPL-3.0-only
 Priority: optional
 
 Package: enigma2-plugin-systemplugins-automaticvolumeadjustment-dbg
-Version: 1.0+git6+4b176690+4b176696ac-r0
+Version: 1.0+git7+80bacf00+80bacf0910-r0
 Section: devel
 Architecture: all
 Maintainer: OpenViX
-MD5Sum: 36b6d990e42ae63c7252e4c823d0cd10
-SHA256sum: 624c3d4840e42fa87e488ad1ac01ab46bc08f4d258b1297af56a38549ab99b4a
+MD5Sum: fd56da1735974bb6918486487e2aa08f
+SHA256sum: d64484cae1a53cb26b22fb5e63e4cd211e847b7e199fa37115fbbc5141020e97
 Size: 636
-Filename: enigma2-plugin-systemplugins-automaticvolumeadjustment-dbg_1.0+git6+4b176690+4b176696ac-r0_all.ipk
+Filename: enigma2-plugin-systemplugins-automaticvolumeadjustment-dbg_1.0+git7+80bacf00+80bacf0910-r0_all.ipk
 Source: enigma2-plugin-systemplugins-automaticvolumeadjustment.bb
 Description: enigma2-plugin-systemplugins-automaticvolumeadjustment version 1.0+git-r0 - Debugging files
 OE: enigma2-plugin-systemplugins-automaticvolumeadjustment
@@ -6758,15 +7323,15 @@ License: GPL-2.0-or-later
 Priority: optional
 
 Package: enigma2-plugin-systemplugins-automaticvolumeadjustment-dev
-Version: 1.0+git6+4b176690+4b176696ac-r0
-Recommends: enigma2-plugin-systemplugins-automaticvolumeadjustment (= 1.0+git6+4b176690+4b176696ac-r0), python3-core-dev, python3-dev
+Version: 1.0+git7+80bacf00+80bacf0910-r0
+Recommends: enigma2-plugin-systemplugins-automaticvolumeadjustment (= 1.0+git7+80bacf00+80bacf0910-r0), python3-core-dev, python3-dev
 Section: devel
 Architecture: all
 Maintainer: OpenViX
-MD5Sum: 803f5accf0be78dfeb85b1b1b78937ee
-SHA256sum: 4bfdc56d30c74cec4a88b5291c2834095ea8778483ebd40d5ed5e31503c45e43
-Size: 686
-Filename: enigma2-plugin-systemplugins-automaticvolumeadjustment-dev_1.0+git6+4b176690+4b176696ac-r0_all.ipk
+MD5Sum: 3b22bdcbfffb5281a106f0723afc52ab
+SHA256sum: a44e5fbbf80650854e12fa6f276f56c8b0c963e0ccb9d6abaa66f621999b4125
+Size: 688
+Filename: enigma2-plugin-systemplugins-automaticvolumeadjustment-dev_1.0+git7+80bacf00+80bacf0910-r0_all.ipk
 Source: enigma2-plugin-systemplugins-automaticvolumeadjustment.bb
 Description: enigma2-plugin-systemplugins-automaticvolumeadjustment version 1.0+git-r0 - Development files
 OE: enigma2-plugin-systemplugins-automaticvolumeadjustment
@@ -6775,14 +7340,14 @@ License: GPL-2.0-or-later
 Priority: optional
 
 Package: enigma2-plugin-systemplugins-automaticvolumeadjustment-src
-Version: 1.0+git6+4b176690+4b176696ac-r0
+Version: 1.0+git7+80bacf00+80bacf0910-r0
 Section: devel
 Architecture: all
 Maintainer: OpenViX
-MD5Sum: 3854d67e6a2896f9c511f084e559bc0d
-SHA256sum: 86509bc79896a06e6f97a3e0830b869a7090de8294ba8745d573eea2df2964a9
-Size: 8648
-Filename: enigma2-plugin-systemplugins-automaticvolumeadjustment-src_1.0+git6+4b176690+4b176696ac-r0_all.ipk
+MD5Sum: 8ecc06a955e89acd3c1fbbc6f771964d
+SHA256sum: 78d420da2293e5a59257df3e6e8a07ad475538b7e559cc9aa8468fcd65e718f2
+Size: 8646
+Filename: enigma2-plugin-systemplugins-automaticvolumeadjustment-src_1.0+git7+80bacf00+80bacf0910-r0_all.ipk
 Source: enigma2-plugin-systemplugins-automaticvolumeadjustment.bb
 Description: enigma2-plugin-systemplugins-automaticvolumeadjustment version 1.0+git-r0 - Source files
 OE: enigma2-plugin-systemplugins-automaticvolumeadjustment
@@ -6791,15 +7356,15 @@ License: GPL-2.0-or-later
 Priority: optional
 
 Package: enigma2-plugin-systemplugins-automaticvolumeadjustment
-Version: 1.0+git6+4b176690+4b176696ac-r0
+Version: 1.0+git7+80bacf00+80bacf0910-r0
 Depends: python3-core
 Section: base
 Architecture: all
 Maintainer: OpenViX
-MD5Sum: 0dbc319f40c42f36ceefd914864a5bae
-SHA256sum: b85dfc7820b32abcde78a056b0b84befeb4c94e9507bb47ff930a6ba70e79efc
-Size: 24082
-Filename: enigma2-plugin-systemplugins-automaticvolumeadjustment_1.0+git6+4b176690+4b176696ac-r0_all.ipk
+MD5Sum: e39cd32046760084d88a41476ec02e11
+SHA256sum: 7fc92656a1ed8780a82eb9f1816d586a7602f8bc919bc97da913fc757c0bd5fa
+Size: 24090
+Filename: enigma2-plugin-systemplugins-automaticvolumeadjustment_1.0+git7+80bacf00+80bacf0910-r0_all.ipk
 Source: enigma2-plugin-systemplugins-automaticvolumeadjustment.bb
 Description: enigma2-plugin-systemplugins-automaticvolumeadjustment version 1.0+git-r0
 OE: enigma2-plugin-systemplugins-automaticvolumeadjustment
@@ -6873,14 +7438,14 @@ License: GPL-2.0-or-later
 Priority: optional
 
 Package: enigma2-plugin-systemplugins-m3uiptv-dbg
-Version: 1.0+git501+c3856800+c385680dcb-r0
+Version: 1.0+git514+d0049cc0+d0049cc819-r0
 Section: devel
 Architecture: all
 Maintainer: DimitarCC
-MD5Sum: 1d2cd10f6c8ba1b02a4a0f2da7036547
-SHA256sum: f9cc17a7e6ffcf3b9e01c4bfb638b94d2ebf047f4f411462a515b334ae8c2ffd
+MD5Sum: 606dca891a9a18561e6496b6d81d23fd
+SHA256sum: 01f3670699c7c1b2078ca8b197866f471ed3455214852476d585e16f9ae902ce
 Size: 622
-Filename: enigma2-plugin-systemplugins-m3uiptv-dbg_1.0+git501+c3856800+c385680dcb-r0_all.ipk
+Filename: enigma2-plugin-systemplugins-m3uiptv-dbg_1.0+git514+d0049cc0+d0049cc819-r0_all.ipk
 Source: enigma2-plugin-systemplugins-m3uiptv.bb
 Description: enigma2-plugin-systemplugins-m3uiptv version 1.0+git-r0 - Debugging files
 OE: enigma2-plugin-systemplugins-m3uiptv
@@ -6889,15 +7454,15 @@ License: GPL-3.0-only
 Priority: optional
 
 Package: enigma2-plugin-systemplugins-m3uiptv-dev
-Version: 1.0+git501+c3856800+c385680dcb-r0
-Recommends: enigma2-plugin-systemplugins-m3uiptv (= 1.0+git501+c3856800+c385680dcb-r0), python3-multiprocessing-dev, python3-requests-dev, python3-zoneinfo-dev
+Version: 1.0+git514+d0049cc0+d0049cc819-r0
+Recommends: enigma2-plugin-systemplugins-m3uiptv (= 1.0+git514+d0049cc0+d0049cc819-r0), python3-multiprocessing-dev, python3-requests-dev, python3-zoneinfo-dev
 Section: devel
 Architecture: all
 Maintainer: DimitarCC
-MD5Sum: 1bcd31cf93b70d6ae15664d682e1c171
-SHA256sum: b74a87a66ee91d9f1e86eac80a076e6a0936410f2885e151dbb198e6adc19e04
-Size: 696
-Filename: enigma2-plugin-systemplugins-m3uiptv-dev_1.0+git501+c3856800+c385680dcb-r0_all.ipk
+MD5Sum: 3cb19c4b4580cb14407161e2e187b3cb
+SHA256sum: d665aa626b72c801a40adf32668895966c4222bcdea8d1115196b63ab1365bf3
+Size: 694
+Filename: enigma2-plugin-systemplugins-m3uiptv-dev_1.0+git514+d0049cc0+d0049cc819-r0_all.ipk
 Source: enigma2-plugin-systemplugins-m3uiptv.bb
 Description: enigma2-plugin-systemplugins-m3uiptv version 1.0+git-r0 - Development files
 OE: enigma2-plugin-systemplugins-m3uiptv
@@ -6906,14 +7471,14 @@ License: GPL-3.0-only
 Priority: optional
 
 Package: enigma2-plugin-systemplugins-m3uiptv-src
-Version: 1.0+git501+c3856800+c385680dcb-r0
+Version: 1.0+git514+d0049cc0+d0049cc819-r0
 Section: devel
 Architecture: all
 Maintainer: DimitarCC
-MD5Sum: 9c60433f60e3cba989f7bee0020c18bc
-SHA256sum: ffc6fffde49ea984b4ab5c0c77ec6c48906bd5a2d2f785aebe189d4a3d325e42
-Size: 60668
-Filename: enigma2-plugin-systemplugins-m3uiptv-src_1.0+git501+c3856800+c385680dcb-r0_all.ipk
+MD5Sum: af55a67330c203ce86172cc77e9a787f
+SHA256sum: 5183986a0ec1a5c99c2fb205f12297182ad2dbe47f0baf4cd85d07bbff931c28
+Size: 75888
+Filename: enigma2-plugin-systemplugins-m3uiptv-src_1.0+git514+d0049cc0+d0049cc819-r0_all.ipk
 Source: enigma2-plugin-systemplugins-m3uiptv.bb
 Description: enigma2-plugin-systemplugins-m3uiptv version 1.0+git-r0 - Source files
 OE: enigma2-plugin-systemplugins-m3uiptv
@@ -6922,15 +7487,15 @@ License: GPL-3.0-only
 Priority: optional
 
 Package: enigma2-plugin-systemplugins-m3uiptv
-Version: 1.0+git501+c3856800+c385680dcb-r0
+Version: 1.0+git514+d0049cc0+d0049cc819-r0
 Depends: python3-multiprocessing, python3-requests, python3-zoneinfo
 Section: base
 Architecture: all
 Maintainer: DimitarCC
-MD5Sum: 5f00cd06de408c58bffef432cd734c0d
-SHA256sum: 3ce7f3ecb931b144c055bb23501c59ddbdb17413f416991b60a1036575add472
-Size: 248146
-Filename: enigma2-plugin-systemplugins-m3uiptv_1.0+git501+c3856800+c385680dcb-r0_all.ipk
+MD5Sum: 121d08a4a0e2cb5734b1b82072440bf3
+SHA256sum: 6f811aca803360634e0c9d956af7899fc74e7557cf57931bf41f1d3eba42f0d5
+Size: 277984
+Filename: enigma2-plugin-systemplugins-m3uiptv_1.0+git514+d0049cc0+d0049cc819-r0_all.ipk
 Source: enigma2-plugin-systemplugins-m3uiptv.bb
 Description: enigma2-plugin-systemplugins-m3uiptv version 1.0+git-r0
 OE: enigma2-plugin-systemplugins-m3uiptv
@@ -7073,8 +7638,8 @@ Version: 1.0+git4+e4902be0+e4902befe9-r0
 Section: devel
 Architecture: all
 Maintainer: Huevos
-MD5Sum: 90d6fe609d1f72d50a52df4b58d3ecd2
-SHA256sum: 9823b0d0112199e407441eb0ed81745544face21b35a01487f9ffa01a2c0580f
+MD5Sum: 4aee89be98784132da25ad0bcf3e0bc3
+SHA256sum: d964320eb535bb75c77fd938835e9a8bd4e351d809baf4b8d121bf5189056656
 Size: 632
 Filename: enigma2-plugin-systemplugins-wanip-dbg_1.0+git4+e4902be0+e4902befe9-r0_all.ipk
 Source: enigma2-plugin-systemplugins-wanip.bb
@@ -7090,8 +7655,8 @@ Recommends: enigma2-plugin-systemplugins-wanip (= 1.0+git4+e4902be0+e4902befe9-r
 Section: devel
 Architecture: all
 Maintainer: Huevos
-MD5Sum: 0dd4b97f7f3de9acb665d53298613a53
-SHA256sum: f64adc04370a2232d5e047ddb483ffe395353960b5969d9c8dfb165cb3b19c8f
+MD5Sum: eb5844d05dd4b8ec222c725bc619f591
+SHA256sum: 76cc44d4ef246ae2249d97ba0719c4a49fb6e9348d626595962a7e86ecfd3373
 Size: 682
 Filename: enigma2-plugin-systemplugins-wanip-dev_1.0+git4+e4902be0+e4902befe9-r0_all.ipk
 Source: enigma2-plugin-systemplugins-wanip.bb
@@ -7106,8 +7671,8 @@ Version: 1.0+git4+e4902be0+e4902befe9-r0
 Section: devel
 Architecture: all
 Maintainer: Huevos
-MD5Sum: 75fa027fa242b90d4c7922bdf9454ba5
-SHA256sum: 2863819287305b4c67bbb9ef361c494432099eeb90a86a9e8a83c0dfd3be25ff
+MD5Sum: dae22a1c21f1a9c91e9320be9b808a68
+SHA256sum: 5554b1f82f882d302091b6416800c4a512d239b7ea83e1ebd9b5f0ae2e0c3947
 Size: 1634
 Filename: enigma2-plugin-systemplugins-wanip-src_1.0+git4+e4902be0+e4902befe9-r0_all.ipk
 Source: enigma2-plugin-systemplugins-wanip.bb
@@ -7123,9 +7688,9 @@ Depends: python3-requests
 Section: base
 Architecture: all
 Maintainer: Huevos
-MD5Sum: eebf1b470eaca66d5266d71e135d73a8
-SHA256sum: 0c31cb87463b0bf788149f9a966d4568e5adec13dc55cc0f11ad4ebba6ea4873
-Size: 3384
+MD5Sum: ec79261b1d61f2e77c2745dcee380e0f
+SHA256sum: 5a7797626fda276e57ae5d9faf0a97d7e2f622d2b1e1ad2d1501f2f4ce837f12
+Size: 3380
 Filename: enigma2-plugin-systemplugins-wanip_1.0+git4+e4902be0+e4902befe9-r0_all.ipk
 Source: enigma2-plugin-systemplugins-wanip.bb
 Description: enigma2-plugin-systemplugins-wanip version 1.0+git-r0
@@ -7252,6 +7817,22 @@ HomePage: https://www.world-of-satellite.com
 License: GPL-2.0-or-later
 Priority: optional
 
+Package: firmware-aic8800d80
+Version: 1.0+git165+b615b400+b615b403a2-r1
+Section: base
+Architecture: all
+Maintainer: OpenViX
+MD5Sum: 1ff96a2634bc8063988cba6277e61ecf
+SHA256sum: 20b035ab92e7742635020d740dbd220bc335f8bc8a526759c2f26c9bcac991f2
+Size: 749604
+Filename: firmware-aic8800d80_1.0+git165+b615b400+b615b403a2-r1_all.ipk
+Source: firmware-aic8800d80.bb
+Description: Firmware files for AIC8800
+OE: firmware-aic8800d80
+HomePage: https://www.world-of-satellite.com
+License: LicenseRef-Proprietary
+Priority: optional
+
 Package: firmware-as102-data1-st
 Version: 1.0-r0
 Section: base
@@ -7329,6 +7910,38 @@ Source: firmware-cx231xx.bb
 Description: Firmware for cx231xx
 OE: firmware-cx231xx
 HomePage: https://www.world-of-satellite.com
+License: LicenseRef-Proprietary
+Priority: optional
+
+Package: firmware-dvb-demod-m88rs6060
+Version: 1.0-r0
+Section: base
+Architecture: all
+Maintainer: OpenViX
+MD5Sum: 2734a88bbb0f6b8f1c6b5bb823dd7fe6
+SHA256sum: 147ac7072014eadca0380e1a3ae741dbdf8457b68605df3ae50705287c4f5305
+Size: 7494
+Filename: firmware-dvb-demod-m88rs6060_1.0-r0_all.ipk
+Source: tbs-tuner-firmwares_1.0.bb
+Description: Firmware collection for TBS USB DVB tuners
+OE: tbs-tuner-firmwares
+HomePage: https://www.tbsdtv.com/
+License: LicenseRef-Proprietary
+Priority: optional
+
+Package: firmware-dvb-demod-si2183
+Version: 1.0-r0
+Section: base
+Architecture: all
+Maintainer: OpenViX
+MD5Sum: bc21f8a385095741a9bfb4f87fe6fb12
+SHA256sum: 20f0e94d01fe4c24923d689c3f1da32268dec1174873c483f17318742e22be0c
+Size: 3012
+Filename: firmware-dvb-demod-si2183_1.0-r0_all.ipk
+Source: tbs-tuner-firmwares_1.0.bb
+Description: Firmware collection for TBS USB DVB tuners
+OE: tbs-tuner-firmwares
+HomePage: https://www.tbsdtv.com/
 License: LicenseRef-Proprietary
 Priority: optional
 
@@ -7625,14 +8238,94 @@ Version: 1.0-r0
 Section: base
 Architecture: all
 Maintainer: OpenViX
-MD5Sum: dcd68a02b032f58c480369a0faab0edb
-SHA256sum: 39045b3fc3b11423b80f959dc042e71f0a58358dd39a1c3354d6b8c1e70de98f
-Size: 2938
+MD5Sum: 24797931cd5e274f53b76b1c32ddd87d
+SHA256sum: 165a7d0295c1d029e0d7e31ef9c7a64d0890c3084ed7c7e01c5795602b83fb25
+Size: 2954
 Filename: firmware-dvb-usb-tbs5520_1.0-r0_all.ipk
-Source: firmware-dvb-usb-tbs5520.bb
-Description: firmware-dvb-usb-tbs5520 version 1.0-r0
-OE: firmware-dvb-usb-tbs5520
-HomePage: https://www.world-of-satellite.com
+Source: tbs-tuner-firmwares_1.0.bb
+Description: Firmware collection for TBS USB DVB tuners
+OE: tbs-tuner-firmwares
+HomePage: https://www.tbsdtv.com/
+License: LicenseRef-Proprietary
+Priority: optional
+
+Package: firmware-dvb-usb-tbs5520se
+Version: 1.0-r0
+Section: base
+Architecture: all
+Maintainer: OpenViX
+MD5Sum: 483c575a85e10c8882fa3e790d8d6b4a
+SHA256sum: 89d9b4e00dc875a7d7879faff84360a3e58b91c6c22a12faf72ad0305fdbfb6f
+Size: 2972
+Filename: firmware-dvb-usb-tbs5520se_1.0-r0_all.ipk
+Source: tbs-tuner-firmwares_1.0.bb
+Description: Firmware collection for TBS USB DVB tuners
+OE: tbs-tuner-firmwares
+HomePage: https://www.tbsdtv.com/
+License: LicenseRef-Proprietary
+Priority: optional
+
+Package: firmware-dvb-usb-tbs5530
+Version: 1.0-r0
+Section: base
+Architecture: all
+Maintainer: OpenViX
+MD5Sum: fca6b6eed3b8c64bbc2fec84f451912f
+SHA256sum: 5d3171674e68a8776b6ebbfd0880eba899fe79b35b14ed638eafc448eda3722d
+Size: 2976
+Filename: firmware-dvb-usb-tbs5530_1.0-r0_all.ipk
+Source: tbs-tuner-firmwares_1.0.bb
+Description: Firmware collection for TBS USB DVB tuners
+OE: tbs-tuner-firmwares
+HomePage: https://www.tbsdtv.com/
+License: LicenseRef-Proprietary
+Priority: optional
+
+Package: firmware-dvb-usb-tbs5580
+Version: 1.0-r0
+Section: base
+Architecture: all
+Maintainer: OpenViX
+MD5Sum: 13efe68c241813ce17015e8e6332154c
+SHA256sum: a798fb0af48206e861d45d48c3580dd17f9c2fb305a4d900749e674a44d93351
+Size: 3742
+Filename: firmware-dvb-usb-tbs5580_1.0-r0_all.ipk
+Source: tbs-tuner-firmwares_1.0.bb
+Description: Firmware collection for TBS USB DVB tuners
+OE: tbs-tuner-firmwares
+HomePage: https://www.tbsdtv.com/
+License: LicenseRef-Proprietary
+Priority: optional
+
+Package: firmware-dvb-usb-tbs5590
+Version: 1.0-r0
+Section: base
+Architecture: all
+Maintainer: OpenViX
+MD5Sum: 6fea3547a9920223c013a55423fdfd18
+SHA256sum: 28f50b0d9fa027b795c0f197764340028e1bf99a69b9154a8604465c0160f89f
+Size: 2574
+Filename: firmware-dvb-usb-tbs5590_1.0-r0_all.ipk
+Source: tbs-tuner-firmwares_1.0.bb
+Description: Firmware collection for TBS USB DVB tuners
+OE: tbs-tuner-firmwares
+HomePage: https://www.tbsdtv.com/
+License: LicenseRef-Proprietary
+Priority: optional
+
+Package: firmware-dvb-usb-tbs5881
+Version: 1.0-r0
+Section: base
+Architecture: all
+Maintainer: OpenViX
+MD5Sum: 2c14810bc902de2a76551aa88a17528b
+SHA256sum: 0fe5582c114b00d33cbf18d55b5fbd3f1b35a29927aece1c51987725e47ca4e5
+Size: 3722
+Filename: firmware-dvb-usb-tbs5881_1.0-r0_all.ipk
+Source: tbs-tuner-firmwares_1.0.bb
+Description: Firmware collection for TBS USB DVB tuners
+OE: tbs-tuner-firmwares
+HomePage: https://www.tbsdtv.com/
 License: LicenseRef-Proprietary
 Priority: optional
 
@@ -7641,14 +8334,46 @@ Version: 1.0-r0
 Section: base
 Architecture: all
 Maintainer: OpenViX
-MD5Sum: 50214d4910c2ee73a49a3d0b33b2e421
-SHA256sum: d113f75a4a204c071684ab39230786c0602989456511807bf102234bab730015
-Size: 3484
+MD5Sum: db9fde9aa0081807f14f13322503b340
+SHA256sum: b265294d3dfe6c8cee2ed45b66aa380825d40c48a60535e9c02378ae5ef1016c
+Size: 3502
 Filename: firmware-dvb-usb-tbs5925_1.0-r0_all.ipk
-Source: firmware-dvb-usb-tbs5925.bb
-Description: firmware-dvb-usb-tbs5925 version 1.0-r0
-OE: firmware-dvb-usb-tbs5925
-HomePage: https://www.world-of-satellite.com
+Source: tbs-tuner-firmwares_1.0.bb
+Description: Firmware collection for TBS USB DVB tuners
+OE: tbs-tuner-firmwares
+HomePage: https://www.tbsdtv.com/
+License: LicenseRef-Proprietary
+Priority: optional
+
+Package: firmware-dvb-usb-tbs5927
+Version: 1.0-r0
+Section: base
+Architecture: all
+Maintainer: OpenViX
+MD5Sum: 6c1dd1b3df1f0058049790c8536ad829
+SHA256sum: 80d42fe97361640d2d5aec37631a5ccb1de1db3f0065139c2c138a734107ccd9
+Size: 2958
+Filename: firmware-dvb-usb-tbs5927_1.0-r0_all.ipk
+Source: tbs-tuner-firmwares_1.0.bb
+Description: Firmware collection for TBS USB DVB tuners
+OE: tbs-tuner-firmwares
+HomePage: https://www.tbsdtv.com/
+License: LicenseRef-Proprietary
+Priority: optional
+
+Package: firmware-dvb-usb-tbs5931
+Version: 1.0-r0
+Section: base
+Architecture: all
+Maintainer: OpenViX
+MD5Sum: 9511b9de0038f7b3b0db56f3011e83a8
+SHA256sum: 19974914726a33157acf06f1c25167530f16405820c0eb4b55d05039ba4e19ba
+Size: 2974
+Filename: firmware-dvb-usb-tbs5931_1.0-r0_all.ipk
+Source: tbs-tuner-firmwares_1.0.bb
+Description: Firmware collection for TBS USB DVB tuners
+OE: tbs-tuner-firmwares
+HomePage: https://www.tbsdtv.com/
 License: LicenseRef-Proprietary
 Priority: optional
 
@@ -7657,14 +8382,14 @@ Version: 1.0-r0
 Section: base
 Architecture: all
 Maintainer: OpenViX
-MD5Sum: 8c24220b23e4f421c9ca9cc663875c7e
-SHA256sum: 1c37f0e57cd3081142794bfe1fd20028f1f38fa19c5eca5e46b4c4d32aa24bb9
-Size: 3752
+MD5Sum: fcf00c274918c14bb2b74860af1da523
+SHA256sum: ef6691d1c6c30eb6df6e0e68b3bcb5e815578fb8bf5aa82c0b2cc1fe7fa32ccf
+Size: 3770
 Filename: firmware-dvb-usb-tbs5980_1.0-r0_all.ipk
-Source: firmware-dvb-usb-tbs5980.bb
-Description: firmware-dvb-usb-tbs5980 version 1.0-r0
-OE: firmware-dvb-usb-tbs5980
-HomePage: https://www.world-of-satellite.com
+Source: tbs-tuner-firmwares_1.0.bb
+Description: Firmware collection for TBS USB DVB tuners
+OE: tbs-tuner-firmwares
+HomePage: https://www.tbsdtv.com/
 License: LicenseRef-Proprietary
 Priority: optional
 
@@ -7973,6 +8698,22 @@ HomePage: https://www.world-of-satellite.com
 License: LicenseRef-Proprietary
 Priority: optional
 
+Package: firmware-tbs-cx231xx
+Version: 1.0-r0
+Section: base
+Architecture: all
+Maintainer: OpenViX
+MD5Sum: 7be897466d5b614e5743cd438cc4f494
+SHA256sum: 24299a5f584604692a5ea2245585c9ab0b36ec35735e79481ea5583a98a5d188
+Size: 9674
+Filename: firmware-tbs-cx231xx_1.0-r0_all.ipk
+Source: tbs-tuner-firmwares_1.0.bb
+Description: Firmware collection for TBS USB DVB tuners
+OE: tbs-tuner-firmwares
+HomePage: https://www.tbsdtv.com/
+License: LicenseRef-Proprietary
+Priority: optional
+
 Package: firmware-xc3028-v27
 Version: 1.0-r0
 Section: base
@@ -8181,55 +8922,6 @@ Description: fstrim cron job
 OE: fstrim-cron-vix
 HomePage: https://www.world-of-satellite.com
 License: GPL-2.0-or-later
-Priority: optional
-
-Package: hicolor-icon-theme-dbg
-Version: 0.18-r0
-Section: devel
-Architecture: all
-Maintainer: OpenViX
-MD5Sum: 097849bb1f090c3e1a9b53b12e935ebf
-SHA256sum: 52c5f53859b88aa40909e81fdaa83fdb440ca04a625a7c76ff932d1a49fe90d4
-Size: 662
-Filename: hicolor-icon-theme-dbg_0.18-r0_all.ipk
-Source: hicolor-icon-theme_0.18.bb
-Description: Default icon theme that all icon themes automatically inherit from - Debugging files
-OE: hicolor-icon-theme
-HomePage: https://www.freedesktop.org/wiki/Software/icon-theme
-License: GPL-2.0-only
-Priority: optional
-
-Package: hicolor-icon-theme-dev
-Version: 0.18-r0
-Recommends: hicolor-icon-theme (= 0.18-r0)
-Section: devel
-Architecture: all
-Maintainer: OpenViX
-MD5Sum: 693402872b5c36878e8e8f3413b6508a
-SHA256sum: b981cd4e7dcc319f2914dcd1f71d6013ac893f2b8ef0fbb220e62787c420d509
-Size: 900
-Filename: hicolor-icon-theme-dev_0.18-r0_all.ipk
-Source: hicolor-icon-theme_0.18.bb
-Description: Default icon theme that all icon themes automatically inherit from - Development files
-OE: hicolor-icon-theme
-HomePage: https://www.freedesktop.org/wiki/Software/icon-theme
-License: GPL-2.0-only
-Priority: optional
-
-Package: hicolor-icon-theme
-Version: 0.18-r0
-Section: base
-Architecture: all
-Maintainer: OpenViX
-MD5Sum: b0c40920c2a7a896719df7d7e3138d5f
-SHA256sum: a65a2b1db7ae7e277738512674671073da257feeb2270f59a84e434524bffe83
-Size: 11336
-Filename: hicolor-icon-theme_0.18-r0_all.ipk
-Source: hicolor-icon-theme_0.18.bb
-Description: Default icon theme that all icon themes automatically inherit from
-OE: hicolor-icon-theme
-HomePage: https://www.freedesktop.org/wiki/Software/icon-theme
-License: GPL-2.0-only
 Priority: optional
 
 Package: iso-codes-dbg
@@ -8463,15 +9155,15 @@ License: GPL-2.0-only
 Priority: optional
 
 Package: netbase-dbg
-Version: 1:6.5-r0.3
+Version: 1:6.6-r0.3
 Section: devel
 Architecture: all
 Maintainer: OpenViX
-MD5Sum: 2e285916c5889eb0fa49ac1e00bfdf70
-SHA256sum: 22f93b878993eec29d84bf91ba75e8e24a94029eff436817941f16e2c042bb4f
+MD5Sum: 67cfe196c0fe0e079d58af4f1c50561f
+SHA256sum: 210949d5e479f89d5f2cf3a61385806c2fbdb4eb042d807498611940db9b7462
 Size: 618
-Filename: netbase-dbg_6.5-r0.3_all.ipk
-Source: netbase_6.5.bb
+Filename: netbase-dbg_6.6-r0.3_all.ipk
+Source: netbase_6.6.bb
 Description: Basic TCP/IP networking support - Debugging files
 OE: netbase
 HomePage: http://packages.debian.org/netbase
@@ -8479,16 +9171,16 @@ License: GPL-2.0-only
 Priority: optional
 
 Package: netbase-dev
-Version: 1:6.5-r0.3
-Recommends: netbase (= 1:6.5-r0.3)
+Version: 1:6.6-r0.3
+Recommends: netbase (= 1:6.6-r0.3)
 Section: devel
 Architecture: all
 Maintainer: OpenViX
-MD5Sum: 79aa57cc14bf1cbb24402d216e63ba9c
-SHA256sum: d715297e6bd3dd96018183f05dc64cb611d2eb4851af6a65f7e2a254bb090c03
+MD5Sum: 77f5d77d6bbdcd29f33c592cb2807c35
+SHA256sum: e477c1af821153cdc13e1b3aabf53abfa07e6f2ce68f21cd34fa3dc085c29096
 Size: 650
-Filename: netbase-dev_6.5-r0.3_all.ipk
-Source: netbase_6.5.bb
+Filename: netbase-dev_6.6-r0.3_all.ipk
+Source: netbase_6.6.bb
 Description: Basic TCP/IP networking support - Development files
 OE: netbase
 HomePage: http://packages.debian.org/netbase
@@ -8496,15 +9188,15 @@ License: GPL-2.0-only
 Priority: optional
 
 Package: netbase
-Version: 1:6.5-r0.3
+Version: 1:6.6-r0.3
 Section: base
 Architecture: all
 Maintainer: OpenViX
-MD5Sum: a08682bdd4964abeb2fad022f7fec6bf
-SHA256sum: 7369fbba20869185c3078f9e77bdf3646a53aa9c4a480617efbb8cc1093a6311
-Size: 10546
-Filename: netbase_6.5-r0.3_all.ipk
-Source: netbase_6.5.bb
+MD5Sum: d260f2a0935639c09c4469e75a0434a0
+SHA256sum: 4b51de2e858985c8013565847ce9b5d89067e33be4d18874c5b5f63e2a179094
+Size: 10100
+Filename: netbase_6.6-r0.3_all.ipk
+Source: netbase_6.6.bb
 Description: Basic TCP/IP networking support
 OE: netbase
 HomePage: http://packages.debian.org/netbase
@@ -8598,14 +9290,14 @@ License: GPL-2.0-or-later
 Priority: required
 
 Package: openresolv-dbg
-Version: 3.13.2+git471+3d3c65b0+3d3c65bc68-r0
+Version: 3.13.2+git472+fc721630+fc72163141-r0
 Section: devel
 Architecture: all
 Maintainer: OpenViX
-MD5Sum: 970acff34019ea4fc44f090a21a97023
-SHA256sum: 121dfd34c7d96e5c3976d725d09da1e5522928a478328e09ff1b1d02e4557644
+MD5Sum: 35533ed9f88777e8c63fb2665c0066b2
+SHA256sum: 0cf8c38b6a5b11c99efdada6a25f31ece318439a988c9da59a7d904493d3f956
 Size: 616
-Filename: openresolv-dbg_3.13.2+git471+3d3c65b0+3d3c65bc68-r0_all.ipk
+Filename: openresolv-dbg_3.13.2+git472+fc721630+fc72163141-r0_all.ipk
 Source: openresolv_git.bb
 Description: management framework for resolv.conf - Debugging files
 OE: openresolv
@@ -8614,15 +9306,15 @@ License: BSD-2-Clause
 Priority: optional
 
 Package: openresolv-dev
-Version: 3.13.2+git471+3d3c65b0+3d3c65bc68-r0
-Recommends: openresolv (= 3.13.2+git471+3d3c65b0+3d3c65bc68-r0)
+Version: 3.13.2+git472+fc721630+fc72163141-r0
+Recommends: openresolv (= 3.13.2+git472+fc721630+fc72163141-r0)
 Section: devel
 Architecture: all
 Maintainer: OpenViX
-MD5Sum: 5ddea421b7271ff15b0dedc25ae732f8
-SHA256sum: 8d6d6f8ce84ab46d57f1160995b5c2116c10183f4c3b6723ec430b5467908d94
-Size: 650
-Filename: openresolv-dev_3.13.2+git471+3d3c65b0+3d3c65bc68-r0_all.ipk
+MD5Sum: 769a9dae754ace2a5b669d51ba22f50d
+SHA256sum: 4ddce87f7519b58740cc97f4314a4d0c929ad86f2279671789aceb9f2b078cb9
+Size: 648
+Filename: openresolv-dev_3.13.2+git472+fc721630+fc72163141-r0_all.ipk
 Source: openresolv_git.bb
 Description: management framework for resolv.conf - Development files
 OE: openresolv
@@ -8631,14 +9323,14 @@ License: BSD-2-Clause
 Priority: optional
 
 Package: openresolv-doc
-Version: 3.13.2+git471+3d3c65b0+3d3c65bc68-r0
+Version: 3.13.2+git472+fc721630+fc72163141-r0
 Section: doc
 Architecture: all
 Maintainer: OpenViX
-MD5Sum: 8b4f34ebbec1ce9d427993b386e0cd78
-SHA256sum: ce063d8124168ab3d9c3297a7fd624892b2201666cbe59cf5a6d48a93358aa15
+MD5Sum: 5cfba1a677cf5f07d81caf75b430a3c9
+SHA256sum: f8df2ce0865ff10b3ce32636b9eb20a307e2188b8b673ebc338e75e988040723
 Size: 8826
-Filename: openresolv-doc_3.13.2+git471+3d3c65b0+3d3c65bc68-r0_all.ipk
+Filename: openresolv-doc_3.13.2+git472+fc721630+fc72163141-r0_all.ipk
 Source: openresolv_git.bb
 Description: management framework for resolv.conf - Documentation files
 OE: openresolv
@@ -8647,16 +9339,16 @@ License: BSD-2-Clause
 Priority: optional
 
 Package: openresolv
-Version: 3.13.2+git471+3d3c65b0+3d3c65bc68-r0
+Version: 3.13.2+git472+fc721630+fc72163141-r0
 Provides: resolvconf
 Conflicts: resolvconf
 Section: base
 Architecture: all
 Maintainer: OpenViX
-MD5Sum: 8c35b15c90f35a1e25c20655cbe85325
-SHA256sum: 70f018998ef1033ecf5a91c78090bf68f0afe1864acab6a7b9049a391826252e
-Size: 19288
-Filename: openresolv_3.13.2+git471+3d3c65b0+3d3c65bc68-r0_all.ipk
+MD5Sum: b2a88fec9c90cf23e24f8d71244d1f85
+SHA256sum: 9b3c15c2db8f858e8a1ef134a828f1713aa9a36d6aee678721d424b9bc6d4161
+Size: 19368
+Filename: openresolv_3.13.2+git472+fc721630+fc72163141-r0_all.ipk
 Source: openresolv_git.bb
 Description: management framework for resolv.conf
 OE: openresolv
@@ -8950,6 +9642,73 @@ HomePage: https://www.world-of-satellite.com
 License: GPL-2.0-or-later
 Priority: optional
 
+Package: python3-yt-dlp-ejs-dbg
+Version: 0.8.0-r0
+Section: devel
+Architecture: all
+Maintainer: OpenViX
+MD5Sum: 78a28f3dd1a098ca65a61fb14c5fa5fd
+SHA256sum: 34658785eaba2ce380e21810bb69985974afc528e0b23ab1bf2826d5d895e098
+Size: 824
+Filename: python3-yt-dlp-ejs-dbg_0.8.0-r0_all.ipk
+Source: python3-yt-dlp-ejs.bb
+Description: JavaScript challenge solver for yt-dlp - Debugging files
+OE: python3-yt-dlp-ejs
+HomePage: https://github.com/yt-dlp/ejs
+License: ISC AND MIT AND Unlicense
+Priority: optional
+
+Package: python3-yt-dlp-ejs-dev
+Version: 0.8.0-r0
+Recommends: python3-core-dev, python3-yt-dlp-ejs (= 0.8.0-r0)
+Section: devel
+Architecture: all
+Maintainer: OpenViX
+MD5Sum: f08ba0948b4fc20ab853564b19fbd370
+SHA256sum: 71e80eceef821d32bf860c41353f0776314e36c28dd158ebea69910dac7b0eee
+Size: 866
+Filename: python3-yt-dlp-ejs-dev_0.8.0-r0_all.ipk
+Source: python3-yt-dlp-ejs.bb
+Description: JavaScript challenge solver for yt-dlp - Development files
+OE: python3-yt-dlp-ejs
+HomePage: https://github.com/yt-dlp/ejs
+License: ISC AND MIT AND Unlicense
+Priority: optional
+
+Package: python3-yt-dlp-ejs-src
+Version: 0.8.0-r0
+Depends: python3-yt-dlp-ejs
+Section: devel
+Architecture: all
+Maintainer: OpenViX
+MD5Sum: 33561997c01ce91fc98de86ee8533fd1
+SHA256sum: 85e45d94ba0b0259da93b4d9415637a2bd10bbdba4e777832af38f7f299115de
+Size: 1614
+Filename: python3-yt-dlp-ejs-src_0.8.0-r0_all.ipk
+Source: python3-yt-dlp-ejs.bb
+Description: JavaScript challenge solver for yt-dlp - Source files
+OE: python3-yt-dlp-ejs
+HomePage: https://github.com/yt-dlp/ejs
+License: ISC AND MIT AND Unlicense
+Priority: optional
+
+Package: python3-yt-dlp-ejs
+Version: 0.8.0-r0
+Depends: python3-core
+Section: devel/python
+Architecture: all
+Maintainer: OpenViX
+MD5Sum: d148e48104db7ff0eb1a155e6723827e
+SHA256sum: 40caba2e74a18e52bb33040a093e0251b3a023c0304964cfc8f5947597e45ed3
+Size: 56080
+Filename: python3-yt-dlp-ejs_0.8.0-r0_all.ipk
+Source: python3-yt-dlp-ejs.bb
+Description: JavaScript challenge solver for yt-dlp
+OE: python3-yt-dlp-ejs
+HomePage: https://github.com/yt-dlp/ejs
+License: ISC AND MIT AND Unlicense
+Priority: optional
+
 Package: run-postinsts-dbg
 Version: 1.0-r0
 Section: devel
@@ -9051,15 +9810,32 @@ HomePage: www.satdreamgr.com
 License: GPL-2.0-or-later
 Priority: optional
 
+Package: tbs-tuner-firmwares
+Version: 1.0-r0
+Recommends: firmware-dvb-demod-m88rs6060, firmware-dvb-demod-si2183, firmware-dvb-usb-tbs5520, firmware-dvb-usb-tbs5520se, firmware-dvb-usb-tbs5530, firmware-dvb-usb-tbs5580, firmware-dvb-usb-tbs5590, firmware-dvb-usb-tbs5881, firmware-dvb-usb-tbs5925, firmware-dvb-usb-tbs5927, firmware-dvb-usb-tbs5931, firmware-dvb-usb-tbs5980, firmware-tbs-cx231xx
+Section: base
+Architecture: all
+Maintainer: OpenViX
+MD5Sum: ff67c2ecf31791e1656d60076ff282fe
+SHA256sum: f8f95a64668801a776a391425fd1992a4ec1dd5fcc8f319061a698e3d410d239
+Size: 618
+Filename: tbs-tuner-firmwares_1.0-r0_all.ipk
+Source: tbs-tuner-firmwares_1.0.bb
+Description: Firmware collection for TBS USB DVB tuners
+OE: tbs-tuner-firmwares
+HomePage: https://www.tbsdtv.com/
+License: LicenseRef-Proprietary
+Priority: optional
+
 Package: tuxbox-common-dbg
-Version: 1.0+git1023+6cd59a10+6cd59a1819-r0
+Version: 1.0+git1025+82719740+8271974e27-r0
 Section: devel
 Architecture: all
 Maintainer: OE-Alliance team
-MD5Sum: 44e03a4d2b476c5551b340556fcf6dd2
-SHA256sum: 508c541e518a1ea9135fb3aaa636b8fda64282952bb82fceca062e4c3de736e7
+MD5Sum: 645403106fb22cc05b4d012aaaaab603
+SHA256sum: cb19769c307a14901c05bbe13c08893787984e9a26f5151374afae1a4fd130cc
 Size: 608
-Filename: tuxbox-common-dbg_1.0+git1023+6cd59a10+6cd59a1819-r0_all.ipk
+Filename: tuxbox-common-dbg_1.0+git1025+82719740+8271974e27-r0_all.ipk
 Source: tuxbox-common_0.1.1.bb
 Description: Tuxbox common files - Debugging files
 OE: tuxbox-common
@@ -9068,15 +9844,15 @@ License: LicenseRef-Proprietary
 Priority: optional
 
 Package: tuxbox-common-dev
-Version: 1.0+git1023+6cd59a10+6cd59a1819-r0
-Recommends: tuxbox-common (= 1.0+git1023+6cd59a10+6cd59a1819-r0)
+Version: 1.0+git1025+82719740+8271974e27-r0
+Recommends: tuxbox-common (= 1.0+git1025+82719740+8271974e27-r0)
 Section: devel
 Architecture: all
 Maintainer: OE-Alliance team
-MD5Sum: 0bdd5f54ea6175804dec79119e0bf727
-SHA256sum: 7d450f5933f022d5ad0543a6c53a665fe2755c338245cceb399b3fbcfd016384
+MD5Sum: 2db08677010d2090170c0a0c94b65ee6
+SHA256sum: e2ae88b02a204170b674ce5ce6d65e79782ff8443388bb509a12499189663cf6
 Size: 642
-Filename: tuxbox-common-dev_1.0+git1023+6cd59a10+6cd59a1819-r0_all.ipk
+Filename: tuxbox-common-dev_1.0+git1025+82719740+8271974e27-r0_all.ipk
 Source: tuxbox-common_0.1.1.bb
 Description: Tuxbox common files - Development files
 OE: tuxbox-common
@@ -9085,14 +9861,14 @@ License: LicenseRef-Proprietary
 Priority: optional
 
 Package: tuxbox-common
-Version: 1.0+git1023+6cd59a10+6cd59a1819-r0
+Version: 1.0+git1025+82719740+8271974e27-r0
 Section: base
 Architecture: all
 Maintainer: OE-Alliance team
-MD5Sum: 3b0ff8c8aa3e1380acbe195665df580c
-SHA256sum: 3afa277f74b2e8528ef40de0c3ee5730f5be601679d2a52ac61a9fe28d102c0f
-Size: 76990
-Filename: tuxbox-common_1.0+git1023+6cd59a10+6cd59a1819-r0_all.ipk
+MD5Sum: 1e4c66bed4a41e270e3743946c69719f
+SHA256sum: 6eb795ac774be63fd6a1e1bebe62e7cb60eee3012d50ed77399c957fc04ceefb
+Size: 76500
+Filename: tuxbox-common_1.0+git1025+82719740+8271974e27-r0_all.ipk
 Source: tuxbox-common_0.1.1.bb
 Description: Tuxbox common files
 OE: tuxbox-common
@@ -9440,70 +10216,37 @@ HomePage: https://www.world-of-satellite.com
 License: GPL-2.0-or-later
 Priority: optional
 
-Package: wireless-regdb-dbg
-Version: 2022.08.12-r0
-Section: devel
-Architecture: all
-Maintainer: OpenViX
-MD5Sum: 55b84e0793415ff4a666ffc662eee330
-SHA256sum: 82b5dbb46e698f3b4abdcfcb1827a1bc46411713e3d03a228bf96e6b7f7abc56
-Size: 606
-Filename: wireless-regdb-dbg_2022.08.12-r0_all.ipk
-Source: wireless-regdb_2022.08.12.bb
-Description: Wireless Central Regulatory Domain Database - Debugging files
-OE: wireless-regdb
-HomePage: http://wireless.kernel.org/en/developers/Regulatory/CRDA
-License: ISC
-Priority: optional
-
-Package: wireless-regdb-dev
-Version: 2022.08.12-r0
-Recommends: wireless-regdb (= 2022.08.12-r0)
-Section: devel
-Architecture: all
-Maintainer: OpenViX
-MD5Sum: 0d5b41423bb5c177aef24e6af8f6fed6
-SHA256sum: 2e288bbc7ce8a47ce57af27566ce819d0ee64f8fe1cc75f651149462ce4e2751
-Size: 640
-Filename: wireless-regdb-dev_2022.08.12-r0_all.ipk
-Source: wireless-regdb_2022.08.12.bb
-Description: Wireless Central Regulatory Domain Database - Development files
-OE: wireless-regdb
-HomePage: http://wireless.kernel.org/en/developers/Regulatory/CRDA
-License: ISC
-Priority: optional
-
 Package: wireless-regdb-static
-Version: 2022.08.12-r0
+Version: 2026.09.03-r0
 Section: net
 Architecture: all
 Maintainer: OpenViX
-MD5Sum: e8a2d4201b1c3fcf1d39c194482df86e
-SHA256sum: 9d03a000d247850cd7cde796bf568dfeec50876ca9accf0d6455f41ed0b372bf
-Size: 3932
-Filename: wireless-regdb-static_2022.08.12-r0_all.ipk
-Source: wireless-regdb_2022.08.12.bb
+MD5Sum: ab9d208673b02ff36298b6ae51129527
+SHA256sum: ce27ec09668819ffa5a3e050723ebdc012b4bf134a249c57510476f8ef0139b2
+Size: 4448
+Filename: wireless-regdb-static_2026.09.03-r0_all.ipk
+Source: wireless-regdb_2026.09.03.bb
 Description: Wireless Central Regulatory Domain Database
 OE: wireless-regdb
-HomePage: http://wireless.kernel.org/en/developers/Regulatory/CRDA
+HomePage: https://wireless.wiki.kernel.org/en/developers/regulatory/crda
 License: ISC
 Priority: optional
 
 Package: wireless-regdb
-Version: 2022.08.12-r0
+Version: 2026.09.03-r0
 Conflicts: wireless-regdb-static
 Suggests: crda
 Section: net
 Architecture: all
 Maintainer: OpenViX
-MD5Sum: c8216cf84956c280551dfa87d63a5537
-SHA256sum: 71a0aff33bbbde93a6da1ef7f5c3dbd8e538f7e5ca4eaee5ded298cc308ba36a
-Size: 3974
-Filename: wireless-regdb_2022.08.12-r0_all.ipk
-Source: wireless-regdb_2022.08.12.bb
+MD5Sum: da66aa8d822de7b6df3315a6fab9812f
+SHA256sum: d8c94ed6e512a984aedfb57fea42351b00696c02e27170a41dc4ece596135021
+Size: 4668
+Filename: wireless-regdb_2026.09.03-r0_all.ipk
+Source: wireless-regdb_2026.09.03.bb
 Description: Wireless Central Regulatory Domain Database
 OE: wireless-regdb
-HomePage: http://wireless.kernel.org/en/developers/Regulatory/CRDA
+HomePage: https://wireless.wiki.kernel.org/en/developers/regulatory/crda
 License: ISC
 Priority: optional
 
